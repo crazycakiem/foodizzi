@@ -7861,3 +7861,23 @@ a.addon-main-style-r:hover{
     -moz-osx-font-smoothing: grayscale;
 }
 /*.show-map{display:none;}*/
+/* ---list ico update sprite--- */
+.ico-noresult{
+     background: transparent url(../images/ico-sprite.png) left top no-repeat;
+    display: inline-block;
+}
+.ico-noresult.result-no-res{
+width:83px;
+height:72px;
+background-position:-108px -72px ;
+}
+.ico-noresult.result-no-food{
+width:108px;
+height:87px;
+background-position:0 -72px;
+}
+.ico-noresult.result-no-serv{
+width:75px;
+height:75px;
+background-position:-191px -72px;
+}

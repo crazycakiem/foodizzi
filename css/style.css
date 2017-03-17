@@ -3661,6 +3661,17 @@ Portfolio
  height:40px;
  overflow:hidden;
 }
+.work-item .sh-distance{
+     position: absolute;
+    z-index: 9999;
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    padding: 10px 20px;
+    color: #FFF;
+    background-color: rgba(0,0,0,.6);
+}
+.work-item .sh-distance strong{color:#ffd047}
 
 /* Work item hover state */
 
@@ -7162,11 +7173,18 @@ hr.div-decor.bg-white:after {
  height: 22px;
  display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
+/*    font-size: inherit;*/
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     z-index: 9;
+}
+
+h2.section-title .input-circle.form-group{margin:0 5px;}
+h2.section-title .input-circle.form-group .select-list select{
+     height: 39px;
+    width: auto;
+    padding-right: 35px;
 }
 
 .no-pointer-events .select-list:after {
@@ -7513,7 +7531,17 @@ fieldset.list-menu-table.list-reser-menu{
      font-size: .9em;
 }
 .reser-inside{padding:0 20px 20px;}
-.input-circle, .input-circle input.form-control{border-radius:50px;border-color: rgba(255,208,71, .9);}
+.input-circle,
+.input-circle input.form-control,
+.input-circle div.select-list select{
+ border-color: rgba(255,208,71, .9);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
 .input-circle .input-group-addon{
  border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;

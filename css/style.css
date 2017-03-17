@@ -607,7 +607,18 @@ hr.black{
 .sub-heading.black{
  color: rgba(0,0,0, .75);
 }
-
+.dis-tbl{
+ display:table;
+     height: 100%;
+    width: 100%;
+}
+.tbl-cell{
+ display:table-cell;
+ vertical-align:middle;
+}
+.txt-underline{
+ text-decoration:underline;
+}
 
 
 /* ==============================
@@ -2965,7 +2976,7 @@ Sections styles
  margin-top: -5px;
  font-size: 11px;
  font-weight: 400;
- letter-spacing: 0.4em;
+ letter-spacing: 0;
  text-decoration: none;
  text-transform: uppercase;
 
@@ -4194,6 +4205,16 @@ Contact section
  position: absolute;
  top: 10px;
  left: 3px;
+ color: #fff;
+ text-align: center;
+ line-height: 23px;
+}
+.ci-icon-no-bg{
+ width: 23px;
+ height: 23px;
+ position: absolute;
+ top: 0;
+ left: 10px;
  color: #fff;
  text-align: center;
  line-height: 23px;
@@ -5582,7 +5603,8 @@ section:hover .small-item-carousel .owl-next{
  text-align:center;
 }
 .tpl-alt-tabs.w-17per > li a,
-.tpl-alt-tabs.w-33per > li a{
+.tpl-alt-tabs.w-33per > li a,
+.tpl-alt-tabs.w-50per > li a{
  letter-spacing:0;
  position:relative;
 }
@@ -5600,47 +5622,33 @@ section:hover .small-item-carousel .owl-next{
     -moz-osx-font-smoothing: grayscale;
 
 }
-.tpl-alt-tabs.w-33per > li a{
+.tpl-alt-tabs.w-33per > li a,
+.tpl-alt-tabs.w-50per > li a{
      margin-bottom: 15px;
     border: 1px solid #eee !important;
     border-radius: 5px;
 }
-.tpl-alt-tabs.w-33per > li a:hover{
+.tpl-alt-tabs.w-33per > li a:hover,
+.tpl-alt-tabs.w-50per > li a:hover{
  border: 1px solid #ffd047 !important;
 }
-/*.tpl-alt-tabs.w-33per > li a:after{
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: 0;
-    background: #ddd;
-    width: 1px;
-    text-align: center;
-    height: 75px;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-}*/
-/*.tpl-alt-tabs.w-33per > li a:before{
- content: "";
- position: absolute;
- top: 10px;
- left: 0;
- background: #ddd;
- width: 1px;
- text-align: center;
- height: 75px;
- display: inline-block;
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
-}*/
 .tpl-alt-tabs.w-17per > li:last-child a:after{
  display:none;
 }
 .tpl-alt-tabs.w-17per li.active a,
 .tpl-alt-tabs.w-33per li.active a{
  color:#a3a3a3;
+}
+.tpl-alt-tabs.w-50per > li{
+ width:48%;
+ text-align:center;
+}
+.tpl-alt-tabs.w-50per > li a{
+ height:200px;
+}
+.tpl-alt-tabs.w-50per li.active a{
+ color:#333333;
+ border: 1px solid #ffd047 !important;
 }
 .tpl-alt-tabs > li > a{
  text-decoration: none;

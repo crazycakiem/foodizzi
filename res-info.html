@@ -71,7 +71,39 @@
          <div class="dropdown-menu mega-dropdown-menu">
 
           <div class="col-sm-12">
-
+           <div class="sec-order-date">
+            <div class="form-filter dp-flex">
+             <div class="mb-20 mb-md-10 w20-per form-group">
+              <label class="lbl-alone">
+               Đặt bàn
+              </label>
+             </div>
+             <div class="mb-20 mb-md-10 w50-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile">
+               Chọn ngày / giờ
+              </label>
+              <div class="input-group input-circle date form_datetime col-md-5">
+               <input class="form-control" size="16" type="text" id="showDateToday" value="" readonly>
+               <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+              </div>
+              <input type="hidden" id="dtp_input1" value="" />
+             </div>
+             <div class="mb-20 mb-md-10 w30-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile2">
+               Số người
+              </label>
+              <div class="select-list">
+               <select class="input-md form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+               </select>
+              </div>
+             </div>
+            </div>
+           </div>
            <!-- Nav Tabs -->
            <div class="align-center mb-10 mt-20 mb-xs-30">
             <ul class="nav-tabs nav-filter-search tpl-minimal-tabs mn-nav-list animate sm-menu-item-carousel owl-carousel font-alt">
@@ -92,9 +124,6 @@
              </li>
              <li class="it-mn">
               <a href="#mini-six11" data-toggle="tab">Ăn nhanh</a>
-             </li>
-             <li class="it-mn">
-              <a href="#mini-seven11" data-toggle="tab">Nước uống</a>
              </li>
             </ul>
            </div>
@@ -120,7 +149,7 @@
            <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
             <div class="tab-pane fade in active" id="aaa11">
              <div class="row align-left">
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
                 <label for='check-1' class="checkbox-label">
@@ -138,7 +167,7 @@
                 <label for="check-3" class="checkbox-label">Hà Đông</label>
                </div>
               </div>
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input id="check-4" name="check" type="checkbox">
                 <label for="check-4" class="checkbox-label">Tây Hồ</label>
@@ -152,109 +181,51 @@
                <div class="radio main-style">
                 <input id="check-6" name="check" type="checkbox">
                 <label for="check-6" class="checkbox-label">Long Biên</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-7" name="check" type="checkbox">
-                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-8" name="check" type="checkbox">
-                <label  for="check-8" class="checkbox-label">Đống Đa</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-9" name="check" type="checkbox">
-                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-10" name="check" type="checkbox">
-                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-11" name="check" type="checkbox">
-                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-12" name="check" type="checkbox">
-                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
                </div>
               </div>
              </div>
             </div>
             <div class="tab-pane fade" id="bbb11">
              <div class="row align-left">
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
                 <label for='check-1' class="checkbox-label">
                  Cầu Giấy
                 </label>
                </div>
+
                <div class="radio main-style">
                 <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
                 <label  for="check-2" class="checkbox-label">Ba Đình</label>
                </div>
+
                <div class="radio main-style">
                 <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
                 <label for="check-3" class="checkbox-label">Hà Đông</label>
                </div>
               </div>
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input id="check-4" name="check" type="checkbox">
                 <label for="check-4" class="checkbox-label">Tây Hồ</label>
                </div>
+
                <div class="radio main-style">
                 <input id="check-5" name="check" type="checkbox">
                 <label  for="check-5" class="checkbox-label">Thanh Xuân</label>
                </div>
+
                <div class="radio main-style">
                 <input id="check-6" name="check" type="checkbox">
                 <label for="check-6" class="checkbox-label">Long Biên</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-7" name="check" type="checkbox">
-                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
-               </div>
-               <div class="radio main-style">
-                <input id="check-8" name="check" type="checkbox">
-                <label  for="check-8" class="checkbox-label">Đống Đa</label>
-               </div>
-               <div class="radio main-style">
-                <input id="check-9" name="check" type="checkbox">
-                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-10" name="check" type="checkbox">
-                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-11" name="check" type="checkbox">
-                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-12" name="check" type="checkbox">
-                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
                </div>
               </div>
              </div>
             </div>
             <div class="tab-pane fade" id="ccc11">
              <div class="row align-left">
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
                 <label for='check-1' class="checkbox-label">
@@ -272,7 +243,7 @@
                 <label for="check-3" class="checkbox-label">Hà Đông</label>
                </div>
               </div>
-              <div class="col-md-3 col-sm-3">
+              <div class="col-md-6 col-sm-6">
                <div class="radio main-style">
                 <input id="check-4" name="check" type="checkbox">
                 <label for="check-4" class="checkbox-label">Tây Hồ</label>
@@ -286,38 +257,6 @@
                <div class="radio main-style">
                 <input id="check-6" name="check" type="checkbox">
                 <label for="check-6" class="checkbox-label">Long Biên</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-7" name="check" type="checkbox">
-                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-8" name="check" type="checkbox">
-                <label  for="check-8" class="checkbox-label">Đống Đa</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-9" name="check" type="checkbox">
-                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
-               </div>
-              </div>
-              <div class="col-md-3 col-sm-3">
-               <div class="radio main-style">
-                <input id="check-10" name="check" type="checkbox">
-                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-11" name="check" type="checkbox">
-                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
-               </div>
-
-               <div class="radio main-style">
-                <input id="check-12" name="check" type="checkbox">
-                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
                </div>
               </div>
              </div>
@@ -331,9 +270,6 @@
             <div class="tab-pane fade" id="mini-six11">
              Search 6
             </div>
-            <div class="tab-pane fade" id="mini-seven11">
-             Search 7
-            </div>
            </div>
            <!-- End panes -->
 
@@ -341,7 +277,6 @@
             <a href="#" class="btn btn-mod btn-medium btn-circle mt-10">Tìm kiếm</a>
            </div>
           </div>
-
          </div>
         </div>
        </div>
@@ -597,11 +532,79 @@
              <td class="food-name">
               <a href="#" title="">Khoai tây chiên</a>
               <span>Khoai tây chiên ròn trong mỡ</span>
-              <div class="show-size tooltip-bot">
-               <span>Kích cỡ: </span>
-               <a href="javascript:void(0)" id='sm' title="Size nhỏ" class="size btn btn-mod btn-circle size-1">sm</a>
-               <a href="javascript:void(0)" id='md' title="Size vừa" class="size btn btn-mod btn-circle size-2">md</a>
-               <a href="javascript:void(0)" id='lg' title="Size lớn" class="size btn btn-mod btn-circle size-3">lg</a>
+              <div class="box-show-more">
+               <!-- Toggle -->
+               <dl class="toggle show-more-opt">
+                <dt>
+                 <a href="">Thêm lựa chọn</a>
+                </dt>
+                <dd>
+                 <div class="block-1 clearfix">
+                  <p>Chọn mức cay (được lựa chọn duy nhất)</p>
+                  <div class="radio main-style">
+                   <input id="check1" name="radio" type="radio" value="">
+                   <label for="check1" class="radio-label">
+                    Cay cấp 1
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check2" name="radio" type="radio" value="">
+                   <label for="check2" class="radio-label">
+                    Cay cấp 2
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check3" name="radio" type="radio" value="">
+                   <label for="check3" class="radio-label">
+                    Cay cấp 3
+                   </label>
+                  </div>
+                 </div>
+                 <div class="block-1 clearfix">
+                  <p>Chọn kích thước (được lựa chọn duy nhất)</p>
+                  <div class="radio main-style">
+                   <input id="check11" name="radio1" type="radio" value="">
+                   <label for="check11" class="radio-label">
+                    Cỡ nhỏ
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check21" name="radio1" type="radio" value="">
+                   <label for="check21" class="radio-label">
+                    Cỡ vừa (+20.000đ)
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check31" name="radio1" type="radio" value="">
+                   <label for="check31" class="radio-label">
+                    Cỡ lớn (+50.000đ)
+                   </label>
+                  </div>
+                 </div>
+                 <div class="block-1 clearfix">
+                  <p>Món ăn kèm (được chọn nhiều)</p>
+                  <div class="radio main-style">
+                   <input id="check12" name="check11" type="checkbox" value="">
+                   <label for="check12" class="checkbox-label">
+                    Rau sống (+50.000k)
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check22" name="check22" type="checkbox" value="">
+                   <label for="check22" class="checkbox-label">
+                    Rau sống (+50.000k)
+                   </label>
+                  </div>
+                  <div class="radio main-style">
+                   <input id="check32" name="check33" type="checkbox" value="">
+                   <label for="check32" class="checkbox-label">
+                    Rau sống (+50.000k)
+                   </label>
+                  </div>
+                 </div>
+                </dd>
+               </dl>
+               <!-- End Toggle -->
               </div>
              </td>
              <td width="30%" class="food-price">

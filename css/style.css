@@ -1434,6 +1434,8 @@ Top bar
  font-size: 11px;
  letter-spacing: 1px;
  color: #333;
+ z-index: 9;
+ position: relative;
 }
 
 /*
@@ -1918,7 +1920,18 @@ display: block;
 /*
 * Mobile nav
 */
-
+.main-nav .top-bar.desktop-nav .form.form-in-mobile{
+ display:none;
+}
+.main-nav.mobile-on .top-bar.desktop-nav .form.form-in-mobile{
+     display: block;
+    margin-top: 15px;
+    text-align: center;
+    height:45px;
+}
+.main-nav.mobile-on .form-inline.form .search-wrap{
+ display:block;
+}
 .mobile-on .desktop-nav{
  display: none;
  width: 100%;
@@ -1932,14 +1945,20 @@ display: block;
 .mobile-on .full-wrapper .desktop-nav{
  padding: 0;
 }
-
-
+.mobile-on .desktop-nav .bg-deco-t-mn{
+ background-position:center top;
+ background-image:none;
+}
+.mobile-on .desktop-nav a.btn-ex-link{
+display:none;
+}
 .mobile-on .desktop-nav ul{
  width: 100%;
  float: none;
- background: rgba(18,18,18, .97);
+ /* background: rgba(18,18,18, .97);*/
  position: relative;
  overflow-x: hidden;
+ margin-bottom: 10px;
 }
 .mobile-on .desktop-nav > ul{
  overflow-y: auto;
@@ -1948,6 +1967,7 @@ display: block;
  display: block;
  float: none !important;
  overflow: hidden;
+ text-align: center;
 }
 .mobile-on .desktop-nav ul li ul{
  padding: 0;
@@ -1963,20 +1983,47 @@ display: block;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
  padding: 0 10px;
- text-align: left;
+ text-align: center;
  border-left: none;
  border-right: none;
  border-bottom: 1px solid rgba(255,255,255, .065);
- color: #999;
+ color: #333;
  letter-spacing: 1px;
  cursor: pointer;
 }
 .mobile-on .desktop-nav ul li a:hover,
 .mobile-on .desktop-nav ul li a.active{
- background: rgba(255,255,255, .03);
- color: #ddd;
+ background-color: rgba(0,0,0, .02);
+ color: #000;
 }
+.mobile-on .desktop-nav ul.top-links li .form{
+     display: inline-block;
+    height: 40px;
+     padding-left: 0px;
+     margin-top:5px;
+}
+.desktop-nav ul.opt-list{display:none;}
+.mobile-on .desktop-nav ul.opt-list{display:block;}
+.mobile-on .desktop-nav ul.opt-list{border-top: 1px solid #555;margin-top: 10px;}
+.mobile-on .desktop-nav ul.opt-list li{
 
+}
+.mobile-on .desktop-nav ul.opt-list li a{display: inline-block;width: auto;margin-top: 10px;}
+.mobile-on .desktop-nav ul.opt-list li a span{
+ font-size: 1.2em;
+ border-radius: 50px;
+ background-color: #333;
+ /* margin-top: 10px; */
+ color: #fcee17;
+}
+.mobile-on .desktop-nav ul.opt-list li a.lang-flag{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.mobile-on .desktop-nav ul.opt-list li a.lang-flag.active{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
 /* Menu sub */
 
 .mobile-on .mn-has-sub > .fa{
@@ -2035,7 +2082,6 @@ display: block;
  text-transform: uppercase;
  border-left: 1px solid rgba(0,0,0, .05);
  border-right: 1px solid rgba(0,0,0, .05);
- cursor: pointer;
 
  -webkit-user-select: none;
  -moz-user-select: none;
@@ -2069,14 +2115,39 @@ display: block;
  height: 55px;
 }
 .mobile-on .mobile-nav{
- display: table;
+ display: block;
+ width:100%;
+}
+.mobile-nav .logo{
+ display: block;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    height: 80px;
+}
+.mobile-nav .logo img{
+     height: 100%;
+    vertical-align: inherit;
 }
 .mobile-nav .fa{
- height: 100%;
- display: table-cell;
- vertical-align: middle;
- text-align: center;
- font-size: 21px;
+     height: 100%;
+     cursor: pointer;
+    /* display: table-cell; */
+    vertical-align: middle;
+    text-align: center;
+    font-size: 21px;
+    float: right;
+    width: 90px;
+    line-height: 90px;
+    border-left: 1px solid #eee;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.mobile-nav.small-height .fa{
+width:55px;
+line-height:55px;
 }
 
 /* Menu sub multi */
@@ -7229,7 +7300,7 @@ h2.section-title .input-circle.form-group .select-list select{
 a.btn-ex-link{
      width: 75px;
     height: 60px;
-    margin-left: 40px;
+/*    margin-left: 40px;*/
 }
 /**/
 .list-serv{
@@ -7963,3 +8034,7 @@ background-position:-191px -72px;
 .box-show-more .show-more-opt.toggle .main-style.radio input[type="checkbox"]:checked + .checkbox-label:after{
 display:none;
 }
+/*Menu Responsive*/
+.main-nav{position:relative;}
+.mobile-on .top-head{display:none;}
+/*.small-height .top-bar.desktop-nav{display:none;}*/

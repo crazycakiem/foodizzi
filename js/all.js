@@ -154,6 +154,7 @@
         // Mobile menu style toggle
         if ($(window).width() <= 1024) {
             $(".main-nav").addClass("mobile-on");
+            desktop_nav.hide();
         }
         else
             if ($(window).width() > 1024) {
@@ -175,9 +176,9 @@
         height_line($(".inner-nav > ul > li > a"), $(".main-nav"));
         height_line(mobile_nav, $(".main-nav"));
 
-        mobile_nav.css({
-            "width": $(".main-nav").height() + "px"
-        });
+        // mobile_nav.css({
+        //     "width": $(".main-nav").height() + "px"
+        // });
 
         // Transpaner menu
 
@@ -190,10 +191,12 @@
                 if ($(window).scrollTop() > 10) {
                     $(".js-transparent").removeClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").addClass("small-height");
+                    desktop_nav.hide();
                 }
                 else {
                     $(".js-transparent").addClass("transparent");
                     $(".main-nav, .nav-logo-wrap .logo, .mobile-nav").removeClass("small-height");
+                    desktop_nav.show();
                 }
 
 
@@ -201,14 +204,17 @@
 
         // Mobile menu toggle
 
-        mobile_nav.click(function(){
+        // mobile_nav.click(function(){
+        $(".mobile-nav .fa").click(function(){
 
             if (desktop_nav.hasClass("js-opened")) {
-                desktop_nav.slideUp("slow", "easeOutExpo").removeClass("js-opened");
+                desktop_nav.hide();
+                desktop_nav.removeClass("js-opened");
                 $(this).removeClass("active");
             }
             else {
-                desktop_nav.slideDown("slow", "easeOutQuart").addClass("js-opened");
+                desktop_nav.show();
+                desktop_nav.addClass("js-opened");
                 $(this).addClass("active");
 
                 // Fix for responsive menu

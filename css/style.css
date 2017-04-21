@@ -8038,3 +8038,65 @@ display:none;
 .main-nav{position:relative;}
 .mobile-on .top-head{display:none;}
 /*.small-height .top-bar.desktop-nav{display:none;}*/
+
+.scroll-to-top {
+    border-radius: 2px;
+    display: none;
+    position: fixed;
+    right: 35px;
+    top: 94%;
+    text-align: center;
+    z-index: 999;
+}
+/* update 20 04 */
+.e-deal-box{}
+ .flex-center{
+ display: flex;
+ }
+.e-deal-box .ct-left{
+ text-align:center;
+ padding-top: 50px;
+ padding-bottom:20px;
+ position:relative;
+}
+.e-deal-box .ct-left .badge-top-left{position:absolute;top:0;left:0;padding: 18px;font-weight:bold;font-size:1.2em;}
+.e-deal-box .ct-left .badge-top-left:before{
+      width: 0px;
+      height: 0px;
+      border-left: 75px solid rgba(252,238,23, 1);
+      border-right: 75px solid transparent;
+      border-top: 45px solid rgba(252,238,23, 1);
+      border-bottom: 45px solid transparent;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 9;
+}
+.e-deal-box .ct-left .badge-top-left span{
+ position:relative;
+ z-index:10;
+}
+.e-deal-box .ct-left h3{
+font-size:1.4em;
+}
+.fullwidth-slider-edeal{padding-bottom:40px}
+.fullwidth-slider-edeal .owl-controls .owl-pagination{bottom: 6px;}
+.fullwidth-slider-edeal .owl-controls .owl-pagination .owl-page span{
+    width: 12px;
+    height: 12px;
+    background-color: #eee;
+    box-shadow: none;
+    border-radius: 50%;
+}
+.fullwidth-slider-edeal .owl-controls .owl-pagination .owl-page.active span{
+background-color: rgb(252,238,23);
+}
+.e-deal-box .ct-left:before{}
+.e-deal-box .ct-right{}
+.show-total-p.tt-inpost{
+height: 39px;
+}
+.show-total-p.tt-inpost h4{
+    margin-top: 3px;
+}

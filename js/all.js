@@ -146,6 +146,8 @@
 
     var mobile_nav = $(".mobile-nav");
     var desktop_nav = $(".desktop-nav");
+    var top_mobi_nav = $(".nav-show-on-mobile");
+    var search_mobi_nav = $(".popup-search-nav");
 
     function init_classic_menu_resize(){
 
@@ -156,10 +158,12 @@
         if ($(window).width() <= 1024) {
             $(".main-nav").addClass("mobile-on");
             desktop_nav.hide();
+            top_mobi_nav.hide();
         }
         else
             if ($(window).width() > 1024) {
                 $(".main-nav").removeClass("mobile-on");
+                top_mobi_nav.show();
                 desktop_nav.show();
             }
     }
@@ -206,17 +210,62 @@
         // Mobile menu toggle
 
         // mobile_nav.click(function(){
-        $(".mobile-nav .fa").click(function(){
+        $(".mobile-nav .fa.fa-bars").click(function(){
 
-            if (desktop_nav.hasClass("js-opened")) {
-                desktop_nav.hide();
-                desktop_nav.removeClass("js-opened");
+            if (top_mobi_nav.hasClass("js-opened")) {
+                top_mobi_nav.hide();
+                top_mobi_nav.removeClass("js-opened");
                 $(this).removeClass("active");
             }
             else {
-                desktop_nav.show();
-                desktop_nav.addClass("js-opened");
+                top_mobi_nav.show();
+                top_mobi_nav.addClass("js-opened");
                 $(this).addClass("active");
+
+             if ($(".main-nav").hasClass("not-top")){
+                 $(window).scrollTo(".main-nav", "slow");
+             }
+
+            }
+
+        });
+
+        // mobile_nav.click(function(){
+        $(".mobile-nav .fa.open-search").click(function(){
+
+            if (search_mobi_nav.hasClass("js-opened")) {
+                search_mobi_nav.hide();
+                search_mobi_nav.removeClass("js-opened");
+                $(this).removeClass("active");
+
+            }
+            else {
+                search_mobi_nav.show();
+                $('body').addClass("hide-scroll");
+                search_mobi_nav.addClass("js-opened");
+                $(this).addClass("active");
+
+                // Fix for responsive menu
+                if ($(".main-nav").hasClass("not-top")){
+                    $(window).scrollTo(".main-nav", "slow");
+                }
+
+            }
+
+        });
+        $(".popup-search-nav .close-popup").click(function(){
+
+            if (search_mobi_nav.hasClass("js-opened")) {
+                search_mobi_nav.hide();
+                search_mobi_nav.removeClass("js-opened");
+                $(this).removeClass("active");
+                $('body').removeClass("hide-scroll");
+            }
+            else {
+                search_mobi_nav.show();
+                search_mobi_nav.addClass("js-opened");
+                $(this).addClass("active");
+                
 
                 // Fix for responsive menu
                 if ($(".main-nav").hasClass("not-top")){

@@ -3761,7 +3761,7 @@ Portfolio
 }
 .work-item .sh-distance{
      position: absolute;
-    z-index: 9999;
+    z-index: 9;
     width: 100%;
     text-align: left;
     bottom: 0;

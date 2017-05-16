@@ -1101,6 +1101,9 @@ Home sections
  height: 100%;
  vertical-align: middle;
 }
+.home-text .btn.btn-mod{
+ margin-bottom: 10px;
+}
 
 /* Scroll down icon */
 
@@ -3075,12 +3078,11 @@ Sections styles
 
 .mod-breadcrumbs{
  margin-top: -5px;
- font-size: 11px;
+ font-size: 12px;
  font-weight: 400;
  letter-spacing: 0;
  text-decoration: none;
- text-transform: uppercase;
-
+ text-transform: inherit;
  -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
  -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
  -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -4854,7 +4856,6 @@ a.blog-item-more:hover{
  min-width: 30px;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
-
  padding: 7px 14px;
  border: 1px solid #eaeaea;
  color: #999;
@@ -4863,7 +4864,6 @@ a.blog-item-more:hover{
  text-transform: uppercase;
  text-align: center;
  text-decoration: none;
-
  -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
  -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
  -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -4881,9 +4881,10 @@ a.blog-item-more:hover{
 }
 .pagination a.active,
 .pagination a.active:hover{
- border-color: #bbb;
+ border-color: rgb(226, 213, 13);
  color: #444;
  cursor: default;
+ background-color: rgba(252,238,23, .9);
 }
 .pagination a.no-active,
 .pagination a.no-active:hover{

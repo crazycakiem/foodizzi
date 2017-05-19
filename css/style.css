@@ -3874,7 +3874,13 @@ Portfolio
  -ms-transform: scale(1.05);
  transform: scale(1.05);
 }
-
+.work-item:hover .work-img .img-giftcode{
+  -webkit-transform: scale(1);
+ -moz-transform: scale(1);
+ -o-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+}
 /*
 * Works full view
 */

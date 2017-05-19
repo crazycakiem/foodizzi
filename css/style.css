@@ -373,7 +373,7 @@ Typography
 body{
  color: #111;
  font-size: 14px;
- font-family: "Roboto", arial, sans-serif;
+ font-family: 'iCielGotham-Medium';
  line-height: 1.6;
  -webkit-font-smoothing: antialiased;
  padding-right: 0 !important;

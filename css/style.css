@@ -8371,3 +8371,12 @@ body.hide-scroll{
 @media (min-width: 1024px) {
 .nav-show-on-mobile{display:none !important}
 }
+.captcha-inline .captcha-image{
+ height: 43px;
+    position: absolute;
+    right: 1px;
+    top: 28px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-left: 1px solid #eee;
+}

@@ -4748,11 +4748,12 @@ Blog
  letter-spacing: 1px;
  color: #aaa;
 }
-.blog-item-body{
+.blog-item-body *{
  font-size: 16px;
  font-weight: normal;
  color: #333;
  line-height: 1.8;
+ font-family: 'iCielGotham-Medium' !important;
 }
 .blog-item-body h1,
 .blog-item-body h2,
@@ -8485,4 +8486,16 @@ body.hide-scroll{
     z-index: 0!important;
       left: 0px!important;
     top: 0px!important;
+}
+.affix-right.affix{
+/* width:41.66666667%;*/
+/* width: 457px;
+ position:fixed !important;*/
+/* position: static !important;
+  width: auto;
+  top: 0;*/
+  position: fixed !important;
+    width: 457px;
+    padding: 0px;
+    top:50px;
 }

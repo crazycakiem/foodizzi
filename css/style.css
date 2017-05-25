@@ -8261,6 +8261,15 @@ margin-bottom:20px;
     border-top: 1px solid #eee;
     border-right: 1px solid #eee;
 }
+.alert-box .head-box.style2{
+ background-color:transparent;
+}
+.alert-box .head-box.style2:before{
+ content:"";
+ height:2px;
+ width:50%;
+ background-color:gray;
+}
 .alert-box .body-box{
     padding: 20px;
     border-left: 1px solid #eee;
@@ -8419,8 +8428,9 @@ body.hide-scroll{
 }
 .ico-noresult.ico-note1 {
     width: 28px;
-    height: 17px;
+    height: 15px;
     background-position: -226px -382px;
+    top: 5px;
 }
 .ico-noresult.ico-note2 {
     width: 24px;

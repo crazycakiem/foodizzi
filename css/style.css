@@ -1504,7 +1504,7 @@ Top bar
  min-width: 40px;
  height: 60px;
  line-height: 60px;
- padding: 0 2em;
+ padding: 0 1.3em;
  text-decoration: none;
  text-align: center;
  color: #333;
@@ -4758,6 +4758,9 @@ Blog
  color: #333;
  line-height: 1.8;
  font-family: 'iCielGotham-Medium' !important;
+}
+.blog-item-body i{
+ font-family: 'FontAwesome' !important;
 }
 .blog-item-body h1,
 .blog-item-body h2,
@@ -8178,6 +8181,7 @@ height: 39px;
 }
 .show-total-p.tt-inpost h4{
     margin-top: 3px;
+    font-size:1em;
 }
 .icon-block{font-family:'iCielGotham-Medium';}
 .icon-block .icon {
@@ -8502,14 +8506,72 @@ body.hide-scroll{
     top: 0px!important;
 }
 .affix-right.affix{
-/* width:41.66666667%;*/
-/* width: 457px;
- position:fixed !important;*/
-/* position: static !important;
-  width: auto;
-  top: 0;*/
   position: fixed !important;
     width: 457px;
     padding: 0px;
     top:50px;
 }
+@media (max-width: 768px){
+ .affix-right.affix{
+   position: relative !important;
+     width: 100%;
+     padding: 0px;
+     top:50px;
+ }
+}
+div.with-badge{
+    position: relative;
+}
+div.with-badge:before{
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid rgba(252,238,23, 1);
+    border-right: 50px solid transparent;
+    border-top: 40px solid rgba(252,238,23, 1);
+    border-bottom: 40px solid transparent;
+    content: '';
+    position: absolute;
+    z-index: 9;
+}
+div.with-badge.badge-left:before{left: -2px;top: -2px;}
+div.izzi-d.active:before{
+content:"";
+}
+div.with-badge.izzi-d:after{
+    content: 'IZZI \a DEAL';
+    white-space: pre;
+    position: absolute;
+    z-index: 9;
+    top: 7px;
+    left: 7px;
+    -ms-transform: rotate(-40deg); /* IE 9 */
+    -webkit-transform: rotate(-40deg); /* Chrome, Safari, Opera */
+    transform: rotate(-40deg);
+    line-height: 16px;
+    font-weight: bold;
+    text-align:center
+}
+div.with-badge.izzi-d.end-deal:after{
+ content: 'HẾT \a HẠN';
+ color:#FFF;
+}
+div.with-badge.izzi-d.end-deal:before{
+    width: 0px;
+    height: 0px;
+    border-left: 50px solid #777;
+    border-right: 50px solid transparent;
+    border-top: 40px solid #777;
+    border-bottom: 40px solid transparent;
+}
+div.with-badge.izzi-d.end-deal:before{
+
+}
+.izzi-d .deal-price .section-title.second-section-title.sm-txt-price{
+    font-size: 1.1em;
+    font-weight: normal;
+}
+.izzi-d .deal-price .section-title.second-section-title{
+    font-size: 1.3em;
+    font-weight: normal;
+}
+.izzi-d strong{color:#333;}

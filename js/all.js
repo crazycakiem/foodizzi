@@ -265,7 +265,7 @@
                 search_mobi_nav.show();
                 search_mobi_nav.addClass("js-opened");
                 $(this).addClass("active");
-                
+
 
                 // Fix for responsive menu
                 if ($(".main-nav").hasClass("not-top")){
@@ -1310,6 +1310,17 @@ $(document).ready(function(){
 			$('.toTopButton').removeClass('toTopButton--active');
 		}
 	});
+ //Check to see if the window is top if not then display button
+ $(window).scroll(function(){
+  if ($(this).scrollTop() > 400) {
+   $('.popup-buy-deal').addClass('popup-buy-deal--active');
+  } else {
+   $('.popup-buy-deal').removeClass('popup-buy-deal--active');
+  }
+ });
+ $('.dimiss-pop').on('click', function(){
+     $('.popup-buy-deal').addClass('popup-disable');
+ });
 });
 
 // $(document).ready(function(){

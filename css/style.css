@@ -8459,15 +8459,16 @@ body.hide-scroll{
 .line-through{text-decoration:line-through;}
 .deal-price .show-d-per{
  position:absolute;
- right: 30%;
- top: -51px;
+ right: 20px;
+    top: 2px;
  width: 50px;
  height: 50px;
  background-color:#fcee17;
  border-radius:100px;
  text-align: center;
- line-height: 50px;
- font-size: 1.1em;
+ line-height: 14px;
+ font-size: .9em;
+ padding-top: 12px;
 }
 .note-ico-l{
  padding-left:40px;
@@ -8552,7 +8553,7 @@ div.with-badge.izzi-d:after{
     text-align:center
 }
 div.with-badge.izzi-d.end-deal:after{
- content: 'HẾT \a HẠN';
+ content: 'Háº¾T \a Háº N';
  color:#FFF;
 }
 div.with-badge.izzi-d.end-deal:before{
@@ -8580,8 +8581,8 @@ div.with-badge.izzi-d.end-deal:before{
 }
 .izzi-d strong{color:#333;}
 .box-show-info-deal{
-     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
      padding:10px;
+     border: 1px solid #666666;
 }
 .box-show-info-deal div.with-badge.badge-left:before {
     left: -10px;
@@ -8599,9 +8600,9 @@ div.with-badge.izzi-d.end-deal:before{
      background-color: #FFF;
      width: 400px;
      opacity: .9;
-     left: 10px;
+     right: 10px;
      visibility: hidden;
-     z-index: 1200;
+     z-index: 1190;
      transition: 0.4s all ease;
      transform: scale(1.5);
      opacity: 0;
@@ -8609,7 +8610,7 @@ div.with-badge.izzi-d.end-deal:before{
 }
 .popup-buy-deal a:hover{text-decoration:none}
 .popup-buy-deal .deal-price .show-d-per{
- right:20%;
+ right: 17%;
 }
 .popup-buy-deal .dimiss-pop{
  width: 20px;
@@ -8627,6 +8628,7 @@ div.with-badge.izzi-d.end-deal:before{
  visibility: visible;
  opacity: .9;
  transform: scale(1);
+ box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 }
 .popup-buy-deal.popup-buy-deal--active:hover{
  opacity:1;
@@ -8635,11 +8637,19 @@ div.with-badge.izzi-d.end-deal:before{
  visibility:hidden;
  opacity:0;
 }
+.popup-buy-deal .deal-price .show-d-per{
+ right: 16%;
+    top: -51px;
+}
 @media screen and (max-width: 420px){
  .popup-buy-deal {
          width: 100%;
     left: 0;
     right: 0;
     bottom: 0;
+ }
+ .izzi-d .deal-price .section-title.second-section-title .tit-left{
+      width: 35%;
+    font-size: .7em;
  }
 }

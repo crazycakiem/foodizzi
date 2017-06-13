@@ -1788,10 +1788,12 @@ float: right;
     margin-left: 0;
 }
 .inner-nav ul li .us-dr-mn li a{
-display: block;
+    display: block;
     height: 34px !important;
     line-height: 30px !important;
     color: #000;
+    letter-spacing: 0;
+    text-transform: initial;
 }
 .list-lang li a img {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -2160,6 +2162,13 @@ display:none;
 .mobile-nav .logo img{
      height: 100%;
     vertical-align: inherit;
+}
+.mobile-nav.small-height .logo{
+    padding: 5px 10px 5px 20px;
+}
+.mobile-nav.small-height .logo img{
+     height: 100%;
+    vertical-align: top;
 }
 .mobile-nav .fa{
      height: 100%;
@@ -3773,7 +3782,7 @@ Portfolio
 }
 
 .work-item .post-prev-text{
- height:40px;
+ height:45px;
  overflow:hidden;
 }
 .work-item .post-prev-text.time-apply{
@@ -4630,7 +4639,7 @@ Footer
   overflow: hidden;
   text-decoration: none;
   visibility: hidden;
-  z-index: 1200;
+  z-index: 1039;
   transition: 0.4s all ease;
   transform: scale(1.5);
   opacity: 0;
@@ -4865,7 +4874,7 @@ a.blog-item-more:hover{
  font-size: 13px;
  font-family: "Open Sans", arial, sans-serif;
 }
-.pagination a{
+.pagination li a{
  display: inline-block;
  min-width: 30px;
  -moz-box-sizing: border-box;
@@ -4888,20 +4897,20 @@ a.blog-item-more:hover{
  margin-top: 1px;
  font-size: 16px;
 }
-.pagination a:hover{
+.pagination li a:hover{
  text-decoration: none;
  border-color: #bbb;
  color: #444;
 }
-.pagination a.active,
-.pagination a.active:hover{
+.pagination li.active a,
+.pagination li.active:hover a{
  border-color: rgb(226, 213, 13);
  color: #444;
  cursor: default;
  background-color: rgba(252,238,23, .9);
 }
-.pagination a.no-active,
-.pagination a.no-active:hover{
+.pagination li a.no-active,
+.pagination li a.no-active:hover{
  border-color: #efefef;
  color: #bbb;
  cursor: default;
@@ -8272,6 +8281,13 @@ margin-bottom:20px;
 .alert-box .head-box.style2{
  background-color:transparent;
 }
+.alert-box .head-box.style2 .post-prev-text{
+     margin-bottom: 0;
+    padding-top: 10px;
+}
+.alert-box .head-box.style2 .post-prev-text hr.divider-dot{
+ margin-bottom:0;
+}
 .alert-box .head-box.style2:before{
  content:"";
  height:2px;
@@ -8337,6 +8353,7 @@ margin-bottom:20px;
  padding: 40px 20px 20px;
  overflow-x: hidden;
     overflow-y: auto;
+    z-index:111;
 
 }
 .popup-search-nav .close-popup{
@@ -8663,4 +8680,89 @@ div.with-badge.izzi-d.end-deal:before{
       width: 35%;
     font-size: .7em;
  }
+}
+.popup-search-nav.on-mobile .col-md-10{
+ display:block;
+ float:none;
+}
+@media screen and (max-width: 320px){
+ .mobile-nav .fa{width:65px;}
+ .popup-search-nav{
+  padding:
+ }
+.datetimepicker{
+ left:0 !important;
+ width:320px;
+}
+.datetimepicker-minutes > table,
+.datetimepicker-hours > table,
+.datetimepicker-days > table{width:310px;}
+.datetimepicker-dropdown-bottom-left:before
+ right:-20px;
+}
+.datetimepicker-dropdown-bottom-left:after {
+    top: -6px;
+    right: -20px;
+}
+.owl-item .e-deal-box .flex-center{
+ display:block;
+}
+}
+@media screen and (max-width: 760px){
+ .owl-item .e-deal-box .flex-center{
+  display:block;
+ }
+}
+@media screen and (max-width: 414px){
+.search-wrap.w-340{
+ width:100%;
+}
+.reser-inside{
+ padding:0;
+}
+.reser-inside .form-filter.dp-flex{
+ display:block;
+}
+.w50-per.form-group{
+ width: 100%;
+    display: block;
+    float: none;
+}
+.w20-per.form-group,
+.w30-per.form-group{
+ width:46%;
+ display:inline-block;
+}
+.mt-30{margin-top:10px;}
+.payment-sub .panel-body{
+ padding:0;
+}
+.payment-sub .bank>li{
+     width: 31%;
+    height: auto;
+    margin: 1%;
+}
+.payment-sub .bank>li a{
+    width: 100%;
+    height: auto;
+}
+}
+.list-title.list-tab{color:#777;}
+.list-title.list-tab a{
+padding:0 10px;
+color:#777;
+-webkit-transition: all 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -moz-transition: all 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -o-transition: all 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -ms-transition: all 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ transition: all 0.1s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.list-title.list-tab a:hover{
+ color:#333;
+}
+.list-title.list-tab a:first-child{
+ padding-left:0;
+}
+.list-title.list-tab a.active{
+color:#333;
 }

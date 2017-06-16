@@ -452,15 +452,13 @@
      <hr class="divider-dot pt-10 pb-10" />
      <h2 class="section-title second-section-title font-alt align-left mb-30 mt-40 mb-sm-40 tooltip-bot">
       Có <span>32</span> nhà hàng phù hợp với yêu cầu của bạn
-      <a href="javascript:void(0)" class=" view-type right" title="Xem bản đồ"><span aria-hidden="true" class="icon-map"></span></a>
-      <a href="javascript:void(0)" title="Xem dạng list" class="enable view-type right"><span aria-hidden="true" class="icon-grid"></span></a>
-      <div class="input-circle form-group right">
-       <!-- Date-->
-       <div class="select-list relative">
-        <select class="input-md form-control">
-         <option>Sắp xếp theo</option>
-         <option>Nhà hàng gần nhất</option>
-         <option>Giảm giá nhiều nhất</option>
+      <a href="javascript:void(0)" class="view-type right" data-view-type="map" title="Xem bản đồ"><span aria-hidden="true" class="icon-map"></span></a>
+      <a href="javascript:void(0)" class="enable view-type right" data-view-type="grid" title="Xem dạng list" ><span aria-hidden="true" class="icon-grid"></span></a>
+      <div class="right">
+       <div class="center">
+        <select name="sources" id="" class="custom-select sources w230" placeholder="Sắp xếp mặc định">
+         <option value="type1">Sắp xếp mặc định</option>
+         <option value="type2">Nhà hàng gần nhất</option>
         </select>
        </div>
       </div>

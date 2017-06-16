@@ -411,6 +411,14 @@
       Có <span>32</span> nhà hàng đang có khuyến mãi ĂN BUFFET NGON TUYỆT
       <a href="javascript:void(0)" class="view-type right" data-view-type="map" title="Xem bản đồ"><span aria-hidden="true" class="icon-map"></span></a>
       <a href="javascript:void(0)" class="enable view-type right" data-view-type="grid" title="Xem dạng list" ><span aria-hidden="true" class="icon-grid"></span></a>
+      <div class="right">
+       <div class="center">
+        <select name="sources" id="" class="custom-select sources w230" placeholder="Sắp xếp mặc định">
+         <option value="type1">Sắp xếp mặc định</option>
+         <option value="type2">Nhà hàng gần nhất</option>
+        </select>
+       </div>
+      </div>
      </h2>
      <div class="clearfix show-grid" data-view-type="grid">
       <!-- Works Grid -->
@@ -863,72 +871,72 @@
  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
  <script type="text/javascript" src="js/rev-slider.js"></script>
  <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-<script type="text/javascript">
-    var locations = [
-      ['<b>MÓN VIỆT</b><br>123 Nguyễn Khang, Cầu Giấy', 21.0197828191865, 105.801180303097, 4],
-      ['<b>SONG ANH CHICKEN N DELI</b><br>Số 32 Gia Ngư, Hoàn Kiếm', 21.033333, 105.849998, 5],
-      ['<b>SEOUL BBQ</b><br>24-26 Nguyễn Trường Tộ, Ba Đình', 21.0424798690643, 105.844886898994, 3],
-      ['<b>CARNAVAL</b><br>Số 145 Trung Hòa, Cầu Giấy', 20.8959102, 105.6500504, 2],
-      ['<b>GECKO</b><br>86 Hàng Quạt, Hoàn Kiếm', 21.032422, 105.84863, 1]
-    ];
+ <script type="text/javascript">
+ var locations = [
+ ['<b>MÓN VIỆT</b><br>123 Nguyễn Khang, Cầu Giấy', 21.0197828191865, 105.801180303097, 4],
+ ['<b>SONG ANH CHICKEN N DELI</b><br>Số 32 Gia Ngư, Hoàn Kiếm', 21.033333, 105.849998, 5],
+ ['<b>SEOUL BBQ</b><br>24-26 Nguyễn Trường Tộ, Ba Đình', 21.0424798690643, 105.844886898994, 3],
+ ['<b>CARNAVAL</b><br>Số 145 Trung Hòa, Cầu Giấy', 20.8959102, 105.6500504, 2],
+ ['<b>GECKO</b><br>86 Hàng Quạt, Hoàn Kiếm', 21.032422, 105.84863, 1]
+ ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: new google.maps.LatLng(21.01, 105.80),
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      zoomControl: true,
-      zoomControlOptions: {
-          style: google.maps.ZoomControlStyle.SMALL
-      },
-      zoomControlOptions: {
-          position: google.maps.ControlPosition.LEFT_TOP
-      },
-      mapTypeControl: false,
-      scaleControl: false,
-      scrollwheel: false,
-      streetViewControl: false,
-      draggable: true,
-      styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},
-      {"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},
-      {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},
-      {"color":"#b3b3b3"}]},
-      {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
-      {"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},
-      {"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},
-      {"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},
-      {"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},
-      {"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
-      {"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
-      {"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},
-      {"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},
-      {"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},
-      {"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
-      {"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},
-      {"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},
-      {"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},
-      {"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
-    });
+ var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 10,
+  center: new google.maps.LatLng(21.01, 105.80),
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  zoomControl: true,
+  zoomControlOptions: {
+   style: google.maps.ZoomControlStyle.SMALL
+  },
+  zoomControlOptions: {
+   position: google.maps.ControlPosition.LEFT_TOP
+  },
+  mapTypeControl: false,
+  scaleControl: false,
+  scrollwheel: false,
+  streetViewControl: false,
+  draggable: true,
+  styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},
+  {"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},
+  {"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},
+  {"color":"#b3b3b3"}]},
+  {"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
+  {"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},
+  {"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},
+  {"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},
+  {"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},
+  {"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
+  {"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},
+  {"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},
+  {"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},
+  {"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},
+  {"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},
+  {"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},
+  {"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},
+  {"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},
+  {"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+ });
 
-    var infowindow = new google.maps.InfoWindow();
+ var infowindow = new google.maps.InfoWindow();
 
-    var marker, i;
+ var marker, i;
 
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        options: {
-            icon: "images/map-marker.png"
-        },
-        map: map
-      });
+ for (i = 0; i < locations.length; i++) {
+  marker = new google.maps.Marker({
+   position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+   options: {
+    icon: "images/map-marker.png"
+   },
+   map: map
+  });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  </script>
+  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+   return function() {
+    infowindow.setContent(locations[i][0]);
+    infowindow.open(map, marker);
+   }
+  })(marker, i));
+ }
+ </script>
 </body>
 </html>

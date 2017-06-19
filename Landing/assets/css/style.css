@@ -1,0 +1,1461 @@
+/*=============================================================
+CSS INDEX
+=============================
+01. GENERAL STYLE (body, link color, section-title, preloader btn, overlay, section-padding etc)
+02. BOOTSTRAP NAVIGATION OVERRIDES
+03. START HOME DESIGN
+04. START SCREENSHOT DESIGN
+05. START ABOUT US DESIGN
+06. START FEATURES DESIGN
+07. START APP DESCRIBE DESIGN
+08. START VIDEO DESIGN
+09. START PRICING DESIGN
+10. START TESTIMONIAL DESIGN
+11. START DOWNLOAD DESIGN
+12. START NEWSLETTER DESIGN
+13. START CONTACT FORM DESIGN
+14. START CONTACT ADDRESS DESIGN
+15. START SOCIAL PROFILE DESIGN
+16. START FOOTER DESIGN
+=============================================================*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+@font-face {
+ font-family: 'iCielGotham-Medium';
+ src: url('../fonts/iCielGotham-Medium.eot');
+ src: url('../fonts/iCielGotham-Medium.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/iCielGotham-Medium.woff') format('woff'),
+ url('../fonts/iCielGotham-Medium.ttf')  format('truetype'),
+ url('../fonts/iCielGotham-Medium.svg#iCielGotham-Medium') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'iCielGotham-Thin';
+ src: url('../fonts/iCielGotham-Thin.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/iCielGotham-Thin.otf')  format('opentype'),
+ url('../fonts/iCielGotham-Thin.woff') format('woff'),
+ url('../fonts/iCielGotham-Thin.ttf')  format('truetype'),
+ url('../fonts/iCielGotham-Thin.svg#iCielGotham-Thin') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'iCielGotham-Ultra';
+ src: url('../fonts/iCielGotham-Ultra.eot?#iefix') format('embedded-opentype'),
+ url('../fonts/iCielGotham-Ultra.otf')  format('opentype'),
+ url('../fonts/iCielGotham-Ultra.woff') format('woff'),
+ url('../fonts/iCielGotham-Ultra.ttf')  format('truetype'),
+ url('../fonts/iCielGotham-Ultra.svg#iCielGotham-Ultra') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+body {
+ font-family: 'iCielGotham-Medium';
+ font-size: 16px;
+ font-weight: 300;
+ line-height: 24px;
+ color: #777;
+ overflow-x: hidden;
+ margin: auto;
+ background: #fff;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-weight: 400;
+ margin-bottom: 20px;
+ line-height: 1.5;
+ color: #161616;
+ text-transform: uppercase;
+}
+a {
+ text-decoration: none;
+ -webkit-transition: all 0.2s;
+ transition: all 0.2s;
+ color:#F48030;
+}
+a:hover {
+ color: #333;
+ text-decoration: none;
+}
+a:focus {
+ outline: none;
+ text-decoration: none;
+}
+ul,
+li {
+ margin: 0;
+ padding: 0;
+}
+fieldset {
+ border: 0 none;
+ margin: 0 auto;
+ padding: 0;
+}
+::-moz-selection {
+ color: #fff;
+ background: #fcee17;
+}
+::-webkit-selection {
+ color: #fff;
+ background: #fcee17;
+}
+::selection {
+ color: #fff;
+ background: #fcee17;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+ background: rgba(0,0,0,.5);
+ bottom: 0;
+ left: 0;
+ position: fixed;
+ right: 0;
+ top: 0;
+ z-index: 9999;
+}
+.status,
+.status-mes {
+ background-image: url(../img/status.gif);
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 200px;
+ left: 50%;
+ margin: -100px 0 0 -100px;
+ position: absolute;
+ top: 50%;
+ width: 200px;
+}
+.status-mes {
+ background: none;
+ left: 0;
+ margin: 0;
+ text-align: center;
+ top: 65%;
+}
+.status-mes h4 {
+ color: #fff;
+ margin-top: 30px;
+}
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+ background: #fcee17 none repeat scroll 0 0;
+ border-radius: 50px;
+ bottom: 5px;
+ box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+ color: #111;
+ cursor: pointer;
+ font-size: 26px;
+ height: 40px;
+ opacity: 1;
+ filter: alpha(opacity=100);
+ padding: 2px 12px;
+ position: fixed;
+ right: 5px;
+ -webkit-transition: all 0.2s ease 0s;
+ transition: all 0.2s ease 0s;
+ width: 40px;
+}
+.topcontrol:hover {
+ background: #222;
+ color: #fff;
+}
+/*END SCROLL TO TOP*/
+.section-padding { padding: 60px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title { margin-bottom: 60px }
+.section-title  h2 {
+ color: #333;
+ font-size: 24px;
+ font-weight: 700;
+ letter-spacing: 2px;
+ margin-top: 0;
+ text-transform: uppercase;
+}
+@media only screen and (max-width:320px) {
+ .section-title  h2 { font-size: 24px }
+}
+.section-title-white {
+ color: #fff !important;
+ position: relative;
+}
+.section-title div {
+ border-bottom: 1px dashed rgba(0,0,0,.2);
+ margin: auto;
+ width: 150px;
+}
+.section-title p {
+ margin: 20px auto 0;
+ width: 70%;
+}
+/*END SECTION TITLE DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.END GENERAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 02. START BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+.navbar-default {
+ border: none;
+ border-radius: 0;
+ margin-bottom: 0;
+ width: 100%;
+ padding: 20px 0;
+ background: #fff;
+ transition: all 0.4s ease-in-out;
+ -webkit-transition: all 0.4s ease-in-out;
+ -moz-transition: all 0.4s ease-in-out;
+ -o-transition: all 0.4s ease-in-out;
+ -ms-transition: all 0.4s ease-in-out;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+ color: #f48030  !important;
+ background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+ color: #bbb  !important;
+ background-color: transparent;
+}
+.navbar-brand { padding: 0px }
+.navbar-brand img {width: auto;height: 100%;}
+@media only screen and (max-width:480px) {
+ .navbar-brand img {margin-left:10px;}
+}
+.menu-top {background: rgba(256, 256, 256, 1) none repeat scroll 0 0;box-shadow: 2px 2px 2px rgba(0,0,0,.1);}
+.menu-top li a {color: #333 !important;font-size: 12px;font-weight: 400;letter-spacing: 1px;text-transform: uppercase;}
+.menu-top li a:hover { color: #bbb !important }
+@media only screen and (max-width:768px) {
+ .navbar-default .navbar-nav > li > a {
+  margin-top: 10px;
+  padding: 8px;
+ }
+}
+@media only screen and (max-width:480px) {
+ .menu-top {
+  background-color: #fff;
+ }
+ .navbar-default .navbar-nav > li > a { color: #313131  !important }
+}
+.navbar-default.menu-shrink {
+ background-color:#fff;
+ box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+ padding: 10px 0;
+ width: 100%;
+ margin-top:0px
+}
+@media only screen and (max-width:480px) {
+ .menu-top {
+  color: #fff !important;
+  margin-left: 0px;
+ }
+}
+.navbar-default.menu-shrink li a { color: #313131!important }
+.navbar-default.menu-shrink li a:hover { color: #bbb  !important }
+.navbar-default .navbar-toggle { background: #fff none repeat scroll 0 0; border:none; }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { background-color: #fff }
+.navbar-default .navbar-toggle .icon-bar {background-color: #F48030;}
+.sub-logo {
+ padding-left: 18px;
+ font-size: 1.2em;
+ padding-top: 18px;
+ text-transform: uppercase;
+ color: #333;
+}
+@media only screen and (max-width:480px) {
+ .sub-logo{
+  display:none;
+ }
+}
+/*
+* ----------------------------------------------------------------------------------------
+* 02.END BOOTSTRAP NAVIGATION OVERRIDES
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.START HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.home_bg {
+ height: 700px;
+ position: relative;
+}
+.hero-text{padding-top: 140px;}
+@media only screen and (max-width:480px) {
+ .home_bg {height: 1150px;}
+}
+
+@media only screen and (max-width:360px) {
+ .home_bg {height: 1100px;}
+}
+@media only screen and (max-width:320px) {
+ .home_bg {height: 1100px;}
+}
+.home_bg:before {
+ /*background: rgba(0, 0, 0, 0.6);*/
+ content: "";
+ height: 100%;
+ filter: alpha(opacity=80);
+ position: absolute;
+ width: 100%;
+}
+.hero-text h2 {
+ color: #fff;
+ font-size: 40px;
+ letter-spacing: 0;
+ line-height: 52px;
+ padding-top: 200px;
+ text-transform: capitalize;
+}
+.hero-text .section-title{
+ margin-bottom: 5px;
+}
+.hero-text .section-title h2{
+ color: #003e70;
+ padding-top: 0;
+ font-size: 1.5em;
+ padding-bottom: 0;
+ margin-bottom: 5px;
+}
+.main-color .hero-text .section-title h2{color:#FFF;}
+.main-color .hero-text .section-title div{
+     border-bottom: 1px dashed rgba(256,256,256,.4);
+}
+.hero-text .section-title p{
+ padding: 10px;
+ margin: 0;
+ width: 100%;
+ color: #777;
+ text-transform: initial;
+}
+.main-color .hero-text .section-title p{
+ color:#f4f4f4;
+}
+.main-color .hero-text .actions .btn-contact-bg{
+ background: #f48030;
+ border: 1px solid #f48030;
+ color: #fff;
+ font-family: iCielGotham-Medium, sans-serif;
+}
+@media only screen and (max-width:768px) {
+ .hero-text h2 {
+  font-size: 30px;
+  line-height: 40px;
+ }
+}
+@media only screen and (max-width:480px) {
+ .hero-text h2 {
+  padding-top: 100px;
+  font-size: 30px;
+  line-height: 40px;
+ }
+}
+@media only screen and (max-width:360px) {
+ .hero-text h2 {
+  font-size: 26px;
+  line-height: 34px;
+ }
+}
+.hero-text p {
+ color: #fff;
+ font-size: 15px;
+ margin-bottom: 30px;
+ text-transform: capitalize;
+ width: 80%;
+}
+@media only screen and (max-width:768px) {
+ .hero-text p { width: 100% }
+}
+.hero-text img {box-shadow: 0 5px 5px rgba(0, 0, 0, 0.10);}
+@media only screen and (max-width:480px) {
+ .hero-text img{ margin: 10px 0}
+}
+.mbleft15 { margin-left: 15px }
+@media only screen and (max-width:480px) {
+ .mbleft15 { margin-left: 0px}
+}
+.hero-text-img {
+ margin: auto auto 0;
+ max-width: 100%;
+ padding-top: 140px;
+}
+.hero-text-img img{
+ width:100%;
+}
+@media only screen and (max-width:768px) {
+ .hero-text-img{padding-top: 60px; }
+ .hero-text {
+    padding-top: 40px;
+    padding-bottom:40px;
+}
+.section-title{margin-bottom:20px;}
+}
+@media only screen and (max-width:480px) {
+ .hero-text-img{padding-top: 80px; }
+}
+/*START HOME OTHER VERSION DESIGN*/
+/*Start transparent background design*/
+.home_bg_transparent {
+ position: relative;
+}
+.home_bg_transparent:before {
+ background:rgba(55,155,188, 0.6);
+ content: "";
+ height: 100%;
+ filter: alpha(opacity=80);
+ position: absolute;
+ width: 100%;
+}
+/*End transparent background design*/
+
+/*Start Gradient background design*/
+.home_bg_gradient {
+ position: relative;
+}
+.home_bg_gradient:before {
+ background:rgba(0, 0, 0, 0.4) linear-gradient(to left, #fcee17 0%, #fe275a 120%) repeat scroll 0 0;
+ content: "";
+ height: 100%;
+ opacity:0.8;
+ filter: alpha(opacity=80);
+ position: absolute;
+ width: 100%;
+}
+/*End Gradient background design*/
+
+/*Start solid background design*/
+.home_bg_solid {
+ height: 700px;
+ background:#fcee17;
+}
+@media only screen and (max-width:480px) {
+ .home_bg_solid {height: 100%;}
+}
+@media only screen and (max-width:360px) {
+ .home_bg_solid {height: 1100px;}
+}
+@media only screen and (max-width:320px) {
+ .home_bg_solid {height: 1100px;}
+}
+/*End solid background design*/
+/*END HOME OTHER VERSION DESIGN*/
+/*
+* ----------------------------------------------------------------------------------------
+* 03.END HOME DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 04.START SCREENSHOT DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.s-slider .item { margin: 5px }
+.s-slider .item img {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+.owl-theme .owl-controls {
+ margin-top: 50px;
+ text-align: center;
+}
+.owl-theme .owl-controls .owl-page { display: inline-block }
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div { cursor: pointer }
+.owl-theme .owl-controls .owl-page span {
+ display: block;
+ width: 6px;
+ height: 6px;
+ margin: 5px 7px;
+ border-radius: 20px;
+ background-color: #fcee17   !important;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span { background-color: #fff }
+/*
+* ----------------------------------------------------------------------------------------
+* 04.END SCREENSHOTD ESIGN
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 05.START ABOUT US DESIGN
+* ----------------------------------------------------------------------------------------
+*/
+.app-overview {
+ padding-bottom: 20px;
+ padding-top: 60px;
+}
+.single_about { margin-bottom: 40px }
+.single_about i {
+ border-radius: 50%;
+ color: #161616;
+ display: inline-block;
+ font-size: 32px;
+ height: 60px;
+ line-height: 62px;
+ margin: 0 auto 15px;
+ position: relative;
+ text-align: center;
+ width: 60px;
+ z-index: 3;
+}
+.single_about i:after {
+ background-color: #fcee17;
+ border-radius: 50%;
+ content: "";
+ height: 60px;
+ left: 0;
+ margin-top: -30px;
+ opacity: 0;
+ filter: alpha(opacity=0);
+ position: absolute;
+ top: 50%;
+ -webkit-transform: scale();
+ -ms-transform: scale();
+ transform: scale();
+ -webkit-transition: -webkit-transform 0.4s ease 0s, opacity 0.3s ease 0s;
+ transition: transform 0.4s ease 0s, opacity 0.3s ease 0s;
+ width: 60px;
+ z-index: -1;
+}
+.single_about:hover i:after {
+ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+ filter: alpha(opacity=100);
+ -moz-opacity: 1;
+ -khtml-opacity: 1;
+ opacity: 1;
+ -webkit-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1);
+}
+.single_about:hover i { color: #fff }
+.single_about h4 {font-size: 20px;
+ text-transform: capitalize; }
+ @media only screen and (max-width:768px) {
+  .single_about h4 { font-size: 16px }
+ }
+ @media only screen and (max-width:480px) {
+  .single_about h4 { font-size: 14px }
+ }
+ /*
+ * ----------------------------------------------------------------------------------------
+ * 05.END ABOUT US DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ /*
+ * ----------------------------------------------------------------------------------------
+ * 06.START FEATURES DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ .single_feature { padding-top: 100px }
+ @media only screen and (max-width:768px) {
+  .single_feature { padding-top: 0px }
+ }
+ @media only screen and (max-width:480px) {
+  .single_feature { padding-top: 50px }
+ }
+ .single_feature i {
+  border-radius: 50%;
+  color: #161616;
+  display: inline-block;
+  font-size: 32px;
+  height: 60px;
+  line-height: 62px;
+  margin: 0 auto 15px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+  z-index: 3;
+ }
+ .single_feature i:after {
+  background-color: #fcee17;
+  border-radius: 50%;
+  content: "";
+  height: 60px;
+  left: 0;
+  margin-top: -30px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: scale();
+  -ms-transform: scale();
+  transform: scale();
+  -webkit-transition: -webkit-transform 0.4s ease 0s, opacity 0.3s ease 0s;
+  transition: transform 0.4s ease 0s, opacity 0.3s ease 0s;
+  width: 60px;
+  z-index: -1;
+ }
+ .single_feature:hover i:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+ }
+ .single_feature:hover i { color: #fff }
+ .single_feature h3 {
+  text-transform: capitalize;
+ }
+ .single_feature span {
+  border-bottom: 1px dashed #ccc;
+  margin: auto;
+  width: 80px;
+  display: block;
+  margin: 20px auto;
+ }
+ .single_feature p { margin-bottom: 0 }
+ .carousel-indicators li {
+  background: #222 none repeat scroll 0 0;
+  border: 1px solid #222;
+  border-radius: 12px;
+  height: 6px;
+  margin: 0 1px;
+  width: 6px;
+ }
+ .carousel-indicators .active {
+  height: 6px;
+  margin: 0 1px;
+  width: 6px;
+  border: 1px solid #fcee17;
+  background: #fcee17 none repeat scroll 0 0;
+ }
+ .carousel-indicators { bottom: -60px }
+ @media only screen and (max-width:480px) {
+  .carousel-indicators { bottom: -60px }
+ }
+ /*
+ * ----------------------------------------------------------------------------------------
+ * 06.END FEATURES DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ /*
+ * ----------------------------------------------------------------------------------------
+ * 07.START APP DESCRIBE DESIGN
+ * ----------------------------------------------------------------------------------------
+ */
+ .description_text {
+  margin-top: 60px;
+ }
+ @media only screen and (max-width:768px) {
+  .description_text {margin-top: 0px;}
+ }
+ .description_text h3 {
+  color: #333;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  margin-top: 0;
+ }
+ @media only screen and (max-width:768px) {
+  .description_text h3 {
+   font-size: 26px;
+  }
+ }
+ @media only screen and (max-width:480px) {
+  .description_text h3 {
+   font-size: 20px;
+   line-height: 30px;
+  }
+ }
+ .description_text p {}
+  .mbottom40 { margin-bottom: 40px }
+  @media only screen and (max-width:480px) {
+   .description_text_img{margin-top:60px; }
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 07.END APP DESCRIBE DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 08.START VIDEO DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .video { background: #15191c none repeat scroll 0 0 }
+  .watch_video iframe {
+   border: medium none;
+   height: 450px;
+   width: 70%;
+  }
+  @media only screen and (max-width:480px) {
+   .watch_video iframe {
+    height: 300px;
+    width: 100%;
+   }
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 08.END VIDEO DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 09.START PRICING DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .pricing-table {
+   background-color: #fff;
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+   position: relative;
+   -webkit-transition: all 0.4s ease 0s;
+   transition: all 0.4s ease 0s;
+  }
+  @media only screen and (max-width:480px) {
+   .pricing-table { margin-bottom: 40px }
+  }
+  .pricing-table.active { box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) }
+  .pricing-table h3 {
+   color: #333;
+   font-size: 18px;
+   margin-bottom: 0;
+   margin-top: 0;
+   padding: 25px 0;
+   text-align: center;
+   text-transform: uppercase;
+  }
+  .price {
+   border: 0px solid #eee;
+   border-radius: 0;
+   /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12); */
+   display: inline-block;
+   font-family: iCielGotham-Thin,sans-serif;
+   font-size: 14px;
+   height: 124px;
+   line-height: 26px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   width: 124px;
+   font-weight: bold;
+  }
+  .price img{width:100%;}
+  .color-one {
+   background: transparent;
+   color: #fff;
+  }
+  .color-two {
+   background: transparent;
+   color: #fff;
+  }
+  .color-three {
+   background: transparent;
+   color: #fff;
+  }
+  .price span {
+   display: block;
+   font-size: 32px;
+   margin-top: 39px;
+  }
+  .pricing-list {
+   border-top: 1px dashed #eee;
+   list-style: outside none none;
+   margin-bottom: 0;
+   text-align: center;
+   font-family: 'iCielGotham-Thin';
+   font-weight: bold;
+  }
+  .pricing-list li {
+   border-bottom: 1px dashed #eee;
+   color: #333;
+   font-size: 16px;
+   padding: 10px 15px;
+   -webkit-transition: all 0.3s ease 0s;
+   transition: all 0.3s ease 0s;
+  }
+  .pricing-list li:hover { background: rgba(0,0,0,0.02) }
+  .pricing-list li strong{
+   font-family: 'iCielGotham-Medium';
+  }
+  .pricing-btn { padding: 20px 0 }
+  .pricing-btn  a {
+   background: #f48030;
+   border: 1px solid #f48030;
+   color: #fff;
+   font-family: iCielGotham-Medium,sans-serif;
+   padding: 8px 30px;
+   font-weight: bold;
+   text-transform: uppercase;
+   -webkit-transition: all 0.2s ease 0s;
+   transition: all 0.2s ease 0s;
+   border-radius: 50px;
+  }
+  .pricing-btn  button:hover {
+   background: #333;
+   border: 1px solid #333;
+   color: #fff;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 09.END PRICING DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 10.START TESTIMONIAL DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .single_testimonial {
+   border: 1px solid #eee;
+   padding: 20px;
+  }
+  @media only screen and (max-width:480px) {
+   .single_testimonial {margin-bottom:30px;}
+  }
+  .single_testimonial h4 {
+   letter-spacing: 1px;
+   margin-top: 0;
+  }
+  .single_testimonial i {
+   color: #ffc207;
+   margin-bottom: 20px;
+   margin-top: 5px;
+  }
+  .single_testimonial img {
+   border-radius: 500px;
+   display: block;
+   height: 100px;
+   width: 100px;
+   margin: auto;
+  }
+  .single_testimonial h3 {
+   font-size: 16px;
+   margin-bottom: 0;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 10.END TESTIMONIAL DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 11.START DOWNLOAD DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .download_icon img { margin: 0 10px }
+  @media only screen and (max-width:480px) {
+   .download_icon img { margin-bottom: 10px }
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 11.END DOWNLOAD DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 12.START NEWSLETTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .newsletter { position: relative }
+  .newsletter:before {
+   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+   content: "";
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+  }
+  .signup_form h3 {
+   color: #333;
+   margin-bottom: 30px;
+   margin-top: 0;
+   text-transform: uppercase;
+  }
+  .signup_form input {
+   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+   border-bottom: 1px solid #fff;
+   color:#fff;
+   margin-bottom: 30px;
+  }
+  .signup_form button {
+   background: #fcee17 none repeat scroll 0 0;
+   border-radius: 0;
+   box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.1);
+   color: #fff;
+   font-family: iCielGotham-Thin,sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 10px 30px;
+   text-transform: uppercase;
+   -webkit-transition: all 0.2s ease 0s;
+   transition: all 0.2s ease 0s;
+  }
+  .signup_form button:hover {
+   background: #333;
+   color: #fff;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 12.END NEWSLETTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 13.START CONTACT FORM DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .contact-us { background: #f7f7f7 }
+  .contact {
+   background: #fcee17 none repeat scroll 0 0;
+   padding: 25px 35px;
+   -webkit-transition: all 0.4s ease 0s;
+   transition: all 0.4s ease 0s;
+   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+  }
+  .main-color .contact{
+   background: #55328e none repeat scroll 0 0;
+  }
+  @media (min-width:768px) {
+   .contact:hover {
+    -webkit-box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6);
+    box-shadow: 0 4px 20px 0 rgba(168, 182, 191, .6)
+   }
+  }
+  .form-group {
+   margin-bottom: 10px;
+  }
+  .help-block {
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 0;
+   color: #737373;
+   padding-left: 10px;
+   font-size: 14px;
+  }
+  .form-control {
+   background: #fbfbfb none repeat scroll 0 0;
+   border: 1px solid #eee;
+   border-radius: 0;
+   box-shadow: none;
+   color: #333;
+   font-family: "iCielGotham-Thin",sans-serif;
+   font-weight: bold;
+   height: 40px;
+   padding-left: 10px;
+   -webkit-transition: all 0.2s ease 0s;
+   transition: all 0.2s ease 0s;
+   border-radius: 30px;
+  }
+  .form-control:hover,
+  .form-control:focus {
+   /*border-radius: 0;*/
+   box-shadow: none;
+   outline: 0 none;
+  }
+  .mbnone { margin-bottom: 0px }
+  .actions {
+   margin-top: 10px;
+   text-align: center;
+  }
+  .btn-contact-bg {
+   background: #003e70 none repeat scroll 0 0;
+   border-radius: 0;
+   box-shadow: 0 11px 10px 0 rgba(0, 0, 0, 0.1);
+   color: #fff;
+   font-family: iCielGotham-Thin,sans-serif;
+   font-weight: bold;
+   font-size: 14px;
+   padding: 10px 30px;
+   text-transform: uppercase;
+   -webkit-transition: all 0.2s ease 0s;
+   transition: all 0.2s ease 0s;
+   border-radius: 50px;
+   width:100%;
+  }
+  .btn-contact-bg:hover,
+  .btn-contact-bg:focus {
+   background: #333;
+   border: 1px solid #333;
+   color: #fff;
+  }
+  .success {
+   background: #fff none repeat scroll 0 0;
+   color: #fcee17;
+   font-weight: 700;
+   padding: 20px;
+   text-align: center;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 13.END CONTACT FORM DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 14.START CONTACT ADDRESS DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .address {
+   position: relative;
+  }
+  .address:before {
+   background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+   content: "";
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   filter: alpha(opacity=80);
+  }
+  @media only screen and (max-width:480px) {
+   .single_address { margin-bottom: 30px }
+  }
+  .single_address i {
+   background: #fff none repeat scroll 0 0;
+   border-radius: 50%;
+   color: #333;
+   display: inline-block;
+   float: left;
+   font-size: 26px;
+   height: 60px;
+   line-height: 62px;
+   margin: 0 40px 40px auto;
+   position: relative;
+   text-align: center;
+   width: 60px;
+   z-index: 3;
+  }
+  @media only screen and (max-width:768px) {
+   .single_address i {margin: 0 20px 40px auto;}
+  }
+  .single_address i:after {
+   background-color: #fcee17;
+   border-radius: 50%;
+   content: "";
+   height: 60px;
+   left: 0;
+   margin-top: -30px;
+   opacity: 0;
+   filter: alpha(opacity=0);
+   position: absolute;
+   top: 50%;
+   -webkit-transform: scale();
+   -ms-transform: scale();
+   transform: scale();
+   -webkit-transition: -webkit-transform 0.4s ease 0s, opacity 0.3s ease 0s;
+   transition: transform 0.4s ease 0s, opacity 0.3s ease 0s;
+   width: 60px;
+   z-index: -1;
+  }
+  .single_address:hover i:after {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   -moz-opacity: 1;
+   -khtml-opacity: 1;
+   opacity: 1;
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+  }
+  .single_address:hover i { color: #fff }
+  .single_address h4 {
+   color: #fff;
+   margin: 0 0 10px;
+  }
+  @media only screen and (max-width:768px) {
+   .single_address h4 {letter-spacing: 0;}
+  }
+  .single_address p {
+   color: #fff;
+   margin-bottom: 0;
+  }
+  .single_address_mbnone{margin-bottom:0}
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 14.END CONTACT ADDRESS DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 15.START SOCIAL PROFILE DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .footer-social-profile { background: #040e18 }
+  .footer_social_logo img {
+   width: 200px;
+   margin-bottom: 30px;
+  }
+  .footer_social ul {
+   list-style: outside none none;
+   margin: 0;
+   padding: 0;
+  }
+  .footer_social ul li { display: inline-block }
+  .footer_social ul li a {
+   background: #2e3537 none repeat scroll 0 0;
+   border: 1px solid #2e3537;
+   border-radius: 50px;
+   box-shadow: 0 0 0 7px transparent;
+   color: #aaa;
+   display: block;
+   font-size: 16px;
+   height: 45px;
+   line-height: 28px;
+   padding: 9px 13px;
+   -webkit-transition: all 0.4s ease 0s;
+   transition: all 0.4s ease 0s;
+   width: 45px;
+  }
+  @media only screen and (max-width:768px) {
+   .footer_social ul li a { font-size: 12px }
+  }
+  @media only screen and (max-width:360px) {
+   .footer_social ul li a { font-size: 14px }
+  }
+  @media only screen and (max-width:320px) {
+   .footer_social ul li a { font-size: 14px }
+  }
+  @media only screen and (max-width:480px) {
+   .footer_social ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+   }
+  }
+  .footer_social ul li a:hover { color: #fff }
+  .f_facebook:hover {
+   background: #5D82D1;
+   box-shadow: 0 0 0 0px #5D82D1;
+   border: 1px solid #5D82D1;
+  }
+  .f_twitter:hover {
+   background: #40BFF5;
+   box-shadow: 0 0 0 0px #40BFF5;
+   border: 1px solid #40BFF5;
+  }
+  .f_google:hover {
+   background: #EB5E4C;
+   box-shadow: 0 0 0 0px #EB5E4C;
+   border: 1px solid #EB5E4C;
+  }
+  .f_linkedin:hover {
+   background: #238CC8;
+   box-shadow: 0 0 0 0px #238CC8;
+   border: 1px solid #238CC8;
+  }
+  .f_youtube:hover {
+   background: #CC181E;
+   box-shadow: 0 0 0 0px #CC181E;
+   border: 1px solid #CC181E;
+  }
+  .f_skype:hover {
+   background: #00AFF0;
+   box-shadow: 0 0 0 0px #00AFF0;
+   border: 1px solid #00AFF0;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 15.END SOCIAL PROFILE DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 16.START FOOTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .footer {
+   padding: 30px 0;
+   background-color: #09121b;
+  }
+  .footer_copyright {
+   color: #fff;
+   font-size: 14px;
+   margin: 0;
+   text-transform: capitalize;
+  }
+  /*
+  * ----------------------------------------------------------------------------------------
+  * 16.END FOOTER DESIGN
+  * ----------------------------------------------------------------------------------------
+  */
+  .over-hide {
+   overflow: hidden;
+  }
+  .fiz-container {
+   display: table;
+   position: relative;
+  }
+  .w100per {
+   width: 100%;
+  }
+  .align-center{
+   text-align: center;
+  }
+  .adr.horizontal {
+   padding: 15px;
+   position: relative;
+   display: inline;
+   color: #003e70;
+   /* margin-bottom: 40px; */
+   font-weight: bold;
+   text-transform: uppercase;
+  }
+  .adr.horizontal::before {
+   content: '' !important;
+   position: absolute !important;
+   border-bottom: 1px solid #003e70 !important;
+   top: 50% !important;
+   right: 100% !important;
+   width: 5000px !important;
+  }
+  .adr.horizontal::after {
+   content: '' !important;
+   position: absolute !important;
+   border-bottom: 1px solid #003e70 !important;
+   top: 50% !important;
+   left: 100% !important;
+   width: 5000px !important;
+  }
+  .mb-15{
+   margin-bottom: 15px;
+  }
+  .form-control-feedback {
+   position: absolute;
+   top: 2px;
+   right: 14px;
+   z-index: 2;
+   display: block;
+   width: 40px;
+   height: 40px;
+   line-height: 34px;
+   text-align: center;
+   pointer-events: none;
+  }
+  .txt-capital{    text-transform: capitalize;}
+  /** Custom Select **/
+  .custom-select-wrapper {
+   position: relative;
+   display: inline-block;
+   user-select: none;
+  }
+  .w100per .custom-select-wrapper{
+   width:100%;
+  }
+  .custom-select-wrapper select {
+   display: none;
+  }
+  .custom-select {
+   position: relative;
+   display: inline-block;
+  }
+  .custom-select.w230 {
+   width: 230px;
+  }
+  .custom-select-trigger {
+   position: relative;
+   display: block;
+   width: auto;
+   padding: 0 50px 0 22px;
+   font-size: 14px;
+   font-weight: 300;
+   color: #333;
+   line-height: 37px;
+   background: #FFF;
+   border-radius: 50px;
+   cursor: pointer;
+   border: 1px solid #eee;
+   height: 39px;
+   overflow:hidden;
+  }
+  .custom-select-trigger:after {
+   position: absolute;
+   display: block;
+   content: '';
+   width: 10px;
+   height: 10px;
+   top: 50%;
+   right: 20px;
+   margin-top: -3px;
+   border-bottom: 2px solid #d9d7d7;
+   border-right: 2px solid #d9d7d7;
+   transform: rotate(45deg) translateY(-50%);
+   transition: all .4s ease-in-out;
+   transform-origin: 50% 0;
+  }
+  .custom-select.opened .custom-select-trigger:after {
+   margin-top: 3px;
+   transform: rotate(-135deg) translateY(-50%);
+  }
+  .custom-options {
+   position: absolute;
+   display: block;
+   top: 100%;
+   left: 0;
+   right: 0;
+   min-width: 100%;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   box-shadow: 0 2px 1px rgba(0, 0, 0, .07);
+   background: #fff;
+   transition: all .4s ease-in-out;
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+   transform: translateY(-15px);
+  }
+  .custom-select.opened .custom-options {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: all;
+   transform: translateY(0);
+   z-index: 9999;
+  }
+  .custom-options:before {
+   position: absolute;
+   display: block;
+   content: '';
+   bottom: 101%;
+   right: 25px;
+   width: 7px;
+   height: 7px;
+   margin-bottom: -4px;
+   border-top: 1px solid #ccc;
+   border-left: 1px solid #ccc;
+   background: #fff;
+   transform: rotate(45deg);
+   transition: all .4s ease-in-out;
+  }
+  .w100per .custom-options:before{
+   width: 8px;
+   height: 8px;
+   margin-bottom: -7px;
+  }
+  .option-hover:before {
+   background: #f9f9f9;
+  }
+  .custom-option {
+   position: relative;
+   display: block;
+   padding: 0 15px;
+   border-bottom: 1px solid #eee;
+   font-size: 14px;
+   font-weight: 400;
+   color: #777;
+   line-height: 40px;
+   cursor: pointer;
+   transition: all .4s ease-in-out;
+  }
+  .custom-option:first-of-type {
+   border-radius: 4px 4px 0 0;
+  }
+  .custom-option:last-of-type {
+   border-bottom: 0;
+   border-radius: 0 0 4px 4px;
+  }
+  .custom-option:hover, .custom-option.selection {
+   background: #f9f9f9;
+  }
+
+  /** End Custom Select **/
+  .input-group-addon:first-child{
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   background-color: #eee;
+  }
+  /* ==============================
+  Features
+  ============================== */
+
+  .features-item{
+   padding: 40px;
+   text-align: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+  .features-icon{
+   font-size: 48px;
+   line-height: 1.3;
+   color: rgba(255,255,255, .9);
+  }
+  .features-title{
+   margin-bottom: 3px;
+   font-size: 18px;
+   font-weight: 500;
+   text-transform: initial;
+   color: rgba(255,255,255, 1);
+  }
+  .features-title h3{
+   margin-bottom: 0;
+   font-size: 2em;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0;
+   line-height: 1.2;
+   color: rgba(255,255,255, 1);
+   padding-bottom: 5px;
+  }
+
+  .features-descr{
+   font-size: 16px;
+   font-weight: 500;
+   color: rgba(255,255,255, 1);
+   padding-top: 15px;
+   font-family: 'iCielGotham-Thin';
+  }
+
+  .features-icon.black{
+   color: rgba(0,0,0, .9);
+  }
+  .features-title.black{
+   color: rgba(0,0,0, .9);
+  }
+  .features-descr.black{
+   color: rgba(0,0,0, .75);
+  }
+  .how-to-use.box-content {
+   border: 1px solid #eee;
+   padding: 40px 20px 20px;
+   position: relative;
+   margin-top: 60px;
+  }
+  .how-to-use.box-content h4{
+   background-color: #F48030;
+   color: #FFF;
+   padding: 15px;
+   display: inline-block;
+   position: absolute;
+   top: 10px;
+   width: 290px;
+   left: 0;
+   right: 0;
+   margin: -40px auto 0;
+  }
+  .how-to-use .pricing-list{}
+   .how-to-use p{
+    font-family: 'iCielGotham-Thin';
+    padding-top: 10px;
+   }
+   .how-to-use p strong{
+    font-family: 'iCielGotham-Medium';
+   }

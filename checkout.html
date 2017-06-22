@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
  <title>Foodizzi</title>
  <meta name="description" content="">
@@ -11,7 +11,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
  <!-- Favicons -->
- <link rel="shortcut icon" href="images/favicon.png">
+ <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
 
  <!-- CSS -->
  <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,8 +24,8 @@
  <link rel="stylesheet" href="css/rev-slider.css">
  <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
  <link rel="stylesheet" href="css/hover-min.css">
-
 </head>
+
 <body class="appear-animate">
 
  <!-- Page Loader -->
@@ -58,7 +58,7 @@
         <ul class="clearlist">
          <!-- Search -->
          <li>
-          <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm" ><span class="btn btn-mod btn-medium btn-circle">Đăng ký</span></a>
+          <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle">Đăng ký</span></a>
          </li>
          <!-- End Search -->
 
@@ -143,7 +143,7 @@
   <!-- End Top Bar -->
 
   <!-- Portfolio Section -->
-  <section class="page-section pb-40 pt-20" id="portfolio">
+  <section class="page-section pb-40 pt-20 fiz-container-checkout" id="">
    <div class="relative">
     <div class="container">
      <div class="row">
@@ -155,11 +155,20 @@
          </h2>
          <div class="row pt-10">
           <div class="col-sm-12">
+           <div class="search-wrap align-left input-us-info info-user-item">
+            <p class="mb-0"><span>Tài khoản:</span> <strong>Linh Nguyễn</strong></p>
+            <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+            <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+           </div>
+          </div>
+         </div>
+         <div class="row pt-10">
+          <div class="col-sm-12">
            <div class="search-wrap pb-0 align-left input-us-info">
             <input type="text" id="usname" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người mua">
             <input type="text" id="usmail" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
-            <div class="w-notice two-col">
-             <div class="sub-col"><input type="text" id="usphone" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="usphone" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
              <div class="sub-col text-muted small">
               <span>Bộ phận CSKH sẽ liên hệ với SĐT này.</span>
              </div>
@@ -172,16 +181,136 @@
          <h2 class="section-title align-left font-alt mb-10 mb-sm-20">
           Thông tin giao hàng
          </h2>
+         <div class="row pt-10 mb-10">
+          <div class="col-sm-6">
+           <div class="search-wrap pb-0 align-left input-us-info">
+            <label class="mb-10">
+             Thời gian nhận hàng
+            </label>
+            <div class="select-list relative">
+             <input type="date" name="date" id="deliveryDate" value="" class="border-main-color input-md input-circle input-md form-control" placeholder="Ngày nhận hàng">
+            </div>
+           </div>
+          </div>
+          <div class="col-sm-6">
+           <div class="search-wrap pb-0 align-left input-us-info">
+            <label class="mb-10">&nbsp;</label>
+            <div class="select-list relative ip-main-style mb-0">
+             <select class="input-md form-control" id="deliveryTime">
+              <option value="-1">Giờ nhận hàng</option>
+              <option value="8:0">08 : 00</option>
+              <option value="8:30">08 : 30</option>
+              <option value="9:0">09 : 00</option>
+              <option value="9:30">09 : 30</option>
+              <option value="10:0">10 : 00</option>
+              <option value="10:30">10 : 30</option>
+              <option value="11:0">11 : 00</option>
+              <option value="11:30">11 : 30</option>
+              <option value="12:0">12 : 00</option>
+              <option value="12:30">12 : 30</option>
+              <option value="13:0">13 : 00</option>
+              <option value="13:30">13 : 30</option>
+              <option value="14:0">14 : 00</option>
+              <option value="14:30">14 : 30</option>
+              <option value="15:0">15 : 00</option>
+              <option value="15:30">15 : 30</option>
+              <option value="16:0">16 : 00</option>
+              <option value="16:30">16 : 30</option>
+              <option value="17:0">17 : 00</option>
+              <option value="17:30">17 : 30</option>
+              <option value="18:0">18 : 00</option>
+              <option value="18:30">18 : 30</option>
+              <option value="19:0">19 : 00</option>
+              <option value="19:30">19 : 30</option>
+              <option value="20:0">20 : 00</option>
+              <option value="20:30">20 : 30</option>
+              <option value="21:0">21 : 00</option>
+             </select>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row pt-10">
+          <div class="col-sm-12">
+           <div class="search-wrap align-left input-us-info address-item mb-10">
+            <a href="#" class="btn-edit-address">Sửa</a>
+            <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+            <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+            <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+            <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+           </div>
+           <p class="other-address mb-20">
+            <a href="javascript:void(0)" id="pickOtherAddress" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-sink btn-ico-r">Chọn địa chỉ khác</a>
+            <a href="javascript:void(0)" id="addNewAddress" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-float-away btn-ico-r">Thêm địa chỉ giao hàng mới</a>
+           </p>
+           <div id="boxAddNewAddress" class="search-wrap box-add-new-address align-left input-us-info">
+            <label class="mb-10">
+             Thông tin người nhận
+            </label>
+            <input type="text" id="usname1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người nhận">
+            <input type="text" id="usmail1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="usphone1" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+             <div class="sub-col text-muted small">
+              <span>Bộ phận giao hàng sẽ liên hệ với SĐT này.</span>
+             </div>
+            </div>
+            <label class="mb-10">
+             Địa chỉ nhận hàng
+            </label>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Địa chỉ: Ví dụ 21 ngõ 10 Tôn Thất Tùng">
+            <textarea id="note" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Ghi chú:"></textarea>
+            <div class="mb-10">
+             <div class="radio main-style">
+              <input id="check-default" name="check-default" type="checkbox" value="one">
+              <label for="check-default" class="checkbox-label">
+               Sử dụng làm địa chỉ mặc định
+              </label>
+             </div>
+            </div>
+            <div class="align-center mt-0">
+             <a href="javascript:void(0)" id="cancelNewAddress" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Hủy bỏ</a>
+             <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+            </div>
+           </div>
+           <div id="boxPickOtherAddress" class="search-wrap box-pick-address align-left input-us-info">
+            <a href="javascript:void(0)" class="close-box" id="cancelPickAddress"></a>
+            <label class="mb-10">Danh sách địa chỉ có sẵn</label>
+            <div class="search-wrap align-left input-us-info address-item mb-10">
+             <span href="#" class="badge-default btn-edit-address">Mặc định</span>
+             <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+             <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+             <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+             <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+             <div class="align-left mt-10">
+              <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Sửa</a>
+             </div>
+            </div>
+            <div class="search-wrap align-left input-us-info address-item mb-10">
+             <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+             <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+             <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+             <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+             <div class="align-left mt-10">
+              <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Sửa</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Xóa</a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
          <div class="row pt-10">
           <div class="col-sm-12">
            <div class="search-wrap pb-0 align-left input-us-info">
             <label class="mb-10">
              Thông tin người nhận
             </label>
-            <input type="text" id="usname1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người mua">
-            <input type="text" id="usmail1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
-            <div class="w-notice two-col">
-             <div class="sub-col"><input type="text" id="usphone1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người nhận">
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
              <div class="sub-col text-muted small">
               <span>Bộ phận giao hàng sẽ liên hệ với SĐT này.</span>
              </div>
@@ -190,58 +319,13 @@
           </div>
          </div>
          <div class="row pt-10">
-          <div class="col-sm-6">
-           <div class="search-wrap pb-0 align-left input-us-info">
-            <label class="mb-10">
-             Thời gian nhận hàng
-            </label>
-            <div class="select-list relative">
-             <input type="date" name="date" id="date" class="border-main-color input-md input-circle input-md form-control" placeholder="Ngày nhận hàng">
-            </div>
-           </div>
-          </div>
-          <div class="col-sm-6">
-           <div class="search-wrap pb-0 align-left input-us-info">
-            <label  class="mb-10">&nbsp;</label>
-            <div class="select-list relative ip-main-style mb-20">
-             <select class="input-md form-control">
-              <option>Giờ nhận hàng</option>
-              <option>21:00</option>
-              <option>22:30</option>
-              <option>23:31</option>
-             </select>
-            </div>
-           </div>
-          </div>
-         </div>
-         <div class="row pt-10">
-          <div class="col-sm-6">
-           <div class="search-wrap pb-30 align-left input-us-info">
+          <div class="col-sm-12">
+           <div class="search-wrap mb-10 align-left input-us-info">
             <label class="mb-10">
              Địa chỉ nhận hàng
             </label>
-            <input type="text" id="usname" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Số (ngõ, ngách)">
-            <input type="text" id="usphone" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Phường / xã">
-            <div class="select-list relative ip-main-style">
-             <select class="input-md form-control">
-              <option>Thành phố/ Tỉnh</option>
-              <option>Hà Nội</option>
-              <option>TP HCM</option>
-             </select>
-            </div>
-           </div>
-          </div>
-          <div class="col-sm-6">
-           <div class="search-wrap pb-30 align-left input-us-info">
-            <label  class="mb-10">&nbsp;</label>
-            <input type="text" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Đường/ Phố">
-            <input type="text" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Quận/ Huyện">
-            <div class="select-list relative ip-main-style">
-             <select class="input-md form-control">
-              <option>Quốc gia</option>
-              <option>Việt Nam</option>
-             </select>
-            </div>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Địa chỉ: Ví dụ 21 ngõ 10 Tôn Thất Tùng">
+            <textarea id="note" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Ghi chú:"></textarea>
            </div>
           </div>
          </div>
@@ -272,23 +356,37 @@
                  </div>
                 </div>
                 <div class="mb-0 mb-md-10 align-left input-us-info">
-                 <!-- Date-->
-                 <label>
-                  Mã khuyến mại
-                 </label>
-                 <div class="align-left form-control input-md input-circle">
-                  <span>100VND </span>
-                  <span class="right"><strong>-100.000 VND</strong> </span>
+                 <div class="form-group group-no-addon add-code pb-0">
+                  <div class="input-group align-left">
+                   <input type="text" class="form-control input-md input-circle" id="" placeholder="Sử dụng mã giảm giá">
+                   <a href="#" class="input-group-addon addon-main-style-r">Áp dụng</a>
+                  </div>
+                  <span class="show-alert"><em>Bạn được giảm <strong>100.000VND</strong> trực tiếp vào hoá đơn</em></span>
                  </div>
+                 <!-- <label>
+                 Mã khuyến mại
+                </label>
+                <div class="align-left form-control input-md input-circle">
+                <span>100VND </span>
+                <span class="right"><strong>-100.000 VND</strong> </span>
+               </div> -->
                 </div>
                 <hr class="divider-dot pt-10 pb-10">
                 <div class="mb-10 mb-md-10">
                  <!-- Name -->
-                 <div class="align-left form-control input-md input-circle">
-                  <span>Tổng:  </span>
+                 <div class="align-left">
+                  <span>Tổng tạm tính:  </span>
+                  <span class="right">100.000.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span>Khuyến mãi:  </span>
+                  <span class="right">100.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span><strong>Tổng:</strong>  </span>
                   <span class="right"><strong>100.000.000 VND</strong> </span>
                  </div>
-                 <div class="align-right mt-0"><a href="#" class="btn-mod mute-text btn-small animate">Bạn có muốn mua thêm <i class="fa fa-question-circle-o"></i></a></div>
+                 <div class="align-right mt-10"><a href="#" class="btn-mod btn-border btn-circle mute-text btn-small hvr-icon-float-away btn-ico-r">Bạn có muốn mua thêm</a></div>
                 </div>
                </div>
               </div>
@@ -296,46 +394,42 @@
             </div>
            </div>
           </div>
+
          </div>
         </div>
         <div class="pl-20">
          <h2 class="section-title align-left font-alt mb-0 mb-sm-40">
-          Hình thức thanh toán
-         </h2>
+        Hình thức thanh toán
+       </h2>
          <ul class="nav list-pt nav-tabs tpl-alt-tabs w-50per font-alt mt-10 pt-sm-0 pb-0 pb-sm-0 align-left">
           <li class="active">
-           <a href="#" data-toggle="tab"><div class="dis-tbl"><div class="tbl-cell"><img src="images/napas-logo.png" /><br>NAPAS<br>THẺ NỘI ĐỊA</div></div></a>
+           <a href="#" data-toggle="tab">
+            <div class="dis-tbl">
+             <div class="tbl-cell"><img src="images/napas-logo.png" /><br>NAPAS<br>THẺ NỘI ĐỊA</div>
+            </div>
+           </a>
           </li>
           <li>
-           <a href="#" data-toggle="tab"><div class="dis-tbl"><div class="tbl-cell"><img src="images/napas-logo.png" /><br>NAPAS<br>THẺ QUỐC TẾ</div></div></a>
+           <a href="#" data-toggle="tab">
+            <div class="dis-tbl">
+             <div class="tbl-cell"><img src="images/napas-logo.png" /><br>NAPAS<br>THẺ QUỐC TẾ</div>
+            </div>
+           </a>
           </li>
          </ul>
          <div class="align-center mt-0">
-          <a href="#" class="btn btn-mod btn-large btn-circle btn-border-w btn-color-dark"> Quay lại</a>
-          <a href="#" class="btn btn-mod btn-large btn-circle"> Tiếp tục</a>
+          <a href="#sectionPickPayment" id="btnPickPayment" class="btn btn-mod btn-large btn-circle"> Thanh toán</a>
          </div>
         </div>
-       </div>
-      </div>
-      <div class="col-md-10 col-md-offset-1 mt-40">
-       <div class="col-sm-6">
-        <div class="pr-20">
-         <div class="post-prev-text align-left font-alt mb-20 mb-sm-40">
-          Hỗ trợ thanh toán trực tuyến qua thẻ ATM với các ngân hàng nội địa và thẻ quốc tế
-         </div>
-         <img src="images/logo-bank.jpg" />
-        </div>
-       </div>
-       <div class="col-sm-6 relative">
         <div class="pl-20">
-         <ul class="clearlist widget-menu">
+         <ul class="clearlist widget-menu mt-10">
           <li>
            <div class="contact-item">
             <div class="ci-icon-no-bg">
              <i class="fa fa-folder-open main-color"></i>
             </div>
             <div class="ci-text font-alt">
-             <a href="#">Hướng dẫn thanh toán trực tuyến nội địa</a>
+             <a href="#" target="_blank">Hướng dẫn thanh toán trực tuyến nội địa</a>
             </div>
            </div>
           </li>
@@ -345,23 +439,146 @@
              <i class="fa fa-folder-open main-color"></i>
             </div>
             <div class="ci-text font-alt">
-             <a href="#">Hướng dẫn thanh toán cổng quốc tế</a>
+             <a href="#" target="_blank">Hướng dẫn thanh toán cổng quốc tế</a>
              <img src="images/visa-mastercard.png" />
             </div>
            </div>
           </li>
-          <li class="mt-10">
-           <div class="contact-item">
-            <div class="ci-icon-no-bg"></div>
-            <div class="ci-text font-alt">
-             Đối tác cổng thanh toán trực tuyến
-             <img src="images/napas-logo.png" />
-            </div>
-           </div>
-          </li>
          </ul>
         </div>
        </div>
+      </div>
+      <div class="col-md-10 col-md-offset-1 mt-40">
+       <div class="col-md-12 section-pick-payment" id="sectionPickPayment">
+        <p class="legend-title">Chọn loại thẻ để tiến hành thanh toán</p>
+        <!-- Nav tabs -->
+        <div class="box-pick-payment">
+         <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#napas-out" aria-controls="home" role="tab" data-toggle="tab">Napas Quốc Tế</a></li>
+          <li role="presentation"><a href="#napas-in" aria-controls="profile" role="tab" data-toggle="tab">Napas Nội Địa</a></li>
+         </ul>
+         <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="napas-out">
+           <div class="panel panel-default payment-sub">
+            <div class="panel-body">
+             <ul class="bank clearfix">
+              <li><a title="Vietcombank" alt="Vietcombank" href="#" class="li-bank" data-atm-id="1"><img src="images/logo-bank/123PVCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Sacombank" alt="Sacombank" href="#" class="li-bank" data-atm-id="2"><img src="images/logo-bank/123PSCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="ACB" alt="ACB" href="#" class="li-bank" data-atm-id="3"><img src="images/logo-bank/123PACB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Vietinbank" alt="Vietinbank" href="#" class="li-bank" data-atm-id="4"><img src="images/logo-bank/123PVTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="DongA Bank" alt="DongA Bank" href="#" class="li-bank" data-atm-id="5"><img src="images/logo-bank/123PDAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="VIB" alt="VIB" href="#" class="li-bank" data-atm-id="6"><img src="images/logo-bank/123PVIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="BIDV" alt="BIDV" href="#" class="li-bank" data-atm-id="7"><img src="images/logo-bank/123PBIDV.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="TPBank" alt="TPBank" href="#" class="li-bank" data-atm-id="8"><img src="images/logo-bank/123PTPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="VPBank" alt="VPBank" href="#" class="li-bank" data-atm-id="9"><img src="images/logo-bank/123PVPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Techcombank" alt="Techcombank" href="#" class="li-bank" data-atm-id="10"><img src="images/logo-bank/123PTCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Eximbank" alt="Eximbank" href="#" class="li-bank" data-atm-id="11"><img src="images/logo-bank/123PEIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Maritime Bank" alt="Maritime Bank" href="#" class="li-bank" data-atm-id="12"><img src="images/logo-bank/123PMRTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Agribank" alt="Agribank" href="#" class="li-bank" data-atm-id="13"><img src="images/logo-bank/123PAGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Quân Đội (MBBank)" alt="Quân Đội (MBBank)" href="#" class="li-bank" data-atm-id="14"><img src="images/logo-bank/123PMB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="SHB" alt="SHB" href="#" class="li-bank" data-atm-id="15"><img src="images/logo-bank/123PSHB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="SeABank" alt="SeABank" href="#" class="li-bank" data-atm-id="16"><img src="images/logo-bank/123PSEAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="HDBank" alt="HDBank" href="#" class="li-bank" data-atm-id="17"><img src="images/logo-bank/123PHDB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Việt Á" alt="Việt Á" href="#" class="li-bank" data-atm-id="18"><img src="images/logo-bank/123PVAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="OceanBank" alt="OceanBank" href="#" class="li-bank" data-atm-id="19"><img src="images/logo-bank/123POCEB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="OCB" alt="OCB" href="#" class="li-bank" data-atm-id="20"><img src="images/logo-bank/123POCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Bac A Bank" alt="Bac A Bank" href="#" class="li-bank" data-atm-id="21"><img src="images/logo-bank/123PBAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Nam A Bank" alt="Nam A Bank" href="#" class="li-bank" data-atm-id="22"><img src="images/logo-bank/123PNAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="NCB" alt="NCB" href="#" class="li-bank" data-atm-id="23"><img src="images/logo-bank/123PNVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="BaoVietBank" alt="BaoVietBank" href="#" class="li-bank" data-atm-id="24"><img src="images/logo-bank/123PBVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="LienVietPostBank" alt="LienVietPostBank" href="#" class="li-bank" data-atm-id="25"><img src="images/logo-bank/123PLPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="GPBank" alt="GPBank" href="#" class="li-bank" data-atm-id="26"><img src="images/logo-bank/123PGPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Saigonbank" alt="Saigonbank" href="#" class="li-bank" data-atm-id="27"><img src="images/logo-bank/123PSGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="ABBANK" alt="ABBANK" href="#" class="li-bank" data-atm-id="28"><img src="images/logo-bank/123PABB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="PG Bank" alt="PG Bank" href="#" class="li-bank" data-atm-id="31"><img src="images/logo-bank/123PPGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="napas-in">
+           <div class="panel panel-default payment-sub">
+            <div class="panel-body">
+             <ul class="bank clearfix">
+              <li><a title="TPBank" alt="TPBank" href="#" class="li-bank" data-atm-id="8"><img src="images/logo-bank/123PTPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="VPBank" alt="VPBank" href="#" class="li-bank" data-atm-id="9"><img src="images/logo-bank/123PVPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Techcombank" alt="Techcombank" href="#" class="li-bank" data-atm-id="10"><img src="images/logo-bank/123PTCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Eximbank" alt="Eximbank" href="#" class="li-bank" data-atm-id="11"><img src="images/logo-bank/123PEIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Maritime Bank" alt="Maritime Bank" href="#" class="li-bank" data-atm-id="12"><img src="images/logo-bank/123PMRTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Agribank" alt="Agribank" href="#" class="li-bank" data-atm-id="13"><img src="images/logo-bank/123PAGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Quân Đội (MBBank)" alt="Quân Đội (MBBank)" href="#" class="li-bank" data-atm-id="14"><img src="images/logo-bank/123PMB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Vietcombank" alt="Vietcombank" href="#" class="li-bank" data-atm-id="1"><img src="images/logo-bank/123PVCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Sacombank" alt="Sacombank" href="#" class="li-bank" data-atm-id="2"><img src="images/logo-bank/123PSCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="ACB" alt="ACB" href="#" class="li-bank" data-atm-id="3"><img src="images/logo-bank/123PACB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Vietinbank" alt="Vietinbank" href="#" class="li-bank" data-atm-id="4"><img src="images/logo-bank/123PVTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="DongA Bank" alt="DongA Bank" href="#" class="li-bank" data-atm-id="5"><img src="images/logo-bank/123PDAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="VIB" alt="VIB" href="#" class="li-bank" data-atm-id="6"><img src="images/logo-bank/123PVIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="BIDV" alt="BIDV" href="#" class="li-bank" data-atm-id="7"><img src="images/logo-bank/123PBIDV.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="SHB" alt="SHB" href="#" class="li-bank" data-atm-id="15"><img src="images/logo-bank/123PSHB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="SeABank" alt="SeABank" href="#" class="li-bank" data-atm-id="16"><img src="images/logo-bank/123PSEAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="HDBank" alt="HDBank" href="#" class="li-bank" data-atm-id="17"><img src="images/logo-bank/123PHDB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Việt Á" alt="Việt Á" href="#" class="li-bank" data-atm-id="18"><img src="images/logo-bank/123PVAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="OceanBank" alt="OceanBank" href="#" class="li-bank" data-atm-id="19"><img src="images/logo-bank/123POCEB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="OCB" alt="OCB" href="#" class="li-bank" data-atm-id="20"><img src="images/logo-bank/123POCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Bac A Bank" alt="Bac A Bank" href="#" class="li-bank" data-atm-id="21"><img src="images/logo-bank/123PBAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Nam A Bank" alt="Nam A Bank" href="#" class="li-bank" data-atm-id="22"><img src="images/logo-bank/123PNAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="NCB" alt="NCB" href="#" class="li-bank" data-atm-id="23"><img src="images/logo-bank/123PNVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="BaoVietBank" alt="BaoVietBank" href="#" class="li-bank" data-atm-id="24"><img src="images/logo-bank/123PBVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="LienVietPostBank" alt="LienVietPostBank" href="#" class="li-bank" data-atm-id="25"><img src="images/logo-bank/123PLPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="GPBank" alt="GPBank" href="#" class="li-bank" data-atm-id="26"><img src="images/logo-bank/123PGPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="Saigonbank" alt="Saigonbank" href="#" class="li-bank" data-atm-id="27"><img src="images/logo-bank/123PSGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="ABBANK" alt="ABBANK" href="#" class="li-bank" data-atm-id="28"><img src="images/logo-bank/123PABB.jpg?v=1" height="74" width="120" alt=""></a></li>
+              <li><a title="PG Bank" alt="PG Bank" href="#" class="li-bank" data-atm-id="31"><img src="images/logo-bank/123PPGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <!-- <div class="col-sm-6">
+     <div class="pr-20">
+     <div class="post-prev-text align-left font-alt mb-20 mb-sm-40">
+     Hỗ trợ thanh toán trực tuyến qua thẻ ATM với các ngân hàng nội địa và thẻ quốc tế
+    </div>
+    <img src="images/logo-bank.jpg" />
+   </div>
+  </div>
+  <div class="col-sm-6 relative">
+  <div class="pl-20">
+  <ul class="clearlist widget-menu">
+  <li>
+  <div class="contact-item">
+  <div class="ci-icon-no-bg">
+  <i class="fa fa-folder-open main-color"></i>
+ </div>
+ <div class="ci-text font-alt">
+ <a href="#">Hướng dẫn thanh toán trực tuyến nội địa</a>
+</div>
+</div>
+</li>
+<li>
+<div class="contact-item">
+<div class="ci-icon-no-bg">
+<i class="fa fa-folder-open main-color"></i>
+</div>
+<div class="ci-text font-alt">
+<a href="#">Hướng dẫn thanh toán cổng quốc tế</a>
+<img src="images/visa-mastercard.png" />
+</div>
+</div>
+</li>
+<li class="mt-10">
+<div class="contact-item">
+<div class="ci-icon-no-bg"></div>
+<div class="ci-text font-alt">
+Đối tác cổng thanh toán trực tuyến
+<img src="images/napas-logo.png" />
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div> -->
       </div>
      </div>
     </div>
@@ -370,7 +587,7 @@
   <!-- End Portfolio Section -->
 
   <!-- Divider -->
-  <hr class="mt-0 mb-0"/>
+  <hr class="mt-0 mb-0" />
   <!-- End Divider -->
 
   <!-- Contact Section -->
@@ -485,7 +702,7 @@
          </li>
         </ul>
        </div>
-       <hr class="divider-dot pt-10 pb-10" />
+       <hr class="divider-dot pt-10 pb-10" >
        <div class="footer-social-links align-left mb-10 mb-xs-60">
         <span>Theo dõi chúng tôi tại</span>
         <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -560,113 +777,86 @@
            </tr>
           </thead>
           <tbody>
-
            <tr class="cart_item">
-
             <td class="food-thumbnail hidden-xs" width="56">
              <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
             </td>
-
             <td class="food-name" data-title="Product">
              <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
             </td>
-
             <td class="food-price" data-title="Price">
              <span>100.000 VND</span>
             </td>
-
             <td class="food-quantity" data-title="Quantity">
              <div class="quantity">
               <span>1</span>
              </div>
             </td>
-
            </tr>
            <tr class="cart_item">
-
             <td class="food-thumbnail hidden-xs" width="56">
              <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
             </td>
-
             <td class="food-name" data-title="Product">
              <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
             </td>
-
             <td class="food-price" data-title="Price">
              <span>100.000 VND</span>
             </td>
-
             <td class="food-quantity" data-title="Quantity">
              <div class="quantity">
               <span>1</span>
              </div>
             </td>
-
            </tr>
            <tr class="cart_item">
-
             <td class="food-thumbnail hidden-xs" width="56">
              <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
             </td>
-
             <td class="food-name" data-title="Product">
              <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
             </td>
-
             <td class="food-price" data-title="Price">
              <span>100.000 VND</span>
             </td>
-
             <td class="food-quantity" data-title="Quantity">
              <div class="quantity">
               <span>1</span>
              </div>
             </td>
-
            </tr>
            <tr class="cart_item">
-
             <td class="food-thumbnail hidden-xs" width="56">
              <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
             </td>
-
             <td class="food-name" data-title="Product">
              <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
             </td>
-
             <td class="food-price" data-title="Price">
              <span>100.000 VND</span>
             </td>
-
             <td class="food-quantity" data-title="Quantity">
              <div class="quantity">
               <span>1</span>
              </div>
             </td>
-
            </tr>
            <tr class="cart_item">
-
             <td class="food-thumbnail hidden-xs" width="56">
              <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
             </td>
-
             <td class="food-name" data-title="Product">
              <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
             </td>
-
             <td class="food-price" data-title="Price">
              <span>100.000 VND</span>
             </td>
-
             <td class="food-quantity" data-title="Quantity">
              <div class="quantity">
               <span>1</span>
              </div>
             </td>
-
            </tr>
-
           </tbody>
          </table>
         </div>
@@ -676,11 +866,8 @@
     </div>
    </div>
   </div>
-
  </div>
  <!-- End Page Wrap -->
-
-
  <!-- JS -->
  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -699,9 +886,9 @@
  <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
  <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
  <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
- **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+**** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
- <script type="text/javascript" src="js/gmap3.min.js"></script> -->
+<script type="text/javascript" src="js/gmap3.min.js"></script> -->
  <script type="text/javascript" src="js/wow.min.js"></script>
  <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
  <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
@@ -713,5 +900,24 @@
  <script type="text/javascript" src="js/rev-slider.js"></script>
  <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
+ <script type="text/javascript">
+  $("#addNewAddress").click(function() {
+   $("#boxPickOtherAddress").hide("slow", function() {});
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#cancelNewAddress").click(function() {
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#pickOtherAddress").click(function() {
+   $("#boxAddNewAddress").hide("slow", function() {});
+   $("#boxPickOtherAddress").slideToggle("slow", function() {});
+  });
+  $("#cancelPickAddress").click(function() {
+   $("#boxPickOtherAddress").slideToggle("slow", function() {});
+  });
+  $("#btnPickPayment").click(function() {
+   $("#sectionPickPayment").slideToggle("slow", function() {});
+  });
+ </script>
 </body>
 </html>

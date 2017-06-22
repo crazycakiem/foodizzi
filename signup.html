@@ -127,7 +127,7 @@
             </ul>
            </div>
            <!-- End Nav Tabs -->
-           <hr class="divider-dot pt-10 pb-10" />
+           <hr class="divider-dot pt-10 pb-10">
            <div class="selected-item">
             <div class="tags">
              <span class="title" ="">Đã chọn: </span>
@@ -142,7 +142,7 @@
              <a href="">Ăn trưa</a>
              <a href="">Ăn tối</a>
             </div>
-            <hr class="divider-dot pt-0 pb-10" />
+            <hr class="divider-dot pt-0 pb-10">
            </div>
            <!-- Tab panes -->
            <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
@@ -957,7 +957,7 @@
          </div>
         </div>
         <div class="body-box clearfix">
-         <div class="font-thin pt-10 mb-10 align-center">
+         <div class="font-thin pt-0 mb-10 align-center">
           <span>Tạo tài khoản nhanh qua <a class="fb-color font-medium" href="#">Facebook</a> hay <a class="gg-color font-medium" href="#">Google</a></span>
          </div>
          <div class="align-center mt-0">
@@ -971,17 +971,46 @@
             </div>
             <div class="login-wrap pb-0 align-left input-us-info">
              <div class="fiz-container w100per mb-10">
-              <input type="text" id="" class="border-main-color form-control input-lg input-circle align-left" placeholder="Họ và tên của bạn">
+              <div class="form-group has-success has-feedback">
+               <input type="text" name="name" class="border-main-color form-control input-lg input-circle align-left txt-capital" id="first-name" placeholder="Họ tên của bạn" required="required">
+               <span class="fa fa-check form-control-feedback" aria-hidden="true"></span>
+              </div>
              </div>
              <div class="fiz-container w100per mb-10">
-              <input type="text" id="" class="border-main-color form-control input-lg input-circle align-left invalid" placeholder="Email của bạn">
-              <div class="show-error">Email không được bỏ trống</div>
+              <div class="form-group has-error has-feedback">
+               <input type="email" name="email" class="border-main-color form-control input-lg input-circle align-left" id="email" placeholder="Email" required="required">
+               <span class="fa fa-remove form-control-feedback" aria-hidden="true"></span>
+               <span class="help-block">Email đã tồn tại.</span>
+              </div>
+             </div>
+             <div class="fiz-container w100per mb-10 box-verify-phone">
+              <div class="form-group">
+               <input type="text" name="phone" class="border-main-color form-control input-lg input-circle align-left" id="phone" placeholder="Số điện thoại" required="required">
+              </div>
+              <div class="verify-phone" style="display:block;">
+               <a class="btn btn-mod btn-medium btn-circle" >Xác minh SMS</a>
+              </div>
+              <div class="phone-number-verify-widget" style="display:block;">
+               <p class="fiz-verification-error font-thin" style="display:block;">Rất tiếc, chúng tôi không thể gửi mã xác minh đến số này. Hãy đảm bảo bạn nhập đúng số điện thoại di động.</p>
+               <p class="fiz-verification-error font-thin" style="display:block;">Vui lòng nhập mã xác minh.</p>
+               <div class="fiz-verification-step2 font-thin">
+                <p class="message">Chúng tôi đã gửi mã xác minh đến <strong>+84 90 4995187</strong>.</p>
+                <div class="fiz-verify-container">
+                 <label for="phone_number_verification">Nhập mã có 4 chữ số:</label>
+                 <input type="text" pattern="[0-9]*" class="phone-number-verification" id="phone_number_verification">
+                </div>
+                <div class="fiz-verify-container">
+                 <a href="#" class="btn btn-mod btn-medium btn-circle">Xác nhận</a>
+                 <a href="#">Hủy</a>
+                </div>
+                <p class="cancel-message">Nếu không thấy tin nhắn đến, hãy nhấp vào hủy và thử xác minh lại nhé.</p>
+               </div>
+              </div>
              </div>
              <div class="fiz-container w100per mb-10">
-              <input type="text" id="" class="border-main-color form-control input-lg input-circle align-left" placeholder="Số điện thoại của bạn">
-             </div>
-             <div class="fiz-container w100per mb-10">
-              <input type="password" id="" class="border-main-color form-control input-lg input-circle align-left" placeholder="Nhập mật khẩu">
+              <div class="form-group">
+               <input type="password" name="password" class="border-main-color form-control input-lg input-circle align-left" id="password" placeholder="Nhập mật khẩu" required="required">
+              </div>
              </div>
              <div class="fiz-container w100per mb-10">
               <div class="fiz-container w50per left"><input type="text" id="" class="border-main-color form-control input-lg input-circle align-left" placeholder="Nhập mã bảo mật"></div>
@@ -1140,7 +1169,7 @@
          </li>
         </ul>
        </div>
-       <hr class="divider-dot pt-10 pb-10" />
+       <hr class="divider-dot pt-10 pb-10" >
        <div class="footer-social-links align-left mb-10 mb-xs-60">
         <span>Theo dõi chúng tôi tại</span>
         <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -1230,6 +1259,5 @@
  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
  <script type="text/javascript" src="js/rev-slider.js"></script>
  <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-
 </body>
 </html>

@@ -594,10 +594,10 @@ function initPageSliders(){
         // Fullwidth slider
         $(".fullwidth-slider-edeal").owlCarousel({
             slideSpeed: 350,
-            autoPlay: false,
+            autoPlay: 3000,
             singleItem: true,
             autoHeight: true,
-            navigation: false,
+            navigation: true,
             navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
         });
 

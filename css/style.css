@@ -9743,7 +9743,7 @@ a.addon-main-style-r:hover {
 .alert-box .body-box .txt-w-ico-l i.result-code {
  left: -10px;
 }
-.section-pick-payment{display: none;}
+.section-pick-payment{display: block;}
 .section-pick-payment .legend-title{
     display: inline-block;
     background-color: #FFF;

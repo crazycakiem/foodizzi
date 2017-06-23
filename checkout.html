@@ -397,10 +397,10 @@
 
          </div>
         </div>
-        <div class="pl-20">
+        <!-- <div class="pl-20">
          <h2 class="section-title align-left font-alt mb-0 mb-sm-40">
-        Hình thức thanh toán
-       </h2>
+          Hình thức thanh toán
+         </h2>
          <ul class="nav list-pt nav-tabs tpl-alt-tabs w-50per font-alt mt-10 pt-sm-0 pb-0 pb-sm-0 align-left">
           <li class="active">
            <a href="#" data-toggle="tab">
@@ -420,8 +420,8 @@
          <div class="align-center mt-0">
           <a href="#sectionPickPayment" id="btnPickPayment" class="btn btn-mod btn-large btn-circle"> Thanh toán</a>
          </div>
-        </div>
-        <div class="pl-20">
+        </div> -->
+        <!-- <div class="pl-20">
          <ul class="clearlist widget-menu mt-10">
           <li>
            <div class="contact-item">
@@ -445,7 +445,7 @@
            </div>
           </li>
          </ul>
-        </div>
+        </div> -->
        </div>
       </div>
       <div class="col-md-10 col-md-offset-1 mt-40">
@@ -454,8 +454,9 @@
         <!-- Nav tabs -->
         <div class="box-pick-payment">
          <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#napas-out" aria-controls="home" role="tab" data-toggle="tab">Napas Quốc Tế</a></li>
-          <li role="presentation"><a href="#napas-in" aria-controls="profile" role="tab" data-toggle="tab">Napas Nội Địa</a></li>
+          <li role="presentation" class="active"><a href="#napas-out" aria-controls="napas-out" role="tab" data-toggle="tab">Thẻ Quốc Tế</a></li>
+          <li role="presentation"><a href="#napas-in" aria-controls="napas-in" role="tab" data-toggle="tab">Thẻ Nội Địa</a></li>
+          <li role="presentation"><a href="#cod" aria-controls="cod" role="tab" data-toggle="tab">Thanh toán COD</a></li>
          </ul>
          <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="napas-out">
@@ -532,53 +533,14 @@
             </div>
            </div>
           </div>
+          <div role="tabpanel" class="tab-pane" id="cod">
+          </div>
+         </div>
+         <div class="align-center mt-0">
+          <a href="#" id="" class="btn btn-mod btn-large btn-circle"> Thanh toán</a>
          </div>
         </div>
        </div>
-       <!-- <div class="col-sm-6">
-     <div class="pr-20">
-     <div class="post-prev-text align-left font-alt mb-20 mb-sm-40">
-     Hỗ trợ thanh toán trực tuyến qua thẻ ATM với các ngân hàng nội địa và thẻ quốc tế
-    </div>
-    <img src="images/logo-bank.jpg" />
-   </div>
-  </div>
-  <div class="col-sm-6 relative">
-  <div class="pl-20">
-  <ul class="clearlist widget-menu">
-  <li>
-  <div class="contact-item">
-  <div class="ci-icon-no-bg">
-  <i class="fa fa-folder-open main-color"></i>
- </div>
- <div class="ci-text font-alt">
- <a href="#">Hướng dẫn thanh toán trực tuyến nội địa</a>
-</div>
-</div>
-</li>
-<li>
-<div class="contact-item">
-<div class="ci-icon-no-bg">
-<i class="fa fa-folder-open main-color"></i>
-</div>
-<div class="ci-text font-alt">
-<a href="#">Hướng dẫn thanh toán cổng quốc tế</a>
-<img src="images/visa-mastercard.png" />
-</div>
-</div>
-</li>
-<li class="mt-10">
-<div class="contact-item">
-<div class="ci-icon-no-bg"></div>
-<div class="ci-text font-alt">
-Đối tác cổng thanh toán trực tuyến
-<img src="images/napas-logo.png" />
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div> -->
       </div>
      </div>
     </div>
@@ -914,9 +876,6 @@
   });
   $("#cancelPickAddress").click(function() {
    $("#boxPickOtherAddress").slideToggle("slow", function() {});
-  });
-  $("#btnPickPayment").click(function() {
-   $("#sectionPickPayment").slideToggle("slow", function() {});
   });
  </script>
 </body>

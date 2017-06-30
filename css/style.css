@@ -10730,8 +10730,16 @@ text-align: center;
  text-align: left;
  padding: 15px;
  color: #484848;
+ display: none;
 }
-.phone-number-verify-widget .fiz-verification-error {
+.add-address-widget .box-add-new-address,
+.add-address-widget .box-pick-address{
+ border: none;
+ background-color: transparent;
+ padding: 0;
+}
+.phone-number-verify-widget .fiz-verification-error,
+.fiz-verification-error {
  display: none;
  color: #f00;
  line-height: 1.5 !important;
@@ -10859,6 +10867,13 @@ text-align: center;
  padding-top: 10px;
  font-family: 'iCielGotham-Thin';
  font-weight: 600;
+}
+.panel-acc-info .input-us-info .radio.main-style label{
+ padding-top:0;
+}
+.panel-acc-info .input-us-info .main-style.radio input[type="radio"]+.radio-label:before,
+.panel-acc-info .input-us-info .main-style.radio input[type="checkbox"]+.checkbox-label:before{
+top:5px;
 }
 .panel-acc-info .input-us-info input.form-control, .panel-acc-info .input-us-info select {
  font-family: 'iCielGotham-Thin';
@@ -10994,4 +11009,131 @@ height: 40px;
   padding: 3px 5px;
   text-transform: initial;
  }
+}
+.fiz-profile-pic-container{
+ display: inline-block;
+position: relative;
+}
+.fiz-picture-main{
+margin-bottom: 15px;
+}
+.media-photo {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    background-color: #bbb;
+}
+.media-round{
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ border-radius: 50%;
+ border: 2px solid #fff;
+}
+.profile-pic-background {
+    position: absolute;
+    top: 0;
+    left: auto;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+        box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+}
+.fiz-profile-pic-container .media-round {
+    border-width: 0;
+}
+.overlay-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    line-height: 12px;
+    background: rgba(0,0,0,.7);
+    padding-top: 3px;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.picture-tile-delete {
+    display: none;
+}
+.fiz-profile-pic-container:hover .picture-tile-delete,
+.picture-tile:hover .picture-tile-delete{
+ display: block;
+}
+.overlay-btn i {
+    color: #fff;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.button-file-upload {
+  display: inline-block;
+  overflow: hidden;
+}
+.button-file-upload::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.button-file-upload input[type="file"] {
+  left: -1000px;
+  position: fixed;
+}
+.button-file-upload .fake-upload-button {
+ float: left;
+   margin-right: 12px;
+   /* background-color: rgba(0,0,0,.1); */
+   border-radius: 3px;
+   color: #555;
+   cursor: pointer;
+   display: inline-block;
+   font-size: 14px;
+   line-height: 3;
+   overflow: hidden;
+   padding: 0 30px;
+   position: relative;
+   text-align: center;
+   vertical-align: middle;
+   border: 2px solid #aaa;
+   -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+
+}
+.button-file-upload .fake-upload-button:hover {
+ background-color: #f4f4f4
+}
+.list-avt-pic{
+ padding-left: 0;
+list-style: none;
+    margin-bottom: 0;
+}
+.picture-tile {
+    margin-right: 12.5px;
+    position: relative;
+    cursor: move;
+    margin-bottom: 10px;
+        box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+}
+.picture-tile img{
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.picture-tile.active img,
+.picture-tile:hover img{
+ -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }

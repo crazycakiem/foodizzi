@@ -96,6 +96,7 @@ Section Text:       15px/1.7 "Roboto", arial, sans-serif;
 
 body.modal-open {
  padding-right: 0 !important;
+ /*position: fixed;*/
 }
 
 
@@ -8355,7 +8356,15 @@ hr.div-decor.bg-white:after {
  -moz-osx-font-smoothing: grayscale;
  z-index: 9;
 }
-
+@media only screen and (max-width: 480px){
+ .select-list:after{
+  background-color: transparent;
+  color:#777;
+ }
+ .form-filter .form-group select{
+  font-size: 12px;
+ }
+}
 h2.section-title .input-circle.form-group {
  margin: 0 5px;
 }
@@ -8653,8 +8662,17 @@ a.btn-ex-link {
  }
 }
 @media (max-width: 440px) {
+ .modal-open .modal {
+     overflow-x: hidden;
+     overflow-y: auto;
+     padding-right: 0 !important;
+     border: none;
+ }
  .modal-dialog {
   margin:0;
+ }
+ .main-modal .modal-content{
+  border: none;
  }
 }
 
@@ -9659,7 +9677,9 @@ a.addon-main-style-r:hover {
  margin-top: 3px;
  font-size: 1em;
 }
-
+@media only screen and (max-width: 480px){
+ .show-total-p.tt-inpost h4{font-size:.8em;}
+}
 .icon-block {
  font-family: 'iCielGotham-Medium';
 }
@@ -10887,6 +10907,11 @@ top:5px;
  display: inline-block;
  vertical-align: bottom;
  color: #484848;
+}
+@media only screen and (max-width: 410px){
+ .panel-acc-info .input-us-info .col-md-9 .select-list:last-child{
+  margin-top:7px;
+  }
 }
 .panel-acc-info .input-us-info .select-list:after {
  top: 10px;

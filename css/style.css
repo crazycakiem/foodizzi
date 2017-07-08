@@ -1,5 +1,4 @@
-@charset "utf-8"@charset "utf-8";
-
+@charset "utf-8";
 /*------------------------------------------------------------------
 [Master Stylesheet]
 
@@ -10164,7 +10163,7 @@ div.with-badge.izzi-d:after {
 }
 
 div.with-badge.izzi-d.end-deal:after {
- content: 'HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾T \a HÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂºÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â N';
+ content: "HẾT \a HẠN";
  color: #FFF;
 }
 
@@ -10738,6 +10737,10 @@ text-align: center;
  background-color: transparent;
  padding: 0;
 }
+.add-address-widget .box-add-new-address .main-style.radio input[type="radio"]:checked+.radio-label:after,
+.add-address-widget .box-add-new-address .main-style.radio input[type="checkbox"]:checked+.checkbox-label:after{
+    top: 6px;
+}
 .phone-number-verify-widget .fiz-verification-error,
 .fiz-verification-error {
  display: none;
@@ -10751,7 +10754,7 @@ text-align: center;
 }
 .phone-number-verify-widget .fiz-verification-step2 p strong {
  font-family: 'iCielGotham-Medium';
- font-weight: 500;
+ font-weight: 600;
 }
 .phone-number-verify-widget .fiz-verification-step2 label {
  margin: 10px 10px 0 0 !important;
@@ -11136,4 +11139,12 @@ list-style: none;
 .picture-tile:hover img{
  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
+}
+.show-izzipoint{
+ margin: 0;
+ line-height: 42px;
+}
+.show-izzipoint strong{
+ font-family: 'iCielGotham-Medium';
+font-weight: 600;
 }

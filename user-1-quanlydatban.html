@@ -31,6 +31,7 @@
  <!-- Page Loader -->
  <div class="page-loader">
   <div class="loader">Loading...</div>
+   <div id="loading-text">Đang tải dữ liệu</div>
  </div>
  <!-- End Page Loader -->
 
@@ -1006,7 +1007,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type1"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> Đang xử lý</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1014,7 +1015,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type2"><i class="fa fa-motorcycle"></i> Đang giao hàng</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1022,7 +1023,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type3"><i class="fa fa-check-circle"></i> Hoàn thành</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1030,7 +1031,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type1"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> Đang xử lý</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
           </tbody>
          </table>
@@ -1067,7 +1068,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type1"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> Đang xử lý</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1075,7 +1076,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type2"><i class="fa fa-motorcycle"></i> Đang giao hàng</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1083,7 +1084,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type3"><i class="fa fa-check-circle"></i> Hoàn thành</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
            <tr>
             <th scope="row">MX3545465</th>
@@ -1091,7 +1092,7 @@
             <td>Số 2A Đại Cồ Việt, Hai Bà Trưng, Hà Nội</td>
             <td>500,000 VNĐ</td>
             <td><span class="item-type1"><i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> Đang xử lý</span></td>
-            <td><a href="#">Chức năng</a></td>
+            <td><a href="#" data-toggle="modal" data-target="#showDetail">Chi tiết</a></td>
            </tr>
           </tbody>
          </table>
@@ -1293,7 +1294,81 @@
 
  </div>
  <!-- End Page Wrap -->
-
+ <div class="modal main-modal fade" id="showDetail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+     <h4 class="font-alt modal-title align-center" id="myModalLabel">Chi tiết đơn hàng</h4>
+    </div>
+    <div class="modal-body">
+     <p class="res-name"><img width="50" height="50" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""> <a href="#">Nhà hàng Thủy</a></p>
+     <hr class="divider-dot pt-10 pb-10" >
+     <h5 class="font-alt uppercase title-style2">Thông tin đơn hàng</h5>
+     <div class="panel-order-info">
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Mã đặt chỗ</label>
+       <div class="col-md-9">
+        <p><span class="order-code"><strong>54776X098BJ</strong></span></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Thời gian đặt</label>
+       <div class="col-md-9">
+        <p><strong>18h00  -  04/07/2017</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Số lượng</label>
+       <div class="col-md-9">
+        <p><strong>02</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Trạng thái</label>
+       <div class="col-md-9">
+        <p><strong>Đang xử lý</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Tích điểm</label>
+       <div class="col-md-9">
+        <p><span class="order-point"><strong>+5 điểm</strong></span></p>
+       </div>
+      </div>
+     </div>
+     <hr class="divider-dot pt-10 pb-10" >
+     <h5 class="font-alt uppercase title-style2">Thông tin người nhận bàn</h5>
+     <div class="panel-order-info">
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Họ và tên</label>
+       <div class="col-md-9">
+        <p><strong>Trần Minh Quang</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Số điện thoại</label>
+       <div class="col-md-9">
+        <p><strong>0123 456 789</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Email</label>
+       <div class="col-md-9">
+        <p><strong>crazycakiem@gmail.com</strong></p>
+       </div>
+      </div>
+      <div class="row row-condensed">
+       <label class="col-md-3 align-left">Ghi chú</label>
+       <div class="col-md-9">
+        <p><strong>Ngồi gần cửa sổ Ngồi gần cửa sổ Ngồi gần cửa sổ Ngồi gần cửa sổ</strong></p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 
  <!-- JS -->
  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>

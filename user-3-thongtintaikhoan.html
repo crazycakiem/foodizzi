@@ -1046,9 +1046,21 @@
            <div class="col-md-9">
             <div class="phone-numbers-container has-phone-numbers">
              <div class="hide-w-verify">
+              <!-- Remove  -->
+              <em>*** Trường hợp chưa nhập số phone</em>
+              <!-- End Remove  -->
               <div class="no-phone-numbers" style="display: block;">
                <p>Bạn chưa cung cấp số điện thoại</p>
               </div>
+              <a class="add link-icon" href="#" style="display: block;">
+               <i class="fa fa-plus"></i>
+               <span class="link-icon__text">
+                Thêm số điện thoại
+               </span>
+              </a>
+              <!-- Remove  -->
+              <em>*** Trường hợp số đã xác minh xác minh</em>
+              <!-- End Remove  -->
               <table class="phone-numbers-table" cellspacing="0" cellpadding="0" style="display:table;">
                <tbody>
                 <tr class="verified">
@@ -1067,14 +1079,21 @@
                   </a>
                  </td>
                 </tr>
+               </tbody>
+              </table>
+              <!-- Remove  -->
+              <em>*** Trường hợp nhập phone khi đăng ký nhưng chưa xác minh</em>
+              <!-- End Remove  -->
+              <table class="phone-numbers-table" cellspacing="0" cellpadding="0" style="display:table;">
+               <tbody>
                 <tr class="verified">
                  <th class="edit-profile-confirmable-field__label">
                   +84 904995 ***
                  </th>
                  <td>
                   <span class="verified">
-                   <i class="fa fa-check"></i>
-                   Đã xác minh
+                   <i class="fa fa-exclamation"></i>
+                   Chưa xác minh
                   </span>
                  </td>
                  <td class="remove-container" align="center">
@@ -1086,11 +1105,14 @@
                </tbody>
               </table>
               <a class="add link-icon" href="#" style="display: block;">
-               <i class="fa fa-plus"></i>
+               <i class="fa fa-arrow-circle-o-right"></i>
                <span class="link-icon__text">
-                Thêm số điện thoại
+                Xác minh số điện thoại
                </span>
               </a>
+              <!-- Remove  -->
+              <em>*** Các frame khi tiến hành thêm số điện thoại/ xác minh số điện thoại(Nếu đã nhập số phone khi đăng ký như trường hợp 3 thì tự fill số vào ô bên dưới)</em>
+              <!-- End Remove  -->
               <div class="phone-number-verify-widget" style="display:block;">
                <div class="fiz-verification-step2 font-thin">
                 <p class="message">Chúng tôi sẽ gửi tin nhắn SMS chứa mã xác minh gồm 4 chứ số đến số điện thoại của bạn.</p>

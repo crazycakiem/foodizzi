@@ -315,7 +315,16 @@ select.input-lg {
   width: 100%
  }
 }
-
+#loading-modal{
+ width: 100%;
+ height: 100%;
+ position: fixed;
+ top: 0;
+ left: 0;
+ background: rgba(0, 0, 0, .7);
+ z-index: 100000;
+ display: none;
+}
 .page-loader {
  display: block;
  width: 100%;
@@ -10125,7 +10134,8 @@ div.with-badge.izzi-d.end-deal:before {
  text-align: left;
  padding: 15px;
  color: #484848;
- display: none
+ display: none;
+ width: 100%;
 }
 .add-address-widget .box-add-new-address, .add-address-widget .box-pick-address {
  border: 0;

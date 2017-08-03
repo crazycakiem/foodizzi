@@ -10743,3 +10743,167 @@ div.with-badge.izzi-d.end-deal:before {
  height: 100px;
  background-position: -288px 0
 }
+/*update izzipage*/
+.item-wrapper{margin-bottom: 15px;}
+ .item-wrapper .main-title{
+  overflow: hidden;
+  padding-top: 7px;
+  height: 3.3em;
+  margin-bottom: 0;
+  line-height: 1.4em;
+ }
+ .item-wrapper .main-title a{
+  font-size: 1em;
+  line-height: 10px;
+ }
+ .item-wrapper .post-prev-text {
+ padding-left: 0px;
+ padding-right: 0px;
+ margin-bottom: 5px;
+ font-size: .95em;
+}
+.item-wrapper .post-prev-text i {
+ width: 16px;
+ text-align: center;
+}
+.item-wrapper .item-img {
+ position: relative;
+overflow: hidden;
+width: 100%;
+height: 0;
+padding-top: 56.25%;
+background-size: cover;
+background-position: center center;
+}
+.item-wrapper .item-img .tag-item-tl{
+ position: absolute;
+ top: 7px;
+ left: 7px;
+}
+.item-wrapper .item-img .tag-item-tr{
+ position: absolute;
+ top: 7px;
+ right: 7px;
+}
+.item-wrapper .item-img .tag-info-bl {
+ background-color: rgba(0, 0, 0, .9);
+    color: #FFF;
+    display: inline-block;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    z-index: 2;
+    opacity: .9;
+    border-radius: 3px;
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.item-wrapper .item-img .tag-info-bl strong {
+ color: #fcee17;
+}
+.item-wrapper .countdown-timer {
+ position: absolute;
+ bottom: 7px;
+ right: 7px;
+ color: #FFF;
+ display: inline-block;
+ background-color: rgba(0, 0, 0, .7);
+ z-index: 2;
+ border-radius: 4px;
+ opacity: 1;
+ padding: 5px 10px;
+ -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+@media only screen and (max-width:360px){
+.item-wrapper .countdown-timer,
+.item-wrapper .tag-info-bl{
+ font-size: 10px;
+}
+}
+.price-discount {
+ position: absolute;
+ left: 7px;
+ top: 7px;
+ width: 50px;
+ height: 50px;
+ background-color: #fcee17;
+ border-radius: 100px;
+ text-align: center;
+ line-height: 14px;
+ font-size: .9em;
+ padding-top: 12px;
+ z-index: 2;
+}
+.item-info .item-price {
+ margin-top: 0px;
+ padding-left: 0;
+ padding-bottom: 0;
+ padding-right: 10px;
+ padding-top: 0px;
+}
+.item-info .item-price .price {
+ color: #ed1c24;
+ font-size: 21px;
+ font-weight: 700;
+ white-space: nowrap;
+ font-family: Helvetica, Arial, sans-serif;
+}
+.item-info .item-price .price.old-price {
+ color: #aaaaaa;
+ font-size: 16px;
+ font-weight: 400;
+ margin-left: 5px;
+ padding-left: 10px;
+ border-left: 1px solid #ddd;
+}
+.item-info .item-price .price .price-symbol {
+ vertical-align: super;
+ font-size: 80%;
+}
+.item-info .item-price .price.old-price .price-value {
+ text-decoration: line-through;
+}
+.item-info .item-price .discount-tag{
+ background-color: #fcee17;
+padding: 4px 7px;
+margin-left: 5px;
+border-radius: 3px;
+}
+.item-wrapper .post-prev-text span.block {
+    width: 100%;
+    display: block;
+}
+.truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-wrapper hr.divider-dot{padding-top:15px;}
+.item-wrapper .post-prev-text{position: relative;}
+.item-wrapper .truncate.t-res a{color: #555;}
+.item-wrapper .truncate.t-res:hover{
+ overflow: visible;
+ top: 0;
+ white-space: normal;
+ width: auto !important;
+ position: absolute;
+ background-color:#FFF;
+ padding: 5px;
+ border-radius: 3px;
+ box-shadow: 0px 2px 8px rgba(0,0,0,.3);
+ margin-top: 0 !important;
+ transition: all .2s ease;
+}
+.item-wrapper .t-res:hover+span{
+ margin-top: 19px;
+}

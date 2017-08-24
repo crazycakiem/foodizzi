@@ -1110,6 +1110,8 @@
       </div>
      </div>
     </div>
+
+    <div class="align-center"><a href="#" data-toggle="modal" data-target="#showPopup"><span class="btn btn-mod btn-medium btn-circle">Show Popup</span></a></div>
    </div>
   </section>
   <!-- End Portfolio Section -->
@@ -1230,7 +1232,7 @@
          </li>
         </ul>
        </div>
-       <hr class="divider-dot pt-10 pb-10" />
+       <hr class="divider-dot pt-10 pb-10" />
        <div class="footer-social-links align-left mb-10 mb-xs-60">
         <span>Theo dõi chúng tôi tại</span>
         <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -1287,7 +1289,58 @@
 
  </div>
  <!-- End Page Wrap -->
-
+ <div class="modal main-modal fade" id="showPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-header">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+     <h4 class="font-alt modal-title align-center" id="myModalLabel">Thông báo</h4>
+    </div>
+    <div class="modal-body">
+     <!-- Info Message -->
+     <div class="reser-inside">
+      <div class="head-box style2 align-center">
+       <div class="post-prev-text align-center font-alt">
+        <strong class="uppercase">Chào mừng bạn gia nhập FoodIzzi.com</strong>
+        <hr class="divider-dot pt-10 pb-10">
+       </div>
+      </div>
+      <div class="body-box clearfix">
+       <div class="font-thin pt-10 mb-10 align-center">
+        <span>Để cập nhật tài khoản bạn vui lòng nhập mật khẩu vào 2 ô phía dưới, chú ý mật khẩu giới hạn từ 6-12 ký tự.</span>
+       </div>
+       <div class="align-center mt-0">
+        <div class="row">
+         <div class="col-md-12 mt-0">
+          <div class="alert error">
+           <i class="fa fa-lg fa-times-circle"></i> Mật khẩu không trùng nhau, vui lòng kiểm tra lại.
+          </div>
+          <div class="login-wrap pb-0 align-left input-us-info">
+           <div class="fiz-container w100per mb-10">
+            <label>Email đăng ký</label>
+            <input type="text" id="" disabled class="border-main-color form-control input-lg input-circle align-left" value="crazycakiem@gmail.com">
+           </div>
+           <div class="fiz-container w100per mb-10">
+            <label>Mật khẩu</label>
+            <input type="password" id="" class="border-main-color form-control input-lg input-circle align-left invalid" placeholder="Nhập mật khẩu">
+            <div class="show-error">Không được bỏ trống</div>
+           </div>
+           <div class="fiz-container w100per mb-10">
+            <input type="password" id="" class="border-main-color form-control input-lg input-circle align-left" placeholder="Nhập lại mật khẩu">
+           </div>
+           <div class="fiz-container w100per mb-10 pt-10">
+            <a href="#" class="btn btn-mod btn-large btn-full btn-circle" data-dismiss="modal"> Cập nhật mật khẩu</a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
 
  <!-- JS -->
  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>

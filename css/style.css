@@ -10972,6 +10972,9 @@ position: relative;
  position: relative;
  z-index: 2;
 }
+.smart-s-t .item-wrapper,.smart-s-b .item-wrapper{
+ min-height: 105px;
+}
 .smart-s-t .txt-lbl, .smart-s-b .txt-lbl{
  color: #888888;
  font-size: 16px;
@@ -11005,6 +11008,7 @@ width: 40%;
  display: block;
 position: relative;
 padding-left: 18px;
+max-height: 40px;
 }
 .info-right-sm .sm-info span.block i{
  position: absolute;

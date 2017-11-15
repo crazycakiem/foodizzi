@@ -415,6 +415,7 @@ body {
  color: #111;
  font-size: 14px;
  font-family: 'Montserrat', Arial, Sans-Serif;
+ font-weight: normal;
  line-height: 1.6;
  -webkit-font-smoothing: antialiased;
  padding-right: 0!important
@@ -516,12 +517,12 @@ hr.black {
 .font-alt {
  font-family: 'Montserrat', Arial, Sans-Serif;
  letter-spacing: 0;
- font-weight: 500
+ font-weight: bold
 }
 
 .font-medium {
  font-family: 'Montserrat', Arial, Sans-Serif;
- font-weight: 500
+ font-weight: normal
 }
 
 .font-alt.font-thin, .font-thin {
@@ -3280,7 +3281,7 @@ hr.black {
 .section-title {
  margin-bottom: 15px;
  font-size: 1.7em;
- font-weight: 500;
+ font-weight: bold;
  text-transform: uppercase;
  text-align: center;
  letter-spacing: 0;
@@ -5833,7 +5834,7 @@ hr.div-decor.bg-white:after {
  padding-left: 5px;
  font-family: 'Montserrat', Arial, Sans-Serif;
  color: #333;
- font-weight: 500;
+ font-weight: bold;
  letter-spacing: 0;
  font-size: 1em
 }
@@ -6970,7 +6971,7 @@ a.addon-main-style-r:hover {
  -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
  font-size: 14px;
- font-weight: 400;
+ font-weight: normal;
  font-family: 'Montserrat', Arial, Sans-Serif
 }
 
@@ -7203,7 +7204,8 @@ a.addon-main-style-r:hover {
 }
 
 .icon-block {
- font-family: 'Montserrat', Arial, Sans-Serif
+ font-family: 'Montserrat', Arial, Sans-Serif;
+ font-weight: normal;
 }
 
 .icon-block .icon {
@@ -8034,7 +8036,7 @@ div.with-badge.izzi-d:after {
 }
 .phone-number-verify-widget .fiz-verification-step2 p strong {
  font-family: 'Montserrat', Arial, Sans-Serif;
- font-weight: 500
+ font-weight: bold;
 }
 .phone-number-verify-widget .fiz-verification-step2 label {
  margin: 10px 10px 0 0!important;
@@ -8584,7 +8586,8 @@ footer, .bg-premium {
  border-bottom: 1px solid #f0f0f0
 }
 .font-montserrat {
- font-family: 'Montserrat', Arial, Sans-Serif
+ font-family: 'Montserrat', Arial, Sans-Serif;
+ font-weight:normal;
 }
 .font-playfair {
  font-family: 'Playfair Display', Arial, serif
@@ -8656,7 +8659,7 @@ ul.main-menu li {
 }
 ul.main-menu li a {
  font-family: 'Montserrat', Arial, Sans-Serif;
- font-weight: 100;
+ font-weight: 300;
  padding: 10px;
  text-transform: uppercase;
  color: #363d44;
@@ -8685,7 +8688,7 @@ ul.main-menu li a:hover {
 }
 ul.top-links li a {
  font-family: 'Montserrat', Arial, Sans-Serif;
- font-weight: 100
+ font-weight: 300
 }
 ul.top-links li.active a {
  color: #8a6421

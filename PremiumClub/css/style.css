@@ -414,7 +414,7 @@ select.input-lg {
 body {
  color: #111;
  font-size: 14px;
- font-family: 'Montserrat';
+ font-family: 'Montserrat', Arial, Sans-Serif;
  line-height: 1.6;
  -webkit-font-smoothing: antialiased;
  padding-right: 0!important
@@ -514,13 +514,13 @@ hr.black {
 }
 
 .font-alt {
- font-family: 'Montserrat';
+ font-family: 'Montserrat', Arial, Sans-Serif;
  letter-spacing: 0;
  font-weight: 500
 }
 
 .font-medium {
- font-family: 'Montserrat';
+ font-family: 'Montserrat', Arial, Sans-Serif;
  font-weight: 500
 }
 
@@ -731,7 +731,7 @@ hr.black {
 }
 
 .btn {
- font-family: 'Montserrat', Sans-Serif
+ font-family: 'Montserrat', Arial, Sans-Serif
 }
 
 .btn-mod.btn-ico-r, .btn-mod.btn-medium.btn-ico-r, .btn-mod.btn-small.btn-ico-r, .btn-mod.btn-large.btn-ico-r {
@@ -3285,7 +3285,7 @@ hr.black {
  text-align: center;
  letter-spacing: 0;
  line-height: 1.4;
- font-family: 'Montserrat'
+ font-family: 'Montserrat', Arial, Sans-Serif
 }
 
 .section-title.second-section-title {
@@ -5831,7 +5831,7 @@ hr.div-decor.bg-white:after {
 
 .form-filter .form-group label {
  padding-left: 5px;
- font-family: 'Montserrat';
+ font-family: 'Montserrat', Arial, Sans-Serif;
  color: #333;
  font-weight: 500;
  letter-spacing: 0;
@@ -6971,7 +6971,7 @@ a.addon-main-style-r:hover {
  transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
  font-size: 14px;
  font-weight: 400;
- font-family: 'Montserrat'
+ font-family: 'Montserrat', Arial, Sans-Serif
 }
 
 .small-item-carousel2 .owl-item a:hover {
@@ -7203,7 +7203,7 @@ a.addon-main-style-r:hover {
 }
 
 .icon-block {
- font-family: 'Montserrat'
+ font-family: 'Montserrat', Arial, Sans-Serif
 }
 
 .icon-block .icon {
@@ -8033,7 +8033,7 @@ div.with-badge.izzi-d:after {
  line-height: 20px
 }
 .phone-number-verify-widget .fiz-verification-step2 p strong {
- font-family: 'Montserrat';
+ font-family: 'Montserrat', Arial, Sans-Serif;
  font-weight: 500
 }
 .phone-number-verify-widget .fiz-verification-step2 label {
@@ -8584,10 +8584,10 @@ footer, .bg-premium {
  border-bottom: 1px solid #f0f0f0
 }
 .font-montserrat {
- font-family: 'Montserrat', sans-serif
+ font-family: 'Montserrat', Arial, Sans-Serif
 }
 .font-playfair {
- font-family: 'Playfair Display', serif
+ font-family: 'Playfair Display', Arial, serif
 }
 .img-club img {
  width: 100%;
@@ -8655,7 +8655,7 @@ ul.main-menu li {
  display: inline-block
 }
 ul.main-menu li a {
- font-family: 'Montserrat', Sans-Serif;
+ font-family: 'Montserrat', Arial, Sans-Serif;
  font-weight: 100;
  padding: 10px;
  text-transform: uppercase;
@@ -8684,7 +8684,7 @@ ul.main-menu li a:hover {
  color: #8a6421
 }
 ul.top-links li a {
- font-family: 'Montserrat', Sans-Serif;
+ font-family: 'Montserrat', Arial, Sans-Serif;
  font-weight: 100
 }
 ul.top-links li.active a {

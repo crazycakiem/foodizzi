@@ -19,18 +19,18 @@
         max-width: 540px;
     }
     .hs-line-1 {
-        letter-spacing: 40px;
+        letter-spacing: 0;
     }
     .hs-line-2{
         font-size: 68px;
     }
     .hs-line-12{
         font-size: 70px;
-        letter-spacing: 0.3em;
+        letter-spacing: 0;
     }
     .hs-line-13 {
         font-size: 78px;
-        letter-spacing: 0.195em;
+        letter-spacing: 0;
     }
 
     .alt-service-grid {
@@ -61,7 +61,7 @@
 
     .tpl-alt-tabs{
         font-size: 13px;
-        letter-spacing: 0.2em;
+        letter-spacing: 0;
     }
     .tpl-alt-tabs > li{
         width: 170px;
@@ -86,7 +86,7 @@
     }
 
     .hs-line-1 {
-        letter-spacing: 30px;
+        letter-spacing: 0;
     }
     .hs-line-2{
         font-size: 60px;
@@ -97,7 +97,7 @@
     }
     .hs-line-10 {
         padding: 10px 14px;
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
     .hs-line-10 > span {
         margin: 0 1px;
@@ -142,10 +142,10 @@
 @media only screen and (max-width: 992px) {
 
     .hs-line-1 {
-        letter-spacing: 23px;
+        letter-spacing: 0;
     }
     .hs-line-13 {
-        letter-spacing: 0.17em;
+        letter-spacing: 0;
     }
 
     .mod-breadcrumbs:not(.align-center):not(.mod-breadcrumbs-mini){
@@ -348,7 +348,7 @@
     }
     .hs-line-5{
         font-size: 44px;
-        letter-spacing: 0.28em;
+        letter-spacing: 0;
     }
     .hs-line-6{
         font-size: 16px;
@@ -363,7 +363,7 @@
     .hs-line-10 {
         padding: 5px 8px;
         font-size: 11px;
-        letter-spacing: 1px;
+        letter-spacing: 0;
     }
     .hs-line-10 > span {
         margin: 0;
@@ -378,11 +378,11 @@
     }
     .hs-line-13{
         font-size: 60px;
-        letter-spacing: 0.1em;
+        letter-spacing: 0;
     }
     .hs-line-14{
         font-size: 24px;
-        letter-spacing: 0.3em;
+        letter-spacing: 0;
     }
     .hs-line-15{
         font-size: 32px;
@@ -412,7 +412,7 @@
 
     .wide-heading {
         font-size: 32px;
-        letter-spacing: 2px;
+        letter-spacing: 0;
     }
 
     .works-filter a{

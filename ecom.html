@@ -874,21 +874,7 @@
          </div>
          <!-- column  -->
          <div class="col-lg-12 m-t-20">
-          <nav class="">
-           <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-             <a class="page-link" href="#" tabindex="-1">Trước</a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
-            <li class="page-item ">
-             <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-             <a class="page-link" href="#">Tiếp</a>
-            </li>
-           </ul>
-          </nav>
+          <div class="justify-content-center text-center"><a class="btn btn-rounded btn-primary">Xem thêm</a></div>
          </div>
         </div>
        </div>
@@ -1075,17 +1061,24 @@
    <!-- End Top Link -->
   </footer>
   <!-- End Foter -->
-  <!-- Start Shop Cart -->
-  <div id="boxShowCart" class="cart-box box-overlay-cart hide">
-   <div class="container">
-    <a class="close-popup" onclick="showCart()"><i class="fa fa-times"></i></a>
-    <div class="top-cart">
-     <h4 class="title-box">Giỏ hàng của bạn <span>(3 sản phẩm)</span></h4>
-    </div>
-    <div class="middle-cart">
-     <div class="list-item">
-      <div class="blank-item">
-       <span>Không có sản phẩm trong giỏ hàng</span>
+
+ </div>
+ <!-- End Page Wrap -->
+ <!-- Start Shop Cart -->
+ <div id="boxShowCart" class="cart-box box-overlay-cart">
+  <a class="close-popup" onclick="showCart()"><i class="fa fa-times"></i></a>
+  <div class="container">
+   <div class="top-cart">
+    <h4 class="title-box">Giỏ hàng của bạn <span>(13 sản phẩm)</span></h4>
+   </div>
+   <div class="middle-cart">
+    <div class="list-item">
+     <div class="blank-item">
+      <span>Không có sản phẩm trong giỏ hàng</span>
+     </div>
+     <div class="cart-sec">
+      <div class="d-flex head-cart-sec">
+       <span>Giỏ hàng 1</span>
       </div>
       <div class="item-in-cart">
        <div class="thumb-img">
@@ -1153,58 +1146,212 @@
         </div>
        </div>
       </div>
+      <div class="d-flex bot-cart-sec">
+       <span>Tổng: 120.000VND</span>
+       <span class="ml-auto"><a href="#" class="btn btn-primary btn-rounded"> Thoanh toán</a></span>
+      </div>
      </div>
-    </div>
-    <div class="bot-cart">
-     <ul class="list-style-primary">
-      <li><span>Miễn phí giao hàng nội thành cho đơn hàng trên 300,000đ và ngoại thành cho đơn hàng trên 500,000đ </span></li>
-      <li><span>Giảm 5% cho các đơn hàng giao chiều đối với rau củ và trái cây</span></li>
-     </ul>
-     <a href="#" class="d-flex btn btn-primary btn-rounded">
-      <span>Thanh toán ngay</span>
-      <span class="ml-auto">120.000đ</span>
-     </a>
-    </div>
-   </div>
-  </div>
-  <!-- End Shop Cart -->
-  <div class="modal main-modal fade modal-quickview" id="showQuickview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-   <div class="modal-dialog" role="document">
-    <div class="modal-content">
-     <div class="modal-body">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
-      <div class="relative">
-       <div class="info-product clearfix">
-        <div class="col-lg-6 align-left thumb-img">
-         <div class="slot-img">
-          <img src="images/ecomerce/product-1-1.jpg" width="120">
-         </div>
-        </div>
-        <div class="col-lg-6 list-right align-left col-info-pro">
-         <div class="card">
-          <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
-          <h6 class="subtitle">500g - Còn <strong>23</strong> sản phẩm</h6>
-          <div class="price-box">
-           <p class="old-price">
-            <del class="text-muted line-through">123.000đ</del>
-           </p>
-           <p class="special-price">
-            <span class="text-primary">30.000đ</span>
-           </p>
-          </div>
-          <div class="add-to-cart-qty">
-           <div class="d-flex">
-            <div class="quantity">
-             <input type="number" min="1" max="99" step="1" value="1">
-            </div>
-            <div class="btn btn-primary btn-rounded">Cho vào giỏ</div>
+     <div class="cart-sec">
+      <div class="d-flex head-cart-sec">
+       <span>Giỏ hàng 2</span>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/1.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
            </div>
           </div>
-          <div class="sharebox"><img src="images/ecomerce/social_link.png" alt=""></div>
-          <div class="details-description">
-           <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
-           </p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/2.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
+           </div>
           </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/3.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="d-flex bot-cart-sec">
+       <span>Tổng: 120.000VND</span>
+       <span class="ml-auto"><a href="#" class="btn btn-primary btn-rounded"> Thoanh toán</a></span>
+      </div>
+     </div>
+     <div class="cart-sec">
+      <div class="d-flex head-cart-sec">
+       <span>Giỏ hàng 3</span>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/1.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/2.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="item-in-cart">
+       <div class="thumb-img">
+        <a href="#" class="del-item"><i class="fa fa-times"></i></a>
+        <img src="images/ecomerce/3.jpg">
+       </div>
+       <div class="sm-info">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g | <span class="text-primary">30.000đ</span></h6>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="subtotal">
+            <span><strong>90.000đ</strong></span>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="d-flex bot-cart-sec">
+       <span>Tổng: 120.000VND</span>
+       <span class="ml-auto"><a href="#" class="btn btn-primary btn-rounded"> Thoanh toán</a></span>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="bot-cart">
+    <ul class="list-style-primary">
+     <li><span>Miễn phí giao hàng nội thành cho đơn hàng trên 300,000đ và ngoại thành cho đơn hàng trên 500,000đ </span></li>
+     <li><span>Giảm 5% cho các đơn hàng giao chiều đối với rau củ và trái cây</span></li>
+    </ul>
+    <a href="#" class="d-flex btn btn-primary btn-rounded">
+     <span>Thanh toán ngay</span>
+     <span class="ml-auto">120.000đ</span>
+    </a>
+   </div>
+  </div>
+ </div>
+ <!-- End Shop Cart -->
+ <div class="modal main-modal fade modal-quickview" id="showQuickview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content">
+    <div class="modal-body">
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+     <div class="relative">
+      <div class="info-product clearfix">
+       <div class="col-lg-6 align-left thumb-img">
+        <div class="slot-img">
+         <img src="images/ecomerce/product-1-1.jpg" width="120">
+        </div>
+       </div>
+       <div class="col-lg-6 list-right align-left col-info-pro">
+        <div class="card">
+         <h6 class="title"><a href="#" class="link">Cà chua bi </a></h6>
+         <h6 class="subtitle">500g - Còn <strong>23</strong> sản phẩm</h6>
+         <div class="price-box">
+          <p class="old-price">
+           <del class="text-muted line-through">123.000đ</del>
+          </p>
+          <p class="special-price">
+           <span class="text-primary">30.000đ</span>
+          </p>
+         </div>
+         <div class="add-to-cart-qty">
+          <div class="d-flex">
+           <div class="quantity">
+            <input type="number" min="1" max="99" step="1" value="1">
+           </div>
+           <div class="btn btn-primary btn-rounded">Cho vào giỏ</div>
+          </div>
+         </div>
+         <div class="sharebox"><img src="images/ecomerce/social_link.png" alt=""></div>
+         <div class="details-description">
+          <p>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lorem nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean eleifend laoreet congue. Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer enim purus, posuere at ultricies eu, placerat a felis. Suspendisse aliquet urna pretium eros convallis interdum. Quisque in arcu id dui vulputate mollis eget non arcu. Aenean et nulla purus. Mauris vel tellus non nunc mattis lobortis.
+          </p>
          </div>
         </div>
        </div>
@@ -1213,11 +1360,7 @@
     </div>
    </div>
   </div>
-
  </div>
- <!-- End Page Wrap -->
-
-
  <!-- JS -->
  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -1283,18 +1426,25 @@
    spinner.find("input").trigger("change");
   });
  });
+
  function showCart() {
    var myCartClasses = document.getElementById("boxShowCart").classList;
+   var myPageClasses = document.getElementById("top");
+   var overlay = document.querySelector("body");
+   var overlayHtml = document.querySelector("html");
+   overlay.classList.toggle('fixBg');
+   overlayHtml.classList.toggle('full-height');
+   myPageClasses.classList.toggle('full-height');
 
-   if (myCartClasses.contains("show")) {
-     myCartClasses.remove("show");
+   if (myCartClasses.contains("show-cart")) {
+     myCartClasses.remove("show-cart");
    } else {
-     myCartClasses.add("show");
+     myCartClasses.add("show-cart");
    }
-   if (myCartClasses.contains("hide")) {
-     myCartClasses.remove("hide");
+   if (myCartClasses.contains("hide-cart")) {
+     myCartClasses.remove("hide-cart");
    } else {
-     myCartClasses.add("hide");
+     myCartClasses.add("hide-cart");
    }
  }
  </script>

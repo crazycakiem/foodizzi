@@ -1325,7 +1325,38 @@
       <div class="info-product clearfix">
        <div class="col-lg-6 align-left thumb-img">
         <div class="slot-img">
-         <img src="images/ecomerce/product-1-1.jpg" width="120">
+         <div class="slot-img-full">
+          <div class="tab-content tabcontent-border">
+           <div class="tab-pane active" id="pic-01" role="tabpanel" aria-expanded="true">
+            <div class="product-img">
+             <img src="images/ecomerce/product-1-1.jpg" width="120">
+            </div>
+           </div>
+           <div class="tab-pane" id="pic-02" role="tabpanel" aria-expanded="false">
+            <div class="product-img">
+             <img src="images/ecomerce/product-2-1.jpg" width="120">
+            </div>
+           </div>
+           <div class="tab-pane" id="pic-03" role="tabpanel" aria-expanded="false">
+            <div class="product-img">
+             <img src="images/ecomerce/product-3-1.jpg" width="120">
+            </div>
+           </div>
+           <div class="tab-pane" id="pic-04" role="tabpanel" aria-expanded="false">
+            <div class="product-img">
+             <img src="images/ecomerce/product-4-1.jpg" width="120">
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="list-thumb-img">
+          <ul class="nav nav-tabs" role="tablist">
+           <li class="nav-item active"> <a class="nav-link" data-toggle="tab" href="#pic-01" role="tab" aria-expanded="true"><img src="images/ecomerce/product-1-1.jpg" width="120"></a> </li>
+           <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#pic-02" role="tab" aria-expanded="false"><img src="images/ecomerce/product-2-1.jpg" width="120"></a> </li>
+           <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#pic-03" role="tab" aria-expanded="false"><img src="images/ecomerce/product-3-1.jpg" width="120"></a> </li>
+           <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#pic-04" role="tab" aria-expanded="false"><img src="images/ecomerce/product-4-1.jpg" width="120"></a> </li>
+          </ul>
+         </div>
         </div>
        </div>
        <div class="col-lg-6 list-right align-left col-info-pro">
@@ -1339,6 +1370,15 @@
           <p class="special-price">
            <span class="text-primary">30.000đ</span>
           </p>
+         </div>
+         <p class="lbl-exep">Lựa chọn loại rượu:</p>
+         <div class="list-exep">
+          <ul>
+           <li class="active"><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tên loại rượu 1"><img src="images/ecomerce/product-5-1.jpg" width="120"></a></li>
+           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tên loại rượu 2"><img src="images/ecomerce/product-6-1.jpg" width="120"></a></li>
+           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tên loại rượu 3"><img src="images/ecomerce/product-7-1.jpg" width="120"></a></li>
+           <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tên loại rượu 4"><img src="images/ecomerce/product-8-1.jpg" width="120"></a></li>
+          </ul>
          </div>
          <div class="add-to-cart-qty">
           <div class="d-flex">
@@ -1428,24 +1468,24 @@
  });
 
  function showCart() {
-   var myCartClasses = document.getElementById("boxShowCart").classList;
-   var myPageClasses = document.getElementById("top");
-   var overlay = document.querySelector("body");
-   var overlayHtml = document.querySelector("html");
-   overlay.classList.toggle('fixBg');
-   overlayHtml.classList.toggle('full-height');
-   myPageClasses.classList.toggle('full-height');
+  var myCartClasses = document.getElementById("boxShowCart").classList;
+  var myPageClasses = document.getElementById("top");
+  var overlay = document.querySelector("body");
+  var overlayHtml = document.querySelector("html");
+  overlay.classList.toggle('fixBg');
+  overlayHtml.classList.toggle('full-height');
+  myPageClasses.classList.toggle('full-height');
 
-   if (myCartClasses.contains("show-cart")) {
-     myCartClasses.remove("show-cart");
-   } else {
-     myCartClasses.add("show-cart");
-   }
-   if (myCartClasses.contains("hide-cart")) {
-     myCartClasses.remove("hide-cart");
-   } else {
-     myCartClasses.add("hide-cart");
-   }
+  if (myCartClasses.contains("show-cart")) {
+   myCartClasses.remove("show-cart");
+  } else {
+   myCartClasses.add("show-cart");
+  }
+  if (myCartClasses.contains("hide-cart")) {
+   myCartClasses.remove("hide-cart");
+  } else {
+   myCartClasses.add("hide-cart");
+  }
  }
  </script>
 </body>

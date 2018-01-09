@@ -567,16 +567,9 @@
               <a data-toggle="modal" data-target="#showQuickview"><i class="fa fa-search-plus"></i> Xem nhanh</a>
              </div>
             </div>
-            <div class="btn btn-rounded btn-primary">
-             <div class="d-flex">
-              <div>
-               <div class="quantity">
-                <input type="number" min="1" max="99" step="1" value="1">
-               </div>
-              </div>
-              <div class="ml-auto"><a class="mini-addcart"><i class="fa fa-cart-plus"></i></a></div>
-             </div>
-            </div>
+            <a href="javascript:void(0)" class="btn btn-rounded btn-primary quickview bg-3">
+             <i class="fa fa-cart-plus"></i> Thêm vào giỏ
+            </a>
            </div>
            <div class="card">
             <img src="images/ecomerce/10.jpg" alt="" class="img-fluid" />
@@ -898,6 +891,7 @@
   <!-- End List Product Page panel -->
   <!-- Start Shopping Cart panel -->
   <div class="shopping-cart">
+   <div class="badge num-item"><span>10</span></div>
    <a id="btnShowCart" class="btn-show-cart" onclick="showCart()"><span>Xem giỏ hàng</span><i class="fa fa-shopping-cart"></i></a>
   </div>
   <!-- End Shopping Cart panel -->
@@ -1308,9 +1302,10 @@
      <li><span>Miễn phí giao hàng nội thành cho đơn hàng trên 300,000đ và ngoại thành cho đơn hàng trên 500,000đ </span></li>
      <li><span>Giảm 5% cho các đơn hàng giao chiều đối với rau củ và trái cây</span></li>
     </ul>
-    <a href="#" class="d-flex btn btn-primary btn-rounded">
-     <span>Thanh toán ngay</span>
-     <span class="ml-auto">120.000đ</span>
+   </div>
+   <div class="fl-btn-update">
+    <a href="#" class="text-center btn btn-primary btn-rounded">
+     <span><i class="fa fa-refresh"></i> Cập nhật giỏ hàng</span>
     </a>
    </div>
   </div>
@@ -1487,6 +1482,21 @@
    myCartClasses.add("hide-cart");
   }
  }
+ $(document).ready(function(){
+  $(".bg-3").click(function(){
+    if($(this).hasClass("in-cart")){
+      $(this).removeClass("in-cart").text(" Thêm vào giỏ").prepend( '<i class="fa fa-cart-plus"></i>' );
+    }
+    else {
+      var btn = $(this);
+      btn.addClass("anim").text("Đang thêm...");
+
+      setTimeout(function(){
+        btn.removeClass("anim").addClass("in-cart").text(" Đã thêm").prepend( '<i class="fa fa-times"></i>' );
+      }, 2000)
+    }
+  });
+});
  </script>
 </body>
 

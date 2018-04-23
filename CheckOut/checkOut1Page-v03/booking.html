@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Check Out</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta charset="utf-8">
+ <meta name="author" content="">
+ <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+ <!-- Favicons -->
+ <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.min.css">
+ <link rel="stylesheet" href="css/style-responsive.css">
+ <link rel="stylesheet" href="css/animate.min.css">
+ <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+ <link rel="stylesheet" href="css/hover-min.css">
+ <link rel="stylesheet" href="css/calendar.css">
+ <!-- Date picker plugins css -->
+ <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+ <script defer src="fontawesome/fontawesome-all.js"></script>
+ <!-- Add file to change main color -->
+ <link rel="stylesheet" href="css/ynest-color.css">
+
+</head>
+
+<body class="appear-animate">
+
+ <div id="loading-modal">
+  <div class="loader">Loading...</div>
+  <div id="loading-text">Đang tải dữ liệu</div>
+ </div>
+ <div class="page" id="top">
+  <div class="container clearfix">
+   <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+     <nav class="main-nav">
+      <div class="relative clearfix top-head">
+       <div class="nav-logo-wrap logo-w-sub local-scroll col-md-8 col-sm-8">
+        <a href="index.html" class="logo">
+         <img src="images/logo.png" alt="" />
+        </a>
+        <div class="header-text sub-logo hidden-xs">
+         <div id="steps">
+          <div class="step step-1"><i class="far fa-calendar-plus"></i> <span>Schedule Online</span></div>
+          <!-- <div class="step step-2"><i class="fab fa-wpforms"></i> <span>Thanh toán</span></div>
+          <div class="step step-3 next"><i class="far fa-check-circle"></i> <span>Xác nhận</span></div> -->
+         </div>
+        </div>
+       </div>
+       <div class="inner-nav col-md-4 col-sm-4">
+        <ul class="clearlist">
+         <!-- Search -->
+         <!-- <li>
+         <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn">Đăng ký</span></a>
+        </li> -->
+         <!-- End Search -->
+
+         <!-- Cart -->
+         <li>
+          <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showLoginForm"><span class="btn">Đăng nhập</span></a>
+         </li>
+         <!-- End Cart -->
+
+        </ul>
+       </div>
+      </div>
+     </nav>
+    </div>
+   </div>
+  </div>
+  <section class="page-section pb-40 pt-20 fiz-container-checkout" id="">
+   <div class="relative">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+       <div class="col-sm-8 relative col-dot">
+        <div class="pr-20">
+         <h2 class="section-title align-left font-alt mb-10 mb-sm-0">
+         Thông tin giao hàng
+        </h2>
+         <div class="calendar" id="calendar-app">
+          <div class="calendar--view" id="calendar-view">
+           <div class="cview__month">
+            <span class="cview__month-last" id="calendar-month-last">Apr</span>
+            <span class="cview__month-current" id="calendar-month">May</span>
+            <span class="cview__month-next" id="calendar-month-next">Jun</span>
+           </div>
+           <div class="cview__header">Sun</div>
+           <div class="cview__header">Mon</div>
+           <div class="cview__header">Tue</div>
+           <div class="cview__header">Wed</div>
+           <div class="cview__header">Thu</div>
+           <div class="cview__header">Fri</div>
+           <div class="cview__header">Sat</div>
+           <div class="calendar--view" id="dates">
+           </div>
+          </div>
+          <div class="footer-calendar">
+           <span><span id="footer-date" class="footer__link btn btn-mod btn-medium btn-circle">Hôm nay</span></span>
+          </div>
+          <div class="calendar--day-view" id="day-view">
+           <!-- <span class="day-view-date" id="day-view-date">MAY 29 2016</span> -->
+           <div class="day-view-content">
+            <ul class="calendar-page__times-of-day">
+             <li class="calendar-page__slots">
+              <div class="time-slots-list__title">Sáng</div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop time-slots-list__slot--selected">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+             </li>
+             <li class="calendar-page__slots">
+              <div class="time-slots-list__title">Chiều</div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+              <div class="time-slots-list__slot time-slots-list__slot-desktop">
+               <div class="time-slots-list__highlight"><span role="button">10:00 am</span></div>
+              </div>
+             </li>
+             <li class="calendar-page__slots">
+              <div class="time-slots-list__title">Tối</div>
+              <div class="time-slots-list__empty-message">No Available Hours</div>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+         <!-- Start - Show with login user -->
+         <!-- End - Show with not login user -->
+        </div>
+       </div>
+       <div class="col-sm-4">
+        <!-- <div class="pl-20">
+       <div class="widget mt-10 mb-10 box-show-serv box-bill-info">
+       <div>
+       <h5 class="widget-title font-alt align-center mb-0 pb-0">Hoá đơn</h5>
+       <hr class="divider-dot pt-10 pb-10">
+       <div>
+       <div class="widget-text clearfix">
+       <div class="align-center mt-0">
+       <div class="form-filter">
+       <div>
+       <div class="mb-10 mb-md-10 align-left input-us-info">
+       <label>
+       Số lượng hàng mua: 15 <a href="invoice.html" target="_blank" class="btn-mod btn btn-small btn-dark btn-circle">Xem hoá đơn chi tiết</a>
+      </label>
+      <div class="align-left form-control input-md input-circle">
+      <span>Tổng tiền:  </span>
+      <span class="right"><strong>10.000.000 VND</strong> </span>
+     </div>
+    </div>
+    <div class="mb-10 mb-md-10">
+    <div class="align-left">
+    <span>Tổng tạm tính:  </span>
+    <span class="right">100.000.000 VND </span>
+   </div>
+   <div class="align-left">
+   <span>Khuyến mãi và giảm giá:  </span>
+   <span class="right">100.000 VND </span>
+  </div>
+  <div class="align-left">
+  <span>Điểm quy đổi: </span><span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span>
+  <span class="right">100.000 VND </span>
+ </div>
+ <div class="align-left">
+ <span>Phí vận chuyển:  </span>
+ <span class="right">100.000 VND </span>
+</div>
+</div>
+<div class="total-row">
+<div class="align-left">
+<span><strong>Tổng:</strong>  </span>
+<span class="right"><strong>100.000.000 VND</strong> </span>
+</div>
+</div>
+<div class="mb-10 mb-md-10">
+<div class="align-left">
+<span>Bạn tiết kiệm được </span><span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span>
+<span class="right">100.000 VND </span>
+</div>
+<div class="align-left">
+<span>Số điểm tích luỹ:  </span>
+<span class="right">100 FIP </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div> -->
+        <div class="pl-20">
+         <div class="widget mt-10 mb-10 box-show-pay-type no-shadow address-item">
+          <h4 class="align-left font-alt mb-20 mb-sm-20 uppercase">
+   Phòng họp lớn
+  </h4>
+
+          <div class="w-notice two-col clearfix mb-10">
+           <div class="sub-col" style="width:40%">
+            <div class="select-list relative ip-main-style mb-0">
+             <select class="input-md form-control" id="ncc">
+       <option value="1">1 giờ</option>
+       <option value="2">2 giờ</option>
+       <option value="3">3 giờ</option>
+       <option value="4">4 giờ</option>
+      </select>
+            </div>
+           </div>
+           <div class="sub-col text-muted small" style="width:60%">
+            <span>30$/giờ</span>
+           </div>
+          </div>
+          <hr>
+          <div class="show-date"><span class="day-view-date" id="day-view-date"></span></div>
+
+          <br>
+          <div class="align-center mt-0">
+           <a href="#" id="" class="btn btn-mod btn-large btn-circle"> Thanh toán</a>
+          </div>
+          <br>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Divider -->
+  <hr class="mt-0 mb-0" />
+  <!-- End Divider -->
+
+  <!-- Foter -->
+  <footer class="page-section bg-gray-lighter footer pt-30 pb-30">
+   <div class="container">
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+
+     <!-- Copyright -->
+     <div class="footer-copy font-alt">
+      <a href="#" target="_blank">&copy; 2017 Foodizzi Media | Made in Vietnam</a>.
+     </div>
+     <!-- End Copyright -->
+
+     <div class="footer-made">
+      <a href="#">Điều khoản dịch vụ</a>
+     </div>
+
+    </div>
+    <!-- End Footer Text -->
+
+   </div>
+
+
+   <!-- Top Link -->
+   <div class="local-scroll toTopButton">
+    <a href="#top" class="link-to-top"></a>
+   </div>
+   <!-- End Top Link -->
+
+  </footer>
+  <!-- End Foter -->
+
+  <div class="modal main-modal fade" id="showReser-st5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+      <h4 class="font-alt modal-title align-center" id="myModalLabel">Danh sách các món ăn bạn đã đặt</h4>
+     </div>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-sm-12">
+        <div class="box-reser-inside">
+         <table class="table food-cart" cellspacing="0">
+          <thead>
+           <tr>
+            <th class="food-thumbnail hidden-xs" width="56">&nbsp;</th>
+            <th class="food-name">Tên món</th>
+            <th class="food-price">Giá </th>
+            <th class="food-quantity">Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="modal main-modal fade" id="showListAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+   <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+      <h4 class="font-alt modal-title align-center" id="myModalLabel1">Danh sách địa chỉ đã gửi</h4>
+     </div>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-sm-12">
+        <div class="box-reser-inside">
+         <div class="search-wrap align-left input-us-info address-item mb-10">
+          <span href="#" class="badge-default btn-edit-address">Mặc định</span>
+          <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+          <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+          <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+          <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+          <div class="align-left mt-10">
+           <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+          </div>
+         </div>
+         <div class="search-wrap align-left input-us-info address-item mb-10">
+          <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+          <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+          <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+          <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+          <div class="align-left mt-10">
+           <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+           <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Xóa</a>
+          </div>
+         </div>
+         <div class="search-wrap align-left input-us-info address-item mb-10">
+          <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+          <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+          <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+          <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+          <div class="align-left mt-10">
+           <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+           <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Xóa</a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- End Page Wrap -->
+ <!-- JS -->
+ <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+ <!-- <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> -->
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/all.js"></script>
+ <!-- Date Picker Plugin JavaScript -->
+ <script src="js/bootstrap-datepicker.min.js"></script>
+ <script src="js/calendar.js"></script>
+ <script>
+  // Date Picker
+  jQuery('.mydatepicker, #datepicker').datepicker({
+   todayHighlight: true,
+   startDate: '1d'
+  });
+ </script>
+
+ <script type="text/javascript">
+  $("#addNewAddress").click(function() {
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#editUserAddress").click(function() {
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#cancelNewAddress").click(function() {
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#showInfo").click(function() {
+   $("#boxInfoUser").slideToggle("slow", function() {});
+  });
+  $("#showInfoBill").click(function() {
+   $("#boxInfoBill").slideToggle("slow", function() {});
+  });
+
+  // var today = new Date();
+  // var dd = today.getDate();
+  // var mm = today.getMonth()+1; //January is 0!
+  // var yyyy = today.getFullYear();
+  // if(dd<10){
+  //  dd='0'+dd
+  // }
+  // if(mm<10){
+  //  mm='0'+mm
+  // }
+  // today = dd+'/'+mm+'/'+yyyy;
+  // document.getElementById("deliveryDate").value = ("min", today);
+ </script>
+</body>
+
+</html>

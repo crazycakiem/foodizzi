@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Foodizzi</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta charset="utf-8">
+ <meta name="author" content="">
+ <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+ <!-- Favicons -->
+ <link rel="shortcut icon" href="images/favicon.png">
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/style-responsive.css">
+ <link rel="stylesheet" href="css/animate.min.css">
+ <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/magnific-popup.css">
+ <link rel="stylesheet" href="css/rev-slider.css">
+ <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+ <link rel="stylesheet" href="css/hover-min.css">
+
+</head>
+<body class="appear-animate">
+
+ <!-- Page Loader -->
+ <div class="page-loader">
+  <div class="loader">Loading...</div>
+ </div>
+ <!-- End Page Loader -->
+
+ <!-- Page Wrap -->
+ <div class="page" id="top">
+
+  <!-- Navigation panel -->
+  <nav class="main-nav js-stick">
+   <div class="container relative clearfix">
+    <!-- Logo ( * your text or image into link tag *) -->
+    <div class="nav-logo-wrap local-scroll col-md-4 col-sm-4">
+     <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="" />
+     </a>
+     <div class="form-filter animate">
+      <div class="mb-20 mb-md-10 form-group">
+       <div class="dropdown">
+        <button class="btn btn-mod btn-border-w btn-circle dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"> <i class="fa fa-map-marker" aria-hidden="true"></i>Hà Nội<span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hà Nội</a></li>
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TP HCM</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+     <form class="form-inline form animate" role="form">
+      <div class="search-wrap w-340 main-search">
+       <button class="search-button animate" type="submit" title="Start Search">
+        <i class="fa fa-search"></i>
+       </button>
+       <input type="text" class="form-control search-field input-lg input-circle align-left" placeholder="VD: Phở, Sushi...">
+       <div class="btn-filter-search">
+        <div class="dropdown mega-dropdown">
+         <a href="javascript:;" class="dropdown-toggle btn-drop-filter"><i class="icon-adjustments"></i></a>
+         <div class="dropdown-menu mega-dropdown-menu">
+          <div class="col-sm-12">
+
+           <!-- Nav Tabs -->
+           <div class="align-center mb-10 mt-20 mb-xs-30">
+            <ul class="nav-tabs nav-filter-search tpl-minimal-tabs mn-nav-list animate sm-menu-item-carousel owl-carousel font-alt">
+             <li class="active it-mn">
+              <a href="#aaa11" data-toggle="tab">Khu vực</a>
+             </li>
+             <li class="it-mn">
+              <a href="#bbb11" data-toggle="tab">Mục đích</a>
+             </li>
+             <li class="it-mn">
+              <a href="#ccc11" data-toggle="tab">Đồ ăn</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-four11" data-toggle="tab">Đồ uống</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-five11" data-toggle="tab">Phân loại</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-six11" data-toggle="tab">Ăn nhanh</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-seven11" data-toggle="tab">Nước uống</a>
+             </li>
+            </ul>
+           </div>
+           <!-- End Nav Tabs -->
+           <hr class="divider-dot pt-10 pb-10" />
+           <div class="selected-item">
+            <div class="tags">
+             <span class="title" ="">Đã chọn: </span>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+            </div>
+            <hr class="divider-dot pt-0 pb-10" />
+           </div>
+           <!-- Tab panes -->
+           <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
+            <div class="tab-pane fade in active" id="aaa11">
+             <div class="row align-left">
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label  for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label  for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-7" name="check" type="checkbox">
+                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-8" name="check" type="checkbox">
+                <label  for="check-8" class="checkbox-label">Đống Đa</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-9" name="check" type="checkbox">
+                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-10" name="check" type="checkbox">
+                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-11" name="check" type="checkbox">
+                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-12" name="check" type="checkbox">
+                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="bbb11">
+             <div class="row align-left">
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label  for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label  for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-7" name="check" type="checkbox">
+                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
+               </div>
+               <div class="radio main-style">
+                <input id="check-8" name="check" type="checkbox">
+                <label  for="check-8" class="checkbox-label">Đống Đa</label>
+               </div>
+               <div class="radio main-style">
+                <input id="check-9" name="check" type="checkbox">
+                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-10" name="check" type="checkbox">
+                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-11" name="check" type="checkbox">
+                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-12" name="check" type="checkbox">
+                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="ccc11">
+             <div class="row align-left">
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label  for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label  for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-7" name="check" type="checkbox">
+                <label for="check-7" class="checkbox-label">Hai Bà Trưng</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-8" name="check" type="checkbox">
+                <label  for="check-8" class="checkbox-label">Đống Đa</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-9" name="check" type="checkbox">
+                <label for="check-9" class="checkbox-label">Nam Từ Liêm</label>
+               </div>
+              </div>
+              <div class="col-md-3 col-sm-3">
+               <div class="radio main-style">
+                <input id="check-10" name="check" type="checkbox">
+                <label for="check-10" class="checkbox-label">Hoàn Kiếm</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-11" name="check" type="checkbox">
+                <label  for="check-11" class="checkbox-label">Hoàng Mai</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-12" name="check" type="checkbox">
+                <label for="check-12" class="checkbox-label">Bắc Từ Liêm</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="mini-four11">
+             Search 4
+            </div>
+            <div class="tab-pane fade" id="mini-five11">
+             Search 5
+            </div>
+            <div class="tab-pane fade" id="mini-six11">
+             Search 6
+            </div>
+            <div class="tab-pane fade" id="mini-seven11">
+             Search 7
+            </div>
+           </div>
+           <!-- End panes -->
+
+           <div class="align-center mb-20">
+            <a href="#" class="btn btn-mod btn-medium btn-circle mt-10">Tìm kiếm</a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+    <!-- Main Menu -->
+    <div class="inner-nav col-md-4 col-sm-4">
+     <ul class="clearlist">
+      <!-- Search -->
+      <li>
+       <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm" ><span class="btn btn-mod btn-medium btn-circle">Đăng ký</span></a>
+      </li>
+      <!-- End Search -->
+
+      <!-- Cart -->
+      <li>
+       <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showLoginForm"><span class="btn btn-mod btn-medium btn-circle">Đăng nhập</span></a>
+      </li>
+      <!-- End Cart -->
+
+      <!-- Languages -->
+      <li class="dropdown">
+       <a href="#" class="select-lang dropdown-toggle" data-toggle="dropdown"><img src="images/vi.png" /> <i class="fa fa-angle-down"></i></a>
+       <ul class="dropdown-menu list-lang">
+        <li><a href=""><img src="images/en.png" /></a></li>
+        <li><a href=""><img src="images/vi.png" /></a></li>
+       </ul>
+      </li>
+      <!-- End Languages -->
+
+     </ul>
+    </div>
+    <!-- End Main Menu -->
+
+
+   </div>
+  </nav>
+  <!-- End Navigation panel -->
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+   <div class="container clearfix">
+    <div class="row">
+     <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-2 align-left">
+       <a href="#" class="btn-back btn-t-mn"><i class="fa fa-chevron-left"></i> Quay lại<br />Chọn món</a>
+      </div>
+      <div class="col-md-10 align-right">
+       <div id="steps">
+        <div class="step step-1 done"><a href="#"></a></div>
+        <div class="step step-2 done"><a href="#"></a></div>
+        <div class="step step-3"><a href="#"></a></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Top Bar -->
+
+  <!-- Portfolio Section -->
+  <section class="page-section pb-40 pt-20" id="portfolio">
+   <div class="relative">
+    <div class="container">
+     <div class="align-center mt-30">
+      <div class="panel panel-default payment-sub">
+       <div class="panel-body">
+        <ul class="bank">
+         <li><a title="Vietcombank" alt="Vietcombank" href="#" class="li-bank" data-atm-id="1"><img src="images/logo-bank/123PVCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Sacombank" alt="Sacombank" href="#" class="li-bank" data-atm-id="2"><img src="images/logo-bank/123PSCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="ACB" alt="ACB" href="#" class="li-bank" data-atm-id="3"><img src="images/logo-bank/123PACB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Vietinbank" alt="Vietinbank" href="#" class="li-bank" data-atm-id="4"><img src="images/logo-bank/123PVTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="DongA Bank" alt="DongA Bank" href="#" class="li-bank" data-atm-id="5"><img src="images/logo-bank/123PDAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="VIB" alt="VIB" href="#" class="li-bank" data-atm-id="6"><img src="images/logo-bank/123PVIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="BIDV" alt="BIDV" href="#" class="li-bank" data-atm-id="7"><img src="images/logo-bank/123PBIDV.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="TPBank" alt="TPBank" href="#" class="li-bank" data-atm-id="8"><img src="images/logo-bank/123PTPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="VPBank" alt="VPBank" href="#" class="li-bank" data-atm-id="9"><img src="images/logo-bank/123PVPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Techcombank" alt="Techcombank" href="#" class="li-bank" data-atm-id="10"><img src="images/logo-bank/123PTCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Eximbank" alt="Eximbank" href="#" class="li-bank" data-atm-id="11"><img src="images/logo-bank/123PEIB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Maritime Bank" alt="Maritime Bank" href="#" class="li-bank" data-atm-id="12"><img src="images/logo-bank/123PMRTB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Agribank" alt="Agribank" href="#" class="li-bank" data-atm-id="13"><img src="images/logo-bank/123PAGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Quân Đội (MBBank)" alt="Quân Đội (MBBank)" href="#" class="li-bank" data-atm-id="14"><img src="images/logo-bank/123PMB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="SHB" alt="SHB" href="#" class="li-bank" data-atm-id="15"><img src="images/logo-bank/123PSHB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="SeABank" alt="SeABank" href="#" class="li-bank" data-atm-id="16"><img src="images/logo-bank/123PSEAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="HDBank" alt="HDBank" href="#" class="li-bank" data-atm-id="17"><img src="images/logo-bank/123PHDB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Việt Á" alt="Việt Á" href="#" class="li-bank" data-atm-id="18"><img src="images/logo-bank/123PVAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="OceanBank" alt="OceanBank" href="#" class="li-bank" data-atm-id="19"><img src="images/logo-bank/123POCEB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="OCB" alt="OCB" href="#" class="li-bank" data-atm-id="20"><img src="images/logo-bank/123POCB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Bac A Bank" alt="Bac A Bank" href="#" class="li-bank" data-atm-id="21"><img src="images/logo-bank/123PBAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Nam A Bank" alt="Nam A Bank" href="#" class="li-bank" data-atm-id="22"><img src="images/logo-bank/123PNAB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="NCB" alt="NCB" href="#" class="li-bank" data-atm-id="23"><img src="images/logo-bank/123PNVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="BaoVietBank" alt="BaoVietBank" href="#" class="li-bank" data-atm-id="24"><img src="images/logo-bank/123PBVB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="LienVietPostBank" alt="LienVietPostBank" href="#" class="li-bank" data-atm-id="25"><img src="images/logo-bank/123PLPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="GPBank" alt="GPBank" href="#" class="li-bank" data-atm-id="26"><img src="images/logo-bank/123PGPB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="Saigonbank" alt="Saigonbank" href="#" class="li-bank" data-atm-id="27"><img src="images/logo-bank/123PSGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="ABBANK" alt="ABBANK" href="#" class="li-bank" data-atm-id="28"><img src="images/logo-bank/123PABB.jpg?v=1" height="74" width="120" alt=""></a></li>
+         <li><a title="PG Bank" alt="PG Bank" href="#" class="li-bank" data-atm-id="31"><img src="images/logo-bank/123PPGB.jpg?v=1" height="74" width="120" alt=""></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Divider -->
+  <hr class="mt-0 mb-0"/>
+  <!-- End Divider -->
+
+  <!-- Contact Section -->
+  <section class="page-section pt-40 pb-10" id="contact">
+   <div class="container relative">
+
+    <div class="row top-footer">
+
+     <!-- Phone -->
+     <div class="col-sm-4 col-lg-4 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt"><img src="images/logo2.png" alt="" /></h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Food</a>
+         </li>
+         <li>
+          <a href="#" title="">Drink</a>
+         </li>
+         <li>
+          <a href="#" title="">Restaurant</a>
+         </li>
+         <li>
+          <a href="#" title="">Promotion</a>
+         </li>
+         <li>
+          <a href="#" title="">Food Fest</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Phone -->
+
+     <!-- Address -->
+     <div class="col-sm-4 col-lg-3 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Hướng dẫn</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Quy trình đặt bàn</a>
+         </li>
+         <li>
+          <a href="#" title="">Trợ giúp</a>
+         </li>
+         <li>
+          <a href="#" title="">Điều khoản dịch vụ</a>
+         </li>
+         <li>
+          <a href="#" title="">Facebook</a>
+         </li>
+        </ul>
+       </div>
+
+      </div>
+     </div>
+     <!-- End Address -->
+
+     <!-- Email -->
+     <div class="col-sm-4 col-lg-5 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Liên hệ</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-map-marker"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Địa chỉ
+           </div>
+           <div class="ci-text font-alt">
+            Tầng 5, số 2A Đại Cồ Việt - Hai Bà Trưng - HN
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-phone"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Hotline
+           </div>
+           <div class="ci-text font-alt">
+            04.730.18818
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-envelope"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Email
+           </div>
+           <div class="ci-text font-alt">
+            <a href="mailto:contact@foodizzi.vn">contact@foodizzi.vn</a>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <hr class="divider-dot pt-10 pb-10" />
+       <div class="footer-social-links align-left mb-10 mb-xs-60">
+        <span>Theo dõi chúng tôi tại</span>
+        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        <a href="#" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Email -->
+
+
+    </div>
+
+   </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Foter -->
+  <footer class="page-section bg-gray-lighter footer pt-30 pb-30">
+   <div class="container">
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+
+     <!-- Copyright -->
+     <div class="footer-copy font-alt">
+      <a href="#" target="_blank">&copy; 2017 Foodizzi Media | Made in Vietnam</a>.
+     </div>
+     <!-- End Copyright -->
+
+     <div class="footer-made">
+      <a href="#">Điều khoản dịch vụ</a>
+     </div>
+
+    </div>
+    <!-- End Footer Text -->
+
+   </div>
+
+
+   <!-- Top Link -->
+   <div class="local-scroll toTopButton">
+    <a href="#top" class="link-to-top"></a>
+   </div>
+   <!-- End Top Link -->
+
+  </footer>
+  <!-- End Foter -->
+
+
+ </div>
+ <!-- End Page Wrap -->
+
+
+ <!-- JS -->
+ <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/SmoothScroll.js"></script>
+ <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+ <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+ <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+ <script type="text/javascript" src="js/jquery.countTo.js"></script>
+ <script type="text/javascript" src="js/jquery.appear.js"></script>
+ <script type="text/javascript" src="js/jquery.sticky.js"></script>
+ <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+ <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+ <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+ <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+ <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
+ **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+ <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+ <script type="text/javascript" src="js/gmap3.min.js"></script> -->
+ <script type="text/javascript" src="js/wow.min.js"></script>
+ <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+ <script type="text/javascript" src="js/all.js"></script>
+ <script type="text/javascript" src="js/contact-form.js"></script>
+ <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+ <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+ <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+ <script type="text/javascript" src="js/rev-slider.js"></script>
+ <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+</body>
+</html>

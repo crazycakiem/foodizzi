@@ -1,0 +1,11 @@
+/*--- homepage ---*/
+.block-po1{
+width: 263px;
+    height: 68px;
+    display: block;
+    position: absolute;
+    right: 97px;
+    top: 41px;
+    background-color: #333;
+    opacity: 0;
+}

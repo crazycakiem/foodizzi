@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Foodizzi</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta charset="utf-8">
+ <meta name="author" content="">
+ <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+ <!-- Favicons -->
+ <link rel="shortcut icon" href="images/favicon.png">
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.min.css">
+ <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+ <link rel="stylesheet" href="css/style-responsive.css">
+ <link rel="stylesheet" href="css/animate.min.css">
+ <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/magnific-popup.css">
+ <link rel="stylesheet" href="css/rev-slider.css">
+ <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+ <link rel="stylesheet" href="css/hover-min.css">
+ <link rel="stylesheet" href="css/lightslider.css">
+
+</head>
+
+<body class="appear-animate">
+
+ <!-- Page Loader -->
+ <div class="page-loader">
+  <div class="loader">Loading...</div>
+ </div>
+ <!-- End Page Loader -->
+
+ <!-- Page Wrap -->
+ <div class="page" id="top">
+
+  <!-- Navigation panel -->
+  <nav class="main-nav js-stick no-js">
+   <div class="container relative clearfix top-head">
+    <!-- Logo ( * your text or image into link tag *) -->
+    <div class="nav-logo-wrap local-scroll col-md-4 col-sm-4">
+     <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="" />
+     </a>
+     <div class="form-filter animate">
+      <div class="mb-20 mb-md-10 form-group">
+       <div class="dropdown">
+        <button class="btn btn-mod btn-border-w btn-circle dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"> <i class="fa fa-map-marker" aria-hidden="true"></i>Hà Nội<span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hà Nội</a></li>
+         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">TP HCM</a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-4">
+     <form class="form-inline form animate" role="form">
+      <div class="search-wrap w-340 main-search">
+       <button class="search-button animate" type="submit" title="Start Search">
+        <i class="fa fa-search"></i>
+       </button>
+       <input type="text" class="form-control search-field input-lg input-circle align-left" placeholder="VD: Phở, Sushi...">
+       <div class="btn-filter-search">
+        <div class="dropdown mega-dropdown">
+         <a href="javascript:;" class="dropdown-toggle btn-drop-filter"><i class="icon-adjustments"></i></a>
+         <div class="dropdown-menu mega-dropdown-menu">
+
+          <div class="col-sm-12">
+           <div class="sec-order-date">
+            <div class="form-filter dp-flex">
+             <div class="mb-20 mb-md-10 w20-per form-group">
+              <label class="lbl-alone">
+               Đặt bàn
+              </label>
+             </div>
+             <div class="mb-20 mb-md-10 w50-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile">
+               Chọn ngày / giờ
+              </label>
+              <div class="input-group input-circle date form_datetime col-md-5">
+               <input class="form-control" size="16" type="text" id="showDateToday" value="" readonly>
+               <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+              </div>
+              <input type="hidden" id="dtp_input1" value="" />
+             </div>
+             <div class="mb-20 mb-md-10 w30-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile2">
+               Số người
+              </label>
+              <div class="select-list">
+               <select class="input-md form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+               </select>
+              </div>
+             </div>
+            </div>
+           </div>
+           <!-- Nav Tabs -->
+           <div class="align-center mb-10 mt-20 mb-xs-30">
+            <ul class="nav-tabs nav-filter-search tpl-minimal-tabs mn-nav-list animate sm-menu-item-carousel owl-carousel font-alt">
+             <li class="active it-mn">
+              <a href="#aaa11" data-toggle="tab">Khu vực</a>
+             </li>
+             <li class="it-mn">
+              <a href="#bbb11" data-toggle="tab">Mục đích</a>
+             </li>
+             <li class="it-mn">
+              <a href="#ccc11" data-toggle="tab">Đồ ăn</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-four11" data-toggle="tab">Đồ uống</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-five11" data-toggle="tab">Phân loại</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-six11" data-toggle="tab">Ăn nhanh</a>
+             </li>
+            </ul>
+           </div>
+           <!-- End Nav Tabs -->
+           <hr class="divider-dot pt-10 pb-10" />
+           <div class="selected-item">
+            <div class="tags">
+             <span class="title" ="">Đã chọn: </span>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+            </div>
+            <hr class="divider-dot pt-0 pb-10" />
+           </div>
+           <!-- Tab panes -->
+           <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
+            <div class="tab-pane fade in active" id="aaa11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="bbb11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="ccc11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="mini-four11">
+             Search 4
+            </div>
+            <div class="tab-pane fade" id="mini-five11">
+             Search 5
+            </div>
+            <div class="tab-pane fade" id="mini-six11">
+             Search 6
+            </div>
+           </div>
+           <!-- End panes -->
+
+           <div class="align-center mb-20">
+            <a href="#" class="btn btn-mod btn-medium btn-circle mt-10">Tìm kiếm</a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+    </div>
+    <!-- Main Menu -->
+    <div class="inner-nav col-md-4 col-sm-4">
+     <ul class="clearlist">
+      <!-- Search -->
+      <li>
+       <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle">Đăng ký</span></a>
+      </li>
+      <!-- End Search -->
+
+      <!-- Cart -->
+      <li>
+       <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showLoginForm"><span class="btn btn-mod btn-medium btn-circle">Đăng nhập</span></a>
+      </li>
+      <!-- End Cart -->
+
+      <!-- Languages -->
+      <!--       <li class="dropdown">
+       <a href="#" class="select-lang dropdown-toggle" data-toggle="dropdown"><img src="images/vi.png" /> <i class="fa fa-angle-down"></i></a>
+       <ul class="dropdown-menu list-lang">
+        <li><a href=""><img src="images/en.png" /></a></li>
+        <li><a href=""><img src="images/vi.png" /></a></li>
+       </ul>
+      </li> -->
+      <!-- End Languages -->
+
+     </ul>
+    </div>
+    <!-- End Main Menu -->
+   </div>
+   <div class="mobile-nav">
+    <a href="index.html" class="logo">
+     <img src="images/logo.png" alt="" />
+    </a>
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-search open-search"></i>
+   </div>
+   <!-- Top Bar -->
+   <div class="popup-search-nav on-mobile">
+    <a class="close-popup" href="#"><i class="fa fa-times"></i></a>
+    <div class="col-sm-12">
+     <div class="align-center mb-20 col-md-10 mt-20 col-md-offset-1">
+      <input type="text" class="form-control search-field input-lg input-circle align-left" placeholder="VD: Phở, Sushi...">
+     </div>
+     <div class="sec-order-date">
+      <div class="form-filter dp-flex">
+       <div class="mb-20 mb-md-10 w20-per form-group">
+        <label class="lbl-alone">
+         Đặt bàn
+        </label>
+       </div>
+       <div class="mb-20 mb-md-10 w50-per form-group">
+        <!-- Date-->
+        <label for="exampleInputFile">
+         Chọn ngày / giờ
+        </label>
+        <div class="input-group input-circle date form_datetime col-md-5">
+         <input class="form-control" size="16" type="text" id="showDateToday" value="" readonly>
+         <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" />
+       </div>
+       <div class="mb-20 mb-md-10 w30-per form-group">
+        <!-- Date-->
+        <label for="exampleInputFile2">
+         Số người
+        </label>
+        <div class="select-list">
+         <select class="input-md form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+         </select>
+        </div>
+       </div>
+      </div>
+     </div>
+     <!-- Nav Tabs -->
+     <div class="align-center mb-10 mt-20 mb-xs-30">
+      <ul class="nav-tabs nav-filter-search tpl-minimal-tabs mn-nav-list animate sm-menu-item-carousel owl-carousel font-alt">
+       <li class="active it-mn">
+        <a href="#aaa11mobi" data-toggle="tab">Khu vực</a>
+       </li>
+       <li class="it-mn">
+        <a href="#bbb11mobi" data-toggle="tab">Mục đích</a>
+       </li>
+       <li class="it-mn">
+        <a href="#ccc11mobi" data-toggle="tab">Đồ ăn</a>
+       </li>
+       <li class="it-mn">
+        <a href="#mini-four11mobi" data-toggle="tab">Đồ uống</a>
+       </li>
+       <li class="it-mn">
+        <a href="#mini-five11mobi" data-toggle="tab">Phân loại</a>
+       </li>
+       <li class="it-mn">
+        <a href="#mini-six11mobi" data-toggle="tab">Ăn nhanh</a>
+       </li>
+      </ul>
+     </div>
+     <!-- End Nav Tabs -->
+     <hr class="divider-dot pt-10 pb-10" />
+     <div class="selected-item">
+      <div class="tags">
+       <span class="title" ="">Đã chọn: </span>
+       <a href="">Cầu Giấy</a>
+       <a href="">Ẩm thực</a>
+       <a href="">Ăn nhanh</a>
+       <a href="">Ăn trưa</a>
+       <a href="">Ăn tối</a>
+       <a href="">Cầu Giấy</a>
+       <a href="">Ẩm thực</a>
+       <a href="">Ăn nhanh</a>
+       <a href="">Ăn trưa</a>
+       <a href="">Ăn tối</a>
+      </div>
+      <hr class="divider-dot pt-0 pb-10" />
+     </div>
+     <!-- Tab panes -->
+     <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
+      <div class="tab-pane fade in active" id="aaa11mobi">
+       <div class="row align-left">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+         <div class="radio main-style">
+          <input checked='checked' id='check-1aaa' name='check-1' type='checkbox' value='one'>
+          <label for='check-1aaa' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2aa' name='check-2' type='checkbox' value='two'>
+          <label for="check-2aa" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3aa' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3aa" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1aa' name='check-1' type='checkbox' value='one'>
+          <label for='check-1aa' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+         <div class="radio main-style">
+          <input id="check-4" name="check" type="checkbox">
+          <label for="check-4" class="checkbox-label">Tây Hồ</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-5" name="check" type="checkbox">
+          <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-6" name="check" type="checkbox">
+          <label for="check-6" class="checkbox-label">Long Biên</label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane fade" id="bbb11mobi">
+       <div class="row align-left">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+         <div class="radio main-style">
+          <input id="check-4" name="check" type="checkbox">
+          <label for="check-4" class="checkbox-label">Tây Hồ</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-5" name="check" type="checkbox">
+          <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-6" name="check" type="checkbox">
+          <label for="check-6" class="checkbox-label">Long Biên</label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane fade" id="ccc11mobi">
+       <div class="row align-left">
+        <div class="col-md-6 col-sm-6">
+         <div class="radio main-style">
+          <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+          <label for='check-1' class="checkbox-label">
+           Cầu Giấy
+          </label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+          <label for="check-2" class="checkbox-label">Ba Đình</label>
+         </div>
+
+         <div class="radio main-style">
+          <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+          <label for="check-3" class="checkbox-label">Hà Đông</label>
+         </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+         <div class="radio main-style">
+          <input id="check-4" name="check" type="checkbox">
+          <label for="check-4" class="checkbox-label">Tây Hồ</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-5" name="check" type="checkbox">
+          <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+         </div>
+
+         <div class="radio main-style">
+          <input id="check-6" name="check" type="checkbox">
+          <label for="check-6" class="checkbox-label">Long Biên</label>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="tab-pane fade" id="mini-four11mobi">
+       Search 4
+      </div>
+      <div class="tab-pane fade" id="mini-five11mobi">
+       Search 5
+      </div>
+      <div class="tab-pane fade" id="mini-six11mobi">
+       Search 6
+      </div>
+     </div>
+     <!-- End panes -->
+
+     <div class="align-center mb-20">
+      <a href="#" class="btn btn-mod btn-medium btn-circle mt-10">Tìm kiếm</a>
+     </div>
+    </div>
+   </div>
+   <div class="top-bar desktop-nav">
+    <div class="container clearfix">
+     <form class="form-inline form-in-mobile form animate" role="form">
+      <div class="search-wrap w-340 main-search">
+       <button class="search-button animate" type="submit" title="Start Search">
+        <i class="fa fa-search"></i>
+       </button>
+       <input type="text" class="form-control search-field input-lg input-circle align-left" placeholder="VD: Phở, Sushi...">
+       <div class="btn-filter-search">
+        <div class="dropdown mega-dropdown">
+         <a href="javascript:;" class="dropdown-toggle btn-drop-filter"><i class="icon-adjustments"></i></a>
+         <div class="dropdown-menu mega-dropdown-menu">
+
+          <div class="col-sm-12">
+           <div class="sec-order-date">
+            <div class="form-filter dp-flex">
+             <div class="mb-20 mb-md-10 w20-per form-group">
+              <label class="lbl-alone">
+               Đặt bàn
+              </label>
+             </div>
+             <div class="mb-20 mb-md-10 w50-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile">
+               Chọn ngày / giờ
+              </label>
+              <div class="input-group input-circle date form_datetime col-md-5">
+               <input class="form-control" size="16" type="text" id="showDateToday" value="" readonly>
+               <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+              </div>
+              <input type="hidden" id="dtp_input1" value="" />
+             </div>
+             <div class="mb-20 mb-md-10 w30-per form-group">
+              <!-- Date-->
+              <label for="exampleInputFile2">
+               Số người
+              </label>
+              <div class="select-list">
+               <select class="input-md form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+               </select>
+              </div>
+             </div>
+            </div>
+           </div>
+           <!-- Nav Tabs -->
+           <div class="align-center mb-10 mt-20 mb-xs-30">
+            <ul class="nav-tabs nav-filter-search tpl-minimal-tabs mn-nav-list animate sm-menu-item-carousel owl-carousel font-alt">
+             <li class="active it-mn">
+              <a href="#aaa11" data-toggle="tab">Khu vực</a>
+             </li>
+             <li class="it-mn">
+              <a href="#bbb11" data-toggle="tab">Mục đích</a>
+             </li>
+             <li class="it-mn">
+              <a href="#ccc11" data-toggle="tab">Đồ ăn</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-four11" data-toggle="tab">Đồ uống</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-five11" data-toggle="tab">Phân loại</a>
+             </li>
+             <li class="it-mn">
+              <a href="#mini-six11" data-toggle="tab">Ăn nhanh</a>
+             </li>
+            </ul>
+           </div>
+           <!-- End Nav Tabs -->
+           <hr class="divider-dot pt-10 pb-10" />
+           <div class="selected-item">
+            <div class="tags">
+             <span class="title" ="">Đã chọn: </span>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+             <a href="">Cầu Giấy</a>
+             <a href="">Ẩm thực</a>
+             <a href="">Ăn nhanh</a>
+             <a href="">Ăn trưa</a>
+             <a href="">Ăn tối</a>
+            </div>
+            <hr class="divider-dot pt-0 pb-10" />
+           </div>
+           <!-- Tab panes -->
+           <div class="tab-content tpl-minimal-tabs-cont align-center section-text">
+            <div class="tab-pane fade in active" id="aaa11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="bbb11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="ccc11">
+             <div class="row align-left">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input checked='checked' id='check-1' name='check-1' type='checkbox' value='one'>
+                <label for='check-1' class="checkbox-label">
+                 Cầu Giấy
+                </label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-2' name='check-2' type='checkbox' value='two'>
+                <label for="check-2" class="checkbox-label">Ba Đình</label>
+               </div>
+
+               <div class="radio main-style">
+                <input checked='checked' id='check-3' name='check-3' type='checkbox' value='three' disabled>
+                <label for="check-3" class="checkbox-label">Hà Đông</label>
+               </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+               <div class="radio main-style">
+                <input id="check-4" name="check" type="checkbox">
+                <label for="check-4" class="checkbox-label">Tây Hồ</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-5" name="check" type="checkbox">
+                <label for="check-5" class="checkbox-label">Thanh Xuân</label>
+               </div>
+
+               <div class="radio main-style">
+                <input id="check-6" name="check" type="checkbox">
+                <label for="check-6" class="checkbox-label">Long Biên</label>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="tab-pane fade" id="mini-four11">
+             Search 4
+            </div>
+            <div class="tab-pane fade" id="mini-five11">
+             Search 5
+            </div>
+            <div class="tab-pane fade" id="mini-six11">
+             Search 6
+            </div>
+           </div>
+           <!-- End panes -->
+
+           <div class="align-center mb-20">
+            <a href="#" class="btn btn-mod btn-medium btn-circle mt-10">Tìm kiếm</a>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </form>
+     <a href="#" class="left btn-ex-link"></a>
+     <!-- Top Links -->
+     <ul class="top-links right">
+      <li><a href="res-info.html">Đặt bàn</a></li>
+      <li><a href="#" title="">Giao món</a></li>
+      <li><a href="list-news.html" title="">Tin tức</a></li>
+      <li><a href="list-pro.html" title="">Khuyến mại</a></li>
+      <li>
+       <div class="form">
+        <div><input type="text" name="name" id="name-4" class="align-center form-control input-medium input-circle" placeholder="Mã E-Code" maxlength="20"></div>
+       </div>
+      </li>
+      <li><a href="#"><span class="btn btn-mod btn-circle btn-medium btn-dark">Nhập</span></a></li>
+     </ul>
+     <!-- End Top Links -->
+    </div>
+   </div>
+   <div class="top-bar nav-show-on-mobile">
+    <div class="container clearfix">
+     <!-- Top Links -->
+     <a class="close-popup" href="#"><i class="fa fa-times"></i></a>
+     <ul class="top-links right">
+      <li>
+       <a href="#" class="inline" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle btn-border">Đăng nhập</span></a>
+       <a href="#" class="inline" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle btn-border">Đăng ký</span></a>
+      </li>
+      <li class="divider"></li>
+      <li><a href="#" style="color: #d60913; font-weight: bold;">Izzi-Deal</a></li>
+      <li><a href="res-info.html">Đặt bàn</a></li>
+      <li><a href="#" title="">Giao món</a></li>
+      <li><a href="list-news.html" title="">Tin tức</a></li>
+      <li><a href="list-pro.html" title="">Khuyến mại</a></li>
+      <li>
+       <div class="form">
+        <div>
+         <input type="text" name="name" id="name-4" class="align-center form-control input-medium input-circle" placeholder="Mã E-Code" maxlength="20">
+         <a class="inline" href="#"><span class="btn btn-mod btn-circle btn-medium btn-dark">Nhập</span></a>
+        </div>
+       </div>
+      </li>
+     </ul>
+     <!-- End Top Links -->
+     <ul class="clearlist opt-list">
+      <!-- Languages -->
+      <li>
+       <a class="active lang-flag" href=""><img src="images/en.png"></a> <a class="lang-flag" href=""><img src="images/vi.png"></a>
+      </li>
+      <!-- End Languages -->
+
+     </ul>
+
+    </div>
+   </div>
+   <!-- End Top Bar -->
+  </nav>
+  <!-- End Navigation panel -->
+
+  <!-- Portfolio Section -->
+  <section class="page-section pb-40 pt-20">
+   <div class="relative">
+
+    <div class="container">
+     <div class="mod-breadcrumbs font-alt align-left">
+      <a href="#"><i class="fa fa-home"></i> Trang chủ</a>&nbsp;/&nbsp;<a href="#">Khuyến mại</a>&nbsp;/&nbsp;<span>Edeal</span>
+     </div>
+     <!-- Features Grid -->
+     <!-- Info -->
+     <div class="row mt-10">
+      <div class="col-sm-7">
+       <div class="visible-xs">
+        <div class="show-res-avail fiz-container w100per mb-20">
+         <p class="post-prev-text align-left">Nhà hàng áp dụng</p>
+         <div class="">
+          <div class="fiz-container w100per">
+           <div class="fiz-middle">
+            <select name="sources" id="" class="custom-select sources w100per" placeholder="Chọn nhà hàng">
+              <option value="">Al Fresco's - Vincom Nguyễn Chí Thanh</option>
+              <option value="">Al Fresco's - Vincom Center Long Biên</option>
+              <option value="">An Phương</option>
+              <option value="">Al Fresco's - Hoàng Ngân</option>
+              <option value="">Quán Ăn Ngon - Phan Bội Châu</option>
+              <option value="">Hải sản ngon</option>
+              <option value="">Bia Hơi</option>
+              <option value="">Quán nhậu</option>
+              <option value="">Cơm Gà</option>
+            </select>
+           </div>
+          </div>
+          <div class="fiz-container">
+           <div class="fiz-middle">
+            <a href="#" class="btn btn-mod btn-circle btn-medium hvr-icon-wobble-horizontal btn-ico-r">Xem nhà hàng</a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="">
+         <div class="in-bd-dash mt-0 mb-10 with-badge badge-left izzi-d active">
+          <div class="post-prev-text align-left mb-10 mt-10 clearfix">
+           <div class="post-prev-text align-right right">
+            <i class="ico-noresult ico-buyers"></i> <strong>100</strong> | <i class="ico-noresult ico-savemoney"></i> <span class="hidden-xs">Tiết kiệm</span> <strong>(666.000 <span class="price-symbol">đ</span>)</strong>
+           </div>
+          </div>
+          <div class="relative deal-price">
+           <h4 class="section-title sm-txt-price second-section-title font-alt align-left mb-0"><span class="tit-left">Giá niêm yết:</span> <strong><span class="line-through">599.000<span class="price-symbol">đ</span></span></strong></h4>
+           <h4 class="section-title second-section-title font-alt align-left mt-0"><span class="tit-left">Giá Foodizzi:</span> <strong>199.000<span class="price-symbol">đ</span></strong></h4>
+           <div class="show-d-per" >Giảm<br>40%</div>
+          </div>
+         </div>
+         <div class="mt-10">
+          <div class="post-prev-text align-center mb-10 mt-10 clearfix">
+           <div class="relative pd-l30">
+            Thời gian còn lại: <strong><span id="timer2"></span></strong>
+           </div>
+          </div>
+         </div>
+         <div class="mt-10">
+          <div class="form-filter dp-flex mt-20">
+           <div class="mb-10 col-md-6 form-group wix">
+            <!-- Date-->
+            <label class="font-alt" for="exampleInputFile2">
+             Chọn số lượng
+            </label>
+            <div class="select-list">
+             <select class="input-md form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+             </select>
+            </div>
+           </div>
+           <div class="mb-10 col-md-6 form-group wix">
+            <!-- Date-->
+            <label class="font-alt" for="exampleInputFile4">
+             Tổng tạm tính
+            </label>
+            <div class="show-total-p form-control input-md input-circle tt-inpost">
+             <h4 class="font-alt txt-inform"><strong>500.000 <span class="price-symbol">đ</span></strong></h4></div>
+           </div>
+          </div>
+          <div class="mb-20 mt-0 align-center">
+           <!-- Date-->
+           <a href="#" class="btn btn-mod btn-large btn-circle">Mua ngay</a>
+          </div>
+         </div>
+         <hr class="divider-dot pt-0 pb-0">
+        </div>
+       </div>
+       <h1 class="mb-20 mt-20 font-alt align-left">Set 3 nồi lẩu giá chỉ 500.000 <span class="price-symbol">đ</span></h1>
+       <div class="item">
+        <div class="clearfix">
+         <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+          <li data-thumb="images/portfolio/full-project-53.jpg">
+           <img src="images/portfolio/full-project-53.jpg" />
+          </li>
+         </ul>
+        </div>
+       </div>
+       <h3 class="font-alt align-left mb-20 mt-30 mb-sm-40">Thông tin chi tiết Deal</h3>
+
+       <div class="post-prev-text">
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non laoreet dui. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa.
+        </p>
+
+        <p>
+         Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut&nbsp;dignissim consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet
+         mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
+        </p>
+       </div>
+       <h3 class="font-alt align-left mb-20 mt-30 mb-sm-40">Điều kiện áp dụng</h3>
+       <div class="post-prev-text">
+        <p>
+         Praesent ultricies ut ipsum non laoreet. Nunc ac ultricies leo. Nulla ac ultrices arcu. Nullam adipiscing lacus in consectetur posuere. Nunc malesuada tellus turpis, ac pretium orci molestie vel. Morbi lacus massa, euismod ut turpis molestie, tristique
+         sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
+        </p>
+
+        <ul>
+         <li>First item of the list</li>
+         <li>Second item of the list</li>
+         <li>Third item of the list</li>
+        </ul>
+
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non laoreet dui. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
+         Vestibulum pellentesque, purus ut&nbsp;dignissim consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem.
+        </p>
+       </div>
+       <hr class="divider-dot pt-10 pb-10">
+       <h3 class="font-alt align-left mb-20 mt-30 mb-sm-40">Bài viết chi tiết</h3>
+
+       <div class="post-prev-text">
+        <p>
+         Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut&nbsp;dignissim consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet
+         mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
+        </p>
+        <img src="images/portfolio/full-project-54.jpg" alt="" />
+        <br><br>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non laoreet dui. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet mi id sapien tempor molestie in nec massa.
+        </p>
+
+        <p>
+         Fusce non ante sed lorem rutrum feugiat. Vestibulum pellentesque, purus ut&nbsp;dignissim consectetur, nulla erat ultrices purus, ut&nbsp;consequat sem elit non sem. Morbi lacus massa, euismod ut turpis molestie, tristique sodales est. Integer sit amet
+         mi id sapien tempor molestie in nec massa. Fusce non ante sed lorem rutrum feugiat.
+        </p>
+       </div>
+      </div>
+      <div class="col-sm-5">
+       <div class="">
+        <div class="hidden-xs show-res-avail fiz-container w100per mb-20">
+         <p class="post-prev-text align-left">Danh sách nhà hàng áp dụng E-Deal này</p>
+         <div class="">
+          <div class="fiz-container w100per">
+           <div class="fiz-middle">
+            <select name="sources" id="" class="custom-select sources w100per" placeholder="Chọn nhà hàng">
+              <option value="">Al Fresco's - Vincom Nguyễn Chí Thanh</option>
+              <option value="">Al Fresco's - Vincom Center Long Biên</option>
+              <option value="">An Phương</option>
+              <option value="">Al Fresco's - Hoàng Ngân</option>
+              <option value="">Quán Ăn Ngon - Phan Bội Châu</option>
+              <option value="">Hải sản ngon</option>
+              <option value="">Bia Hơi</option>
+              <option value="">Quán nhậu</option>
+              <option value="">Cơm Gà</option>
+            </select>
+           </div>
+          </div>
+          <div class="fiz-container">
+           <div class="fiz-middle">
+            <a href="#" class="btn btn-mod btn-circle btn-medium hvr-icon-wobble-horizontal btn-ico-r">Xem nhà hàng</a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="hidden-xs mt-0 mb-10 in-bd-dash with-badge badge-left izzi-d active">
+         <div class="post-prev-text align-left mb-10 mt-10 clearfix">
+          <div class="post-prev-text align-right right">
+           <i class="ico-noresult ico-buyers visible-xs"></i> <span class="hidden-xs">Số người mua</span> <strong>130</strong> |<i class="ico-noresult ico-savemoney visible-xs"></i> <span class="hidden-xs">Tiết kiệm</span> <strong>(66.000 <span class="price-symbol">đ</span>)</strong>
+          </div>
+         </div>
+         <div class="relative deal-price">
+          <h4 class="section-title sm-txt-price second-section-title font-alt align-left mb-0"><span class="tit-left">Giá niêm yết:</span> <strong><span class="line-through">599.000<span class="price-symbol">đ</span></span></strong></h4>
+          <h4 class="section-title second-section-title font-alt align-left mt-0"><span class="tit-left">Giá Foodizzi:</span> <strong>199.000<span class="price-symbol">đ</span></strong></h4>
+          <div class="show-d-per" >Giảm<br>40%</div>
+         </div>
+        </div>
+        <div class="mt-10 hidden-xs">
+         <div class="post-prev-text align-left mb-10 mt-10 clearfix">
+          <div class="relative pd-l30 left">
+           <i class="ico-noresult ico-clock left-0 top-10 absolute"></i>Thời gian còn lại: <br><strong><span id="timer"></span></strong>
+          </div>
+         </div>
+        </div>
+        <div class="mt-10 hidden-xs">
+         <div class="form-filter dp-flex mt-20">
+          <div class="mb-10 col-md-6 form-group wix">
+           <!-- Date-->
+           <label class="font-alt" for="exampleInputFile2">
+            Chọn số lượng
+           </label>
+           <div class="select-list">
+            <select class="input-md form-control">
+             <option>1</option>
+             <option>2</option>
+             <option>3</option>
+            </select>
+           </div>
+          </div>
+          <div class="mb-10 col-md-6 form-group wix">
+           <!-- Date-->
+           <label class="font-alt" for="exampleInputFile4">
+            Tổng tạm tính
+           </label>
+           <div class="show-total-p form-control input-md input-circle tt-inpost">
+            <h4 class="font-alt txt-inform"><strong>500.000 <span class="price-symbol">đ</span></strong></h4></div>
+          </div>
+         </div>
+         <div class="mb-20 mt-0 align-center">
+          <!-- Date-->
+          <a href="#" class="btn btn-mod btn-large btn-circle">Mua ngay</a>
+         </div>
+        </div>
+        <hr class="divider-dot pt-0 pb-0">
+        <h3 class="section-title font-alt align-left mb-20 mt-30 mb-sm-40 tooltip-bot">
+         Các bước sử dụng izzi-deal
+        </h3>
+        <div class="mb-20 mt-20">
+         <div>
+          <div class="row">
+           <div class="col-xs-4">
+            <div class="align-center mt-10">
+             <div class="mb-10">
+              <i class="ico-noresult use-e-st1"></i>
+             </div>
+             <div class="font-alt">
+              <span>MUA DEAL Ở FOODIZZI</span>
+             </div>
+            </div>
+           </div>
+           <div class="col-xs-4">
+            <div class="align-center mt-10">
+             <div class="mb-10">
+              <i class="ico-noresult use-e-st2"></i>
+             </div>
+             <div class="font-alt">
+              <span>Check email để xác nhận code</span>
+             </div>
+            </div>
+           </div>
+           <div class="col-xs-4">
+            <div class="align-center mt-10">
+             <div class="mb-10">
+              <i class="ico-noresult use-e-st3"></i>
+             </div>
+             <div class="font-alt">
+              <span>Đến nhà hàng để sử dụng</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="mt-10">
+         <p class="post-prev-text align-left">*Lưu ý:</p>
+         <p class="post-prev-text align-left note-ico-l relative"><i class="ico-noresult ico-note1 left-0 absolute"></i>Không có giá trị quy đổi thành tiền mặt</p>
+         <p class="post-prev-text align-left note-ico-l relative"><i class="ico-noresult ico-note2 left-0 absolute"></i>Chỉ nhận thanh toán bằng thẻ ngân hàng</p>
+         <p class="post-prev-text align-left note-ico-l relative"><i class="ico-noresult ico-note3 left-0 absolute"></i>Có hiệu lực trong thời hạn áp dụng </p>
+        </div>
+        <div class="mt-40">
+         <div class="footer-social-links align-left mb-10 mb-xs-60">
+          <span class="post-prev-text align-left">Giới thiệu deal cho bạn bè:</span>
+          <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="Email" target="_blank"><i class="fa fa-envelope"></i></a>
+         </div>
+        </div>
+        <!-- Google Map -->
+        <div class="google-map mt-40 mb-30">
+         <div data-address="32 Gia Ngư, Hoàn Kiếm, Hà Nội" id="map-canvas"></div>
+        </div>
+        <!-- End Google Map -->
+       </div>
+      </div>
+     </div>
+     <!-- End Info -->
+     <hr class="divider-dot pt-10 pb-10" >
+     <div>
+      <div class="tags">
+       <span class="title">Tags: </span>
+       <a href="">Food</a>
+       <a href="">Ẩm thực</a>
+       <a href="">Nhà hàng</a>
+       <a href="">Lễ hội</a>
+       <a href="">Tìm kiếm</a>
+       <a href="">Ăn nhanh</a>
+       <a href="">Ăn trưa</a>
+       <a href="">Ăn tối</a>
+      </div>
+     </div>
+     <h2 class="section-title second-section-title font-alt align-left mb-30 mt-40 mb-sm-40 tooltip-bot">
+      Các Izzi Deal liên quan
+     </h2>
+     <div class="clearfix">
+      <!-- Works Grid -->
+      <ul class="works-grid work-grid-3 work-grid-gut clearfix font-alt hover-white hide-titles" id="work-grid">
+
+       <!-- Work Item (External Page) -->
+       <li class="work-item">
+        <a href="#" class="work-ext-link">
+         <div class="work-img">
+          <img class="work-img" src="images/portfolio/projects-13.jpg" alt="Work" />
+          <span class="gradient"></span>
+         </div>
+         <div class="work-intro">
+          <span class="btn btn-mod btn-large btn-circle">Đặt bàn</span>
+         </div>
+        </a>
+        <div class="post-prev-title font-alt align-left">
+         <a href="#">Thả ga nướng lẩu cao cấp với 159k</a>
+        </div>
+        <div class="post-prev-text align-left">
+         <span>Số 32 Gia Ngư, Hoàn Kiếm, Hà Nội</span>
+        </div>
+       </li>
+       <!-- End Work Item -->
+
+       <!-- Work Item (External Page) -->
+       <li class="work-item">
+        <a href="#" class="work-ext-link">
+         <div class="work-img">
+          <img class="work-img" src="images/portfolio/projects-14.jpg" alt="Work" />
+          <span class="gradient"></span>
+         </div>
+         <div class="work-intro">
+          <span class="btn btn-mod btn-large btn-circle">Đặt bàn</span>
+         </div>
+        </a>
+        <div class="post-prev-title font-alt align-left">
+         <a href="#">Song Anh Chicken N' Deli - Giảm 100K</a>
+        </div>
+        <div class="post-prev-text align-left">
+         <span>02 Nguyễn Xí , Hoàn Kiếm, Hà Nội</span>
+        </div>
+       </li>
+       <!-- End Work Item -->
+
+       <!-- Work Item (External Page) -->
+       <li class="work-item">
+        <a href="#" class="work-ext-link">
+         <div class="work-img">
+          <img class="work-img" src="images/portfolio/projects-6.jpg" alt="Work" />
+          <span class="gradient"></span>
+         </div>
+         <div class="work-intro">
+          <span class="btn btn-mod btn-large btn-circle">Đặt bàn</span>
+         </div>
+        </a>
+        <div class="post-prev-title font-alt align-left">
+         <a href="#">Foodcenter Giảm 100,000 cho hóa đơn trên 1,000,000 </a>
+        </div>
+        <div class="post-prev-text align-left">
+         <span>14 Hàng Buồm, Hoàn Kiếm, Hà Nội</span>
+        </div>
+       </li>
+       <!-- End Work Item -->
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Divider -->
+  <hr class="mt-0 mb-0" />
+  <!-- End Divider -->
+
+  <!-- Contact Section -->
+  <section class="page-section pt-40 pb-10" id="contact">
+   <div class="container relative">
+
+    <div class="row top-footer">
+
+     <!-- Phone -->
+     <div class="col-sm-4 col-lg-4 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt"><img src="images/logo2.png" alt="" /></h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Food</a>
+         </li>
+         <li>
+          <a href="#" title="">Drink</a>
+         </li>
+         <li>
+          <a href="#" title="">Restaurant</a>
+         </li>
+         <li>
+          <a href="#" title="">Promotion</a>
+         </li>
+         <li>
+          <a href="#" title="">Food Fest</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Phone -->
+
+     <!-- Address -->
+     <div class="col-sm-4 col-lg-3 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Hướng dẫn</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Quy trình đặt bàn</a>
+         </li>
+         <li>
+          <a href="#" title="">Trợ giúp</a>
+         </li>
+         <li>
+          <a href="#" title="">Điều khoản dịch vụ</a>
+         </li>
+         <li>
+          <a href="#" title="">Facebook</a>
+         </li>
+        </ul>
+       </div>
+
+      </div>
+     </div>
+     <!-- End Address -->
+
+     <!-- Email -->
+     <div class="col-sm-4 col-lg-5 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Liên hệ</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-map-marker"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Địa chỉ
+           </div>
+           <div class="ci-text font-alt">
+            Tầng 5, số 2A Đại Cồ Việt - Hai Bà Trưng - HN
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-phone"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Hotline
+           </div>
+           <div class="ci-text font-alt">
+            04.730.18818
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-envelope"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Email
+           </div>
+           <div class="ci-text font-alt">
+            <a href="mailto:contact@foodizzi.vn">contact@foodizzi.vn</a>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <hr class="divider-dot pt-10 pb-10" />
+       <div class="footer-social-links align-left mb-10 mb-xs-60">
+        <span>Theo dõi chúng tôi tại</span>
+        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        <a href="#" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Email -->
+
+
+    </div>
+
+   </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Foter -->
+  <footer class="page-section bg-gray-lighter footer pt-30 pb-30">
+   <div class="container">
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+
+     <!-- Copyright -->
+     <div class="footer-copy font-alt">
+      <a href="#" target="_blank">&copy; 2017 Foodizzi Media | Made in Vietnam</a>.
+     </div>
+     <!-- End Copyright -->
+
+     <div class="footer-made">
+      <a href="#">Điều khoản dịch vụ</a>
+     </div>
+
+    </div>
+    <!-- End Footer Text -->
+
+   </div>
+
+  </footer>
+  <!-- End Foter -->
+  <!-- Top Link -->
+  <div class="local-scroll toTopButton">
+   <a href="#top" class="link-to-top"></a>
+  </div>
+  <!-- End Top Link -->
+  <!-- Popup buy deal -->
+  <div class="popup-buy-deal hidden-xs">
+   <div class="b-pop relative">
+    <a class="dimiss-pop"><i class="fa fa-times"></i></a>
+    <div class="box-show-info-deal">
+     <div class="mt-0 mb-10 with-badge badge-left izzi-d active">
+      <div class="show-d-per" >Giảm<br>40%</div>
+      <div class="post-prev-text align-left mb-10 pt-10 clearfix">
+       <div class="mb-5"><i class="ico-noresult ico-buyers visible-xs"></i> <span class="hidden-xs">Số người mua</span> <strong>130</strong></div>
+       <div><i class="ico-noresult ico-savemoney visible-xs"></i> <span class="hidden-xs">Tiết kiệm</span> <strong>(66.000<span class="price-symbol">đ</span>)</strong></div>
+      </div>
+      <div class="relative deal-price">
+       <h4 class="section-title sm-txt-price second-section-title font-alt align-left mb-0"><span class="tit-left">Giá niêm yết:</span> <strong><span class="line-through">599.000<span class="price-symbol">đ</span></span></strong></h4>
+       <h4 class="section-title second-section-title font-alt align-left mt-0"><span class="tit-left">Giá Foodizzi:</span> <strong>199.000<span class="price-symbol">đ</span></strong></h4>
+      </div>
+     </div>
+     <hr class="divider-dot pt-0 pb-0">
+     <div class="mt-10">
+      <div class="post-prev-text align-center mb-0 mt-10 clearfix">
+       <div class="relative pd-l30">
+        Thời gian còn lại: <strong><span id="timer3"></span></strong>
+       </div>
+      </div>
+     </div>
+     <div class="mt-0">
+      <div class="form-filter dp-flex mt-10">
+       <div class="mb-10 col-md-6 form-group wix">
+        <!-- Date-->
+        <label class="font-alt" for="exampleInputFile2">
+         Chọn số lượng
+        </label>
+        <div class="select-list">
+         <select class="input-md form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+         </select>
+        </div>
+       </div>
+       <div class="mb-10 col-md-6 form-group wix">
+        <!-- Date-->
+        <label class="font-alt" for="exampleInputFile4">
+         Tổng tạm tính
+        </label>
+        <div class="show-total-p form-control input-md input-circle tt-inpost">
+         <h4 class="font-alt txt-inform"><strong>500.000<span class="price-symbol">đ</span></strong></h4></div>
+       </div>
+      </div>
+      <div class="mb-20 mt-0 align-center">
+       <!-- Date-->
+       <a href="#" class="btn btn-mod btn-large btn-circle">Mua ngay</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Popup buy deal -->
+
+ </div>
+ <!-- End Page Wrap -->
+
+ <!-- JS -->
+ <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/SmoothScroll.js"></script>
+ <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+ <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+ <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+ <script type="text/javascript" src="js/jquery.countTo.js"></script>
+ <script type="text/javascript" src="js/jquery.appear.js"></script>
+ <script type="text/javascript" src="js/jquery.sticky.js"></script>
+ <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+ <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+ <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+ <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+ <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
+ **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+ <script type="text/javascript" src="js/gmap3.min.js"></script>
+ <script type="text/javascript" src="js/wow.min.js"></script>
+ <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+ <!--<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>-->
+ <script type="text/javascript" src="js/all.js"></script>
+ <!--<script type="text/javascript" src="js/contact-form.js"></script>-->
+ <!--<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>-->
+ <!--<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>-->
+ <!--<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>-->
+ <!-- <script type="text/javascript" src="js/rev-slider.js"></script> -->
+ <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+ <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+ <script type="text/javascript" src="js/locales/bootstrap-datetimepicker.vi.js" charset="UTF-8"></script>
+ <script type="text/javascript" src="js/lightslider.js" charset="UTF-8"></script>
+ <script type="text/javascript">
+  $('.form_datetime').datetimepicker({
+   language: 'vi',
+   weekStart: 1,
+   todayBtn: 1,
+   autoclose: 1,
+   pickerPosition: "bottom-left",
+   todayHighlight: 1,
+   startView: 2,
+   forceParse: 0,
+   showMeridian: 1,
+   format: "dd MM yyyy - hh:ii"
+  });
+
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth() + 1; //January is 0!
+  var yyyy = today.getFullYear();
+
+  if (dd < 10) {
+   dd = '0' + dd
+  }
+
+  if (mm < 10) {
+   mm = '0' + mm
+  }
+
+  today = mm + '/' + dd + '/' + yyyy;
+  document.getElementById("showDateToday").value = today;
+ </script>
+ <script>
+  $(document).ready(function() {
+   $('#image-gallery').lightSlider({
+    gallery: true,
+    item: 1,
+    thumbItem: 4,
+    slideMargin: 10,
+    thumbMargin: 10,
+    speed: 500,
+    auto: true,
+    loop: true,
+    onSliderLoad: function() {
+     $('#image-gallery').removeClass('cS-hidden');
+    }
+   });
+  });
+ </script>
+ <script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jun 01, 2017 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+   // Get todays date and time
+   var now = new Date().getTime();
+
+   // Find the distance between now an the count down date
+   var distance = countDownDate - now;
+
+   // Time calculations for days, hours, minutes and seconds
+   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+   // Display the result in the element with id="demo"
+   document.getElementById("timer").innerHTML = days + " ngày, " + hours + "h " +
+    minutes + "m " + seconds + "s ";
+   // Display the result in the element with id="demo"
+   document.getElementById("timer2").innerHTML = days + " ngày, " + hours + "h " +
+    minutes + "m " + seconds + "s ";
+   document.getElementById("timer3").innerHTML = days + " ngày, " + hours + "h " +
+    minutes + "m " + seconds + "s ";
+
+   // If the count down is finished, write some text
+   if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "Hết Hạn";
+    document.getElementById("timer2").innerHTML = "Hết Hạn";
+    document.getElementById("timer3").innerHTML = "Hết Hạn";
+   }
+  }, 1000);
+ </script>
+</body>
+
+</html>

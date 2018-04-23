@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Foodizzi</title>
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta charset="utf-8">
+ <meta name="author" content="">
+ <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+ <!-- Favicons -->
+ <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
+
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/style.min.css">
+ <link rel="stylesheet" href="css/style-responsive.css">
+ <link rel="stylesheet" href="css/animate.min.css">
+ <link rel="stylesheet" href="css/vertical-rhythm.min.css">
+ <link rel="stylesheet" href="css/owl.carousel.css">
+ <link rel="stylesheet" href="css/magnific-popup.css">
+ <link rel="stylesheet" href="css/rev-slider.css">
+ <link rel="stylesheet" href="rs-plugin/css/settings.css" media="screen" />
+ <link rel="stylesheet" href="css/hover-min.css">
+ <!-- Date picker plugins css -->
+ <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="appear-animate">
+
+ <div id="loading-modal">
+  <div class="loader">Loading...</div>
+  <div id="loading-text">Đang tải dữ liệu</div>
+ </div>
+ <!-- Page Wrap -->
+ <div class="page" id="top">
+  <div class="container clearfix">
+   <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+     <!-- Navigation panel -->
+     <nav class="main-nav">
+      <div class="relative clearfix top-head">
+       <!-- Logo ( * your text or image into link tag *) -->
+       <div class="nav-logo-wrap logo-w-sub local-scroll col-md-8 col-sm-8">
+        <a href="index.html" class="logo pull-left">
+         <img src="images/logo.png" alt="" />
+        </a>
+        <div class="header-text pull-left sub-logo">
+         <span>
+          Foodizzi đặt gì cũng dễ
+         </span>
+        </div>
+       </div>
+       <!-- Main Menu -->
+       <div class="inner-nav col-md-4 col-sm-4">
+        <ul class="clearlist">
+         <!-- Search -->
+         <li>
+          <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle">Đăng ký</span></a>
+         </li>
+         <!-- End Search -->
+
+         <!-- Cart -->
+         <li>
+          <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#showLoginForm"><span class="btn btn-mod btn-medium btn-circle">Đăng nhập</span></a>
+         </li>
+         <!-- End Cart -->
+
+        </ul>
+       </div>
+       <!-- End Main Menu -->
+      </div>
+      <div class="mobile-nav">
+       <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="" />
+       </a>
+       <i class="fa fa-bars"></i>
+      </div>
+      <!-- Top Bar -->
+      <div class="top-bar nav-show-on-mobile">
+       <div class="container clearfix">
+        <!-- Top Links -->
+        <a class="close-popup" href="#"><i class="fa fa-times"></i></a>
+        <ul class="top-links right">
+         <li>
+          <a href="#" class="inline" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle btn-border">Đăng nhập</span></a>
+          <a href="#" class="inline" data-toggle="modal" data-dismiss="modal" data-target="#showRegForm"><span class="btn btn-mod btn-medium btn-circle btn-border">Đăng ký</span></a>
+         </li>
+         <li class="divider"></li>
+         <li><a href="#" style="color: #d60913; font-weight: bold;">Izzi-Deal</a></li>
+         <li><a href="res-info.html">Đặt bàn</a></li>
+         <li><a href="#" title="">Giao món</a></li>
+         <li><a href="list-news.html" title="">Tin tức</a></li>
+         <li><a href="list-pro.html" title="">Khuyến mại</a></li>
+         <li>
+          <div class="form">
+           <div>
+            <input type="text" name="name" id="name-4" class="align-center form-control input-medium input-circle" placeholder="Mã E-Code" maxlength="20">
+            <a class="inline" href="#"><span class="btn btn-mod btn-circle btn-medium btn-dark">Nhập</span></a>
+           </div>
+          </div>
+         </li>
+        </ul>
+        <!-- End Top Links -->
+        <ul class="clearlist opt-list">
+         <!-- Languages -->
+         <li>
+          <a class="active lang-flag" href=""><img src="images/en.png"></a> <a class="lang-flag" href=""><img src="images/vi.png"></a>
+         </li>
+         <!-- End Languages -->
+
+        </ul>
+
+       </div>
+      </div>
+      <!-- End Top Bar -->
+     </nav>
+     <!-- End Navigation panel -->
+    </div>
+   </div>
+  </div>
+  <!-- Top Bar -->
+  <div class="top-bar">
+   <div class="container clearfix">
+    <div class="row">
+     <div class="col-md-10 col-md-offset-1">
+      <div class="col-md-2 align-left hidden-xs hidden-sm">
+       <a href="#" class="btn-back btn-t-mn"><i class="fa fa-chevron-left"></i> Quay lại<br />Chọn món</a>
+      </div>
+      <div class="col-md-10 align-right">
+       <div id="steps">
+        <div class="step step-1 done"><a href="#"></a></div>
+        <div class="step step-2"><a href="#"></a></div>
+        <div class="step step-3"><a href="#"></a></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- End Top Bar -->
+
+  <!-- Portfolio Section -->
+  <section class="page-section pb-40 pt-20 fiz-container-checkout" id="">
+   <div class="relative">
+    <div class="container">
+     <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+       <div class="col-sm-6 relative col-dot">
+        <div class="pr-20">
+         <h2 class="section-title align-left font-alt mb-10 mb-sm-20">
+          Thông tin giao hàng
+         </h2>
+         <div class="row pt-10 mb-10">
+          <div class="col-sm-6">
+           <div class="search-wrap pb-0 align-left input-us-info">
+            <label class="mb-10">
+             Thời gian nhận hàng
+            </label>
+            <div class="select-list relative">
+             <input type="text" class="border-main-color input-md input-circle input-md form-control mydatepicker" placeholder="dd/mm/yyyy">
+             <!-- <input type="date" min="2017-07-18" name="date" value="" class="mydatepicker border-main-color input-md input-circle input-md form-control" placeholder="Ngày nhận hàng"> -->
+            </div>
+           </div>
+          </div>
+          <div class="col-sm-6">
+           <div class="search-wrap pb-0 align-left input-us-info">
+            <label class="mb-10">&nbsp;</label>
+            <div class="select-list relative ip-main-style mb-0">
+             <select class="input-md form-control" id="deliveryTime">
+              <option value="-1">Giờ nhận hàng</option>
+              <option value="8:0">08 : 00</option>
+              <option value="8:30">08 : 30</option>
+              <option value="9:0">09 : 00</option>
+              <option value="9:30">09 : 30</option>
+              <option value="10:0">10 : 00</option>
+              <option value="10:30">10 : 30</option>
+              <option value="11:0">11 : 00</option>
+              <option value="11:30">11 : 30</option>
+              <option value="12:0">12 : 00</option>
+              <option value="12:30">12 : 30</option>
+              <option value="13:0">13 : 00</option>
+              <option value="13:30">13 : 30</option>
+              <option value="14:0">14 : 00</option>
+              <option value="14:30">14 : 30</option>
+              <option value="15:0">15 : 00</option>
+              <option value="15:30">15 : 30</option>
+              <option value="16:0">16 : 00</option>
+              <option value="16:30">16 : 30</option>
+              <option value="17:0">17 : 00</option>
+              <option value="17:30">17 : 30</option>
+              <option value="18:0">18 : 00</option>
+              <option value="18:30">18 : 30</option>
+              <option value="19:0">19 : 00</option>
+              <option value="19:30">19 : 30</option>
+              <option value="20:0">20 : 00</option>
+              <option value="20:30">20 : 30</option>
+              <option value="21:0">21 : 00</option>
+             </select>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row pt-10">
+          <div class="col-sm-12">
+           <div class="search-wrap align-left input-us-info address-item mb-10">
+            <a href="#" class="btn-edit-address">Sửa</a>
+            <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+            <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+            <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+            <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+           </div>
+           <p class="other-address mb-20">
+            <a href="javascript:void(0)" id="pickOtherAddress" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-sink btn-ico-r">Chọn địa chỉ khác</a>
+            <a href="javascript:void(0)" id="addNewAddress" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-float-away btn-ico-r">Thêm địa chỉ giao hàng mới</a>
+           </p>
+           <div id="boxAddNewAddress" class="search-wrap box-add-new-address align-left input-us-info">
+            <label class="mb-10">
+             Thông tin người nhận
+            </label>
+            <input type="text" id="usname1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người nhận">
+            <input type="text" id="usmail1" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="usphone1" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+             <div class="sub-col text-muted small">
+              <span>Bộ phận giao hàng sẽ liên hệ với SĐT này.</span>
+             </div>
+            </div>
+            <label class="mb-10">
+             Địa chỉ nhận hàng
+            </label>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Địa chỉ: Ví dụ 21 ngõ 10 Tôn Thất Tùng">
+            <textarea id="note" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Ghi chú:"></textarea>
+            <div class="mb-10">
+             <div class="radio main-style">
+              <input id="check-default" name="check-default" type="checkbox" value="one">
+              <label for="check-default" class="checkbox-label">
+               Sử dụng làm địa chỉ mặc định
+              </label>
+             </div>
+            </div>
+            <div class="align-center mt-0">
+             <a href="javascript:void(0)" id="cancelNewAddress" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Hủy bỏ</a>
+             <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+            </div>
+           </div>
+           <div id="boxPickOtherAddress" class="search-wrap box-pick-address align-left input-us-info">
+            <a href="javascript:void(0)" class="close-box" id="cancelPickAddress"></a>
+            <label class="mb-10">Danh sách địa chỉ có sẵn</label>
+            <div class="search-wrap align-left input-us-info address-item mb-10">
+             <span href="#" class="badge-default btn-edit-address">Mặc định</span>
+             <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+             <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+             <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+             <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+             <div class="align-left mt-10">
+              <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Sửa</a>
+             </div>
+            </div>
+            <div class="search-wrap align-left input-us-info address-item mb-10">
+             <p class="mb-0"><span>Người nhận:</span> <strong>Linh Nguyễn</strong></p>
+             <p class="mb-0"><span>Email:</span> crazycakiem@gmail.com</p>
+             <p class="mb-0"><span>Điện thoại:</span> 0904 995 188</p>
+             <p class="mb-0"><span>Địa chỉ:</span> 43 làng Yên Phụ, Phường Yên Phụ, Quận Tây Hồ, Hà Nội, Việt Nam</p>
+             <div class="align-left mt-10">
+              <a href="#" class="btn btn-mod btn-medium btn-circle"> Giao đến đây</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Sửa</a>
+              <a href="javascript:void(0)" id="" class="btn btn-cancel btn-mod btn-medium btn-circle btn-border-w btn-color-dark"> Xóa</a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row pt-10">
+          <div class="col-sm-12">
+           <div class="search-wrap pb-0 align-left input-us-info">
+            <label class="mb-10">
+             Thông tin người nhận
+            </label>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người nhận">
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+             <div class="sub-col text-muted small">
+              <span>Bộ phận giao hàng sẽ liên hệ với SĐT này.</span>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="row pt-10">
+          <div class="col-sm-12">
+           <div class="search-wrap mb-10 align-left input-us-info">
+            <label class="mb-10">
+             Địa chỉ nhận hàng
+            </label>
+            <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Địa chỉ: Ví dụ 21 ngõ 10 Tôn Thất Tùng">
+            <textarea class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Ghi chú:"></textarea>
+            <div class="mb-10">
+             <div class="radio main-style">
+              <input id="check-default1" name="check-default1" type="checkbox" value="one">
+              <label for="check-default1" class="checkbox-label">
+               Lưu thông tin địa chỉ
+              </label>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="pr-20">
+         <h2 class="section-title align-left font-alt mb-10 mb-sm-20">
+          Thông tin người mua
+         </h2>
+         <div class="row pt-10">
+          <div class="col-sm-12">
+           <div class="mb-10">
+            <div class="radio main-style">
+             <input id="check-default2" name="check-default2" type="checkbox" value="one">
+             <label for="check-default2" class="checkbox-label">
+              Thông tin người mua giống như trên
+             </label>
+             <a href="javascript:void(0)" id="showInfo" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-sink btn-ico-r">Xem chi tiết</a>
+            </div>
+           </div>
+           <div id="boxInfoUser" class="search-wrap box-add-new-address align-left input-us-info">
+            <label class="mb-10">
+             Thông tin người mua
+            </label>
+            <input type="text" id="usname11" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên người mua">
+            <input type="text" id="usmail11" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Email">
+            <div class="w-notice two-col clearfix mb-10">
+             <div class="sub-col"><input type="text" id="usphone11" class="border-main-color form-control input-md input-circle align-left" placeholder="Số điện thoại"></div>
+             <div class="sub-col text-muted small">
+              <span>Bộ phận giao hàng sẽ liên hệ với SĐT này.</span>
+             </div>
+            </div>
+           </div>
+           <div class="mb-10">
+            <div class="radio main-style">
+             <input id="check-default3" name="check-default3" type="checkbox" value="one">
+             <label for="check-default3" class="checkbox-label">
+              Xuất hoá đơn GTGT cho đơn hàng
+             </label>
+             <a href="javascript:void(0)" id="showInfoBill" class="btn-mod btn-border-w btn-color-dark btn-circle mute-text btn-medium hvr-icon-sink btn-ico-r">Điền thông tin</a>
+            </div>
+           </div>
+           <div id="boxInfoBill" class="search-wrap box-add-new-address align-left input-us-info">
+            <label class="mb-10">
+             Thông tin hoá đơn
+            </label>
+            <input type="text" id="usname111" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Mã số thuế">
+            <input type="text" id="usname112" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Tên công ty">
+            <input type="text" id="usname113" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Địa chỉ công ty">
+           </div>
+           <div class="mb-10">
+            <div class="radio main-style">
+             <input id="check-default31" name="check-default31" type="checkbox" value="one">
+             <label for="check-default31" class="checkbox-label">
+              Lưu thông tin cho lần đặt hàng sau
+             </label>
+            </div>
+           </div>
+           <br>
+           <em>Lưu ý: Giá trị hoá đơn không bao gồm giá trị giảm giá và số điểm và số điểm FIZ đã sử dụng để thanh toán</em>
+          </div>
+         </div>
+        </div>
+        <br>
+        <div class="search-wrap align-left input-us-info address-item mb-10">
+         <label class="mb-10">
+          Giftcode, Voucher, Mã giảm giá <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span>
+         </label>
+         <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Nhập mã">
+         <div class="w-notice two-col clearfix mb-10">
+          <div class="sub-col" style="width:60%">
+           <div class="select-list relative ip-main-style mb-0">
+            <select class="input-md form-control" id="ncc">
+             <option value="-1">Chọn nhà cung cấp</option>
+             <option value="8:0">08 : 00</option>
+             <option value="8:30">08 : 30</option>
+             <option value="9:0">09 : 00</option>
+             <option value="9:30">09 : 30</option>
+            </select>
+           </div>
+          </div>
+          <div class="sub-col text-muted small" style="width:40%">
+           <a href="#" class="btn-mod btn btn-small btn-dark btn-circle">Áp dụng</a>
+          </div>
+         </div>
+        </div>
+        <div class="search-wrap align-left input-us-info address-item mb-10">
+         <label class="mb-10">
+          Sử dụng điểm tích luỹ
+         </label>
+         <div class="w-notice two-col clearfix mb-10">
+          <div class="sub-col" style="width:60%">
+           <input type="text" id="" class="mb-10 border-main-color form-control input-md input-circle align-left" placeholder="Nhập số điểm sử dụng">
+          </div>
+          <div class="sub-col text-muted small" style="width:40%">
+           <a href="#" class="btn-mod btn btn-small btn-dark btn-circle">Áp dụng</a>
+          </div>
+         </div>
+         <strong>Số điểm khả dụng: 550 FIP  <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span></strong>
+        </div>
+       </div>
+       <div class="col-sm-6">
+        <div class="pl-20">
+         <div class="widget mt-10 mb-10 box-show-serv box-bill-info no-shadow">
+          <div>
+           <h5 class="widget-title font-alt align-center mb-0 pb-0">Hoá đơn</h5>
+           <hr class="divider-dot pt-10 pb-10">
+           <div>
+            <div class="widget-text clearfix">
+             <div class="align-center mt-0">
+              <div class="form-filter">
+               <div>
+                <div class="mb-10 mb-md-10 align-left input-us-info">
+                 <!-- Date-->
+                 <label>
+                  Số lượng hàng mua: 15 <a href="#" class="btn-mod btn btn-small btn-dark btn-circle" data-toggle="modal" data-target="#showReser-st5">Chi tiết</a>
+                 </label>
+                 <div class="align-left form-control input-md input-circle">
+                  <span>Tổng tiền:  </span>
+                  <span class="right"><strong>10.000.000 VND</strong> </span>
+                 </div>
+                </div>
+                <hr class="divider-dot pt-10 pb-10">
+                <div class="mb-10 mb-md-10">
+                 <!-- Name -->
+                 <div class="align-left">
+                  <span>Tổng tạm tính:  </span>
+                  <span class="right">100.000.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span>Khuyến mãi và giảm giá:  </span>
+                  <span class="right">100.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span>Điểm quy đổi: </span><span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span>
+                  <span class="right">100.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span>Phí vận chuyển:  </span>
+                  <span class="right">100.000 VND </span>
+                 </div>
+                </div>
+                <hr class="divider-dot pt-10 pb-10">
+                <div class="mb-10 mb-md-10">
+                 <div class="align-left">
+                  <span><strong>Tổng:</strong>  </span>
+                  <span class="right"><strong>100.000.000 VND</strong> </span>
+                 </div>
+                 <!-- <div class="align-right mt-10"><a href="#" class="btn-mod btn-border btn-circle mute-text btn-small hvr-icon-float-away btn-ico-r">Bạn có muốn mua thêm</a></div> -->
+                </div>
+                <hr class="divider-dot pt-10 pb-10">
+                <div class="mb-10 mb-md-10">
+                 <!-- Name -->
+                 <div class="align-left">
+                  <span>Bạn tiết kiệm được </span><span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non vulputate lorem. Nullam at justo ac erat bibendum vehicula. Pellentesque fringilla at tortor eget semper."><i class="fa fa-question-circle"></i></span>
+                  <span class="right">100.000 VND </span>
+                 </div>
+                 <div class="align-left">
+                  <span>Số điểm tích luỹ:  </span>
+                  <span class="right">100 FIP </span>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+
+         </div>
+        </div>
+        <div class="pl-20">
+         <div class="widget mt-10 mb-10 box-show-pay-type no-shadow address-item">
+          <h4 class="align-left font-alt mb-10 mb-sm-20">
+           Phương thức thanh toán
+          </h4>
+          <div class="radio main-style">
+           <input checked="checked" id="check-st1" name="check-st" type="radio" value="one">
+           <label for="check-st1" class="radio-label">
+            Thẻ ATM
+           </label>
+          </div>
+          <div class="radio main-style">
+           <input id="check-st2" name="check-st" type="radio" value="one">
+           <label for="check-st2" class="radio-label">
+            Thẻ Visa/Master/JCB/AMEX
+           </label>
+          </div>
+          <div class="radio main-style">
+           <input id="check-st3" name="check-st" type="radio" value="one">
+           <label for="check-st3" class="radio-label">
+            Thẻ MOCA
+           </label>
+          </div>
+          <div class="radio main-style">
+           <input id="check-st4" name="check-st" type="radio" value="one">
+           <label for="check-st4" class="radio-label">
+            Nhận hàng và trả tiền COD
+           </label>
+          </div>
+          <br>
+          <div class="align-center mt-0">
+          <a href="#" id="" class="btn btn-mod btn-large btn-circle"> Thanh toán</a>
+         </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- End Portfolio Section -->
+
+  <!-- Divider -->
+  <hr class="mt-0 mb-0" />
+  <!-- End Divider -->
+
+  <!-- Contact Section -->
+  <section class="page-section pt-40 pb-10" id="contact">
+   <div class="container relative">
+
+    <div class="row top-footer">
+
+     <!-- Phone -->
+     <div class="col-sm-4 col-lg-4 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt"><img src="images/logo2.png" alt="" /></h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Food</a>
+         </li>
+         <li>
+          <a href="#" title="">Drink</a>
+         </li>
+         <li>
+          <a href="#" title="">Restaurant</a>
+         </li>
+         <li>
+          <a href="#" title="">Promotion</a>
+         </li>
+         <li>
+          <a href="#" title="">Food Fest</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Phone -->
+
+     <!-- Address -->
+     <div class="col-sm-4 col-lg-3 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Hướng dẫn</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <a href="#" title="">Quy trình đặt bàn</a>
+         </li>
+         <li>
+          <a href="#" title="">Trợ giúp</a>
+         </li>
+         <li>
+          <a href="#" title="">Điều khoản dịch vụ</a>
+         </li>
+         <li>
+          <a href="#" title="">Facebook</a>
+         </li>
+        </ul>
+       </div>
+
+      </div>
+     </div>
+     <!-- End Address -->
+
+     <!-- Email -->
+     <div class="col-sm-4 col-lg-5 pt-20 pb-20 pb-xs-0">
+      <div class="widget">
+
+       <h5 class="widget-title font-alt">Liên hệ</h5>
+
+       <div class="widget-body">
+        <ul class="clearlist widget-menu">
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-map-marker"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Địa chỉ
+           </div>
+           <div class="ci-text font-alt">
+            Tầng 5, số 2A Đại Cồ Việt - Hai Bà Trưng - HN
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-phone"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Hotline
+           </div>
+           <div class="ci-text font-alt">
+            04.730.18818
+           </div>
+          </div>
+         </li>
+         <li>
+          <div class="contact-item">
+           <div class="ci-icon">
+            <i class="fa fa-envelope"></i>
+           </div>
+           <div class="ci-title font-alt">
+            Email
+           </div>
+           <div class="ci-text font-alt">
+            <a href="mailto:contact@foodizzi.vn">contact@foodizzi.vn</a>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <hr class="divider-dot pt-10 pb-10" >
+       <div class="footer-social-links align-left mb-10 mb-xs-60">
+        <span>Theo dõi chúng tôi tại</span>
+        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a>
+        <a href="#" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a>
+        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
+       </div>
+      </div>
+
+     </div>
+     <!-- End Email -->
+
+
+    </div>
+
+   </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Foter -->
+  <footer class="page-section bg-gray-lighter footer pt-30 pb-30">
+   <div class="container">
+
+    <!-- Footer Text -->
+    <div class="footer-text">
+
+     <!-- Copyright -->
+     <div class="footer-copy font-alt">
+      <a href="#" target="_blank">&copy; 2017 Foodizzi Media | Made in Vietnam</a>.
+     </div>
+     <!-- End Copyright -->
+
+     <div class="footer-made">
+      <a href="#">Điều khoản dịch vụ</a>
+     </div>
+
+    </div>
+    <!-- End Footer Text -->
+
+   </div>
+
+
+   <!-- Top Link -->
+   <div class="local-scroll toTopButton">
+    <a href="#top" class="link-to-top"></a>
+   </div>
+   <!-- End Top Link -->
+
+  </footer>
+  <!-- End Foter -->
+
+  <div class="modal main-modal fade" id="showReser-st5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+      <h4 class="font-alt modal-title align-center" id="myModalLabel">Danh sách các món ăn bạn đã đặt</h4>
+     </div>
+     <div class="modal-body">
+      <div class="row">
+       <div class="col-sm-12">
+        <div class="box-reser-inside">
+         <table class="table food-cart" cellspacing="0">
+          <thead>
+           <tr>
+            <th class="food-thumbnail hidden-xs" width="56">&nbsp;</th>
+            <th class="food-name">Tên món</th>
+            <th class="food-price">Giá </th>
+            <th class="food-quantity">Số lượng</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/ico-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+           <tr class="cart_item">
+            <td class="food-thumbnail hidden-xs" width="56">
+             <a href="#"><img width="100" height="100" src="images/img-food1.png" class="attachment-shop_thumbnail size-shop_thumbnail wp-post-image" alt=""></a>
+            </td>
+            <td class="food-name" data-title="Product">
+             <a href="#">Khoai tây chiên bỏ lò | <span class="size">sm</span></a>
+            </td>
+            <td class="food-price" data-title="Price">
+             <span>100.000 VND</span>
+            </td>
+            <td class="food-quantity" data-title="Quantity">
+             <div class="quantity">
+              <span>1</span>
+             </div>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <!-- End Page Wrap -->
+ <!-- JS -->
+ <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+ <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+ <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/SmoothScroll.js"></script>
+ <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+ <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+ <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+ <script type="text/javascript" src="js/jquery.countTo.js"></script>
+ <script type="text/javascript" src="js/jquery.appear.js"></script>
+ <script type="text/javascript" src="js/jquery.sticky.js"></script>
+ <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+ <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+ <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+ <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+ <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
+**** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+ <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+<script type="text/javascript" src="js/gmap3.min.js"></script> -->
+ <script type="text/javascript" src="js/wow.min.js"></script>
+ <!-- <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script> -->
+ <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+ <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+ <script type="text/javascript" src="js/all.js"></script>
+ <!-- <script type="text/javascript" src="js/contact-form.js"></script>
+ <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script> -->
+ <!-- <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+ <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script> -->
+ <script type="text/javascript" src="js/rev-slider.js"></script>
+ <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+ <!-- Date Picker Plugin JavaScript -->
+ <script src="js/bootstrap-datepicker.min.js"></script>
+ <script>
+  // Date Picker
+  jQuery('.mydatepicker, #datepicker').datepicker(
+   {
+    todayHighlight: true,
+    startDate: '1d'
+   }
+  );
+  // jQuery('#datepicker-autoclose').datepicker({
+  //  autoclose: true,
+  //  todayHighlight: true
+  // });
+  // jQuery('#date-range').datepicker({
+  //  toggleActive: true,
+  //  format: 'DD/MM/YYYY'
+  // });
+  // jQuery('#datepicker-inline').datepicker({
+  //  todayHighlight: true
+  // });
+  // // Daterange picker
+  // $('.input-daterange-datepicker').daterangepicker({
+  //  buttonClasses: ['btn', 'btn-sm'],
+  //  applyClass: 'btn-danger',
+  //  cancelClass: 'btn-inverse'
+  // });
+  // $('.input-daterange-timepicker').daterangepicker({
+  //  timePicker: true,
+  //  format: 'MM/DD/YYYY h:mm A',
+  //  timePickerIncrement: 30,
+  //  timePicker12Hour: true,
+  //  timePickerSeconds: false,
+  //  buttonClasses: ['btn', 'btn-sm'],
+  //  applyClass: 'btn-danger',
+  //  cancelClass: 'btn-inverse'
+  // });
+  // $('.input-limit-datepicker').daterangepicker({
+  //  format: 'DD/MM/YYYY',
+  //  minDate: '06/01/2017',
+  //  maxDate: '06/11/2017',
+  //  buttonClasses: ['btn', 'btn-sm'],
+  //  applyClass: 'btn-danger',
+  //  cancelClass: 'btn-inverse',
+  //  dateLimit: {
+  //   days: 6
+  //  }
+  // });
+ </script>
+
+ <script type="text/javascript">
+  $("#addNewAddress").click(function() {
+   $("#boxPickOtherAddress").hide("slow", function() {});
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#cancelNewAddress").click(function() {
+   $("#boxAddNewAddress").slideToggle("slow", function() {});
+  });
+  $("#pickOtherAddress").click(function() {
+   $("#boxAddNewAddress").hide("slow", function() {});
+   $("#boxPickOtherAddress").slideToggle("slow", function() {});
+  });
+  $("#cancelPickAddress").click(function() {
+   $("#boxPickOtherAddress").slideToggle("slow", function() {});
+  });
+
+  $("#showInfo").click(function() {
+   $("#boxInfoUser").slideToggle("slow", function() {});
+  });
+  $("#showInfoBill").click(function() {
+   $("#boxInfoBill").slideToggle("slow", function() {});
+  });
+
+  //Min date is current date
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+   if(dd<10){
+          dd='0'+dd
+      }
+      if(mm<10){
+          mm='0'+mm
+      }
+  today = yyyy+'-'+mm+'-'+dd;
+  document.getElementById("deliveryDate").setAttribute("min", today);
+ </script>
+</body>
+</html>

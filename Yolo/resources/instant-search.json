@@ -1,0 +1,32 @@
+{
+	"Izzi Deal": [
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Thưởng Thức Hương Vị Bánh Mì Ngon Đúng Điệu Với Voucher Giảm Giá 50%", "c-price": "199000", "o-price": "250000", "percent": "-24%", "img": "http://lorempixel.com/400/400/food/1/"}
+ ],
+	"Đặt bàn": [
+	 {"name": "Bánh mì Minh Nhật", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Bánh mì bà nướng", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì BamiKing", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì BamiBread", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì VFresh", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì Five Star", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh ngọt Minh Nhật", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh kẩu Minh Nhật", "address": "Tầng Trệt, Cửa Chính, The Garden, Mễ Trì, Từ Liêm, Hà Nội", "img": "http://lorempixel.com/400/400/food/1/"}
+ ],
+	"Giao món": [
+		{"name": "Bánh mì Tròn", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+	 {"name": "Bánh mì bò nướng", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì hội an", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì thập cẩm", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì Bate", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì khô", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì nóng dòn", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+		{"name": "Bánh mì cháy", "store": "Bánh mì Minh Nhật", "img": "http://lorempixel.com/400/400/food/1/"},
+ ]
+}
